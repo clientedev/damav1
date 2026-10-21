@@ -134,10 +134,10 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
   return (
     <section
       id="inicio"
-      className="relative w-full hero-dark-section min-h-[155vh] sm:min-h-[175vh]"
+      className="relative w-full max-w-full hero-dark-section min-h-[155vh] sm:min-h-[175vh] overflow-x-hidden"
     >
       {/* Sticky full-screen viewport with dvh protection on mobile */}
-      <div className="sticky top-0 w-full h-[100dvh] sm:h-screen overflow-hidden flex flex-col justify-between bg-[#050a14]">
+      <div className="sticky top-0 w-full max-w-full h-[100dvh] sm:h-screen overflow-hidden flex flex-col justify-between bg-[#050a14]">
         {/* Background Slideshow / Video Layer */}
         <div className="absolute inset-0 z-0">
           {/* Background Slideshow / Video Layer: activeSlides always takes priority */}
@@ -238,7 +238,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
           
           {/* THE OFFICIAL LOGO - STARTS GIANT & DEAD-CENTERED, SMOOTHLY SHRINKS & LIFTS ON SCROLL */}
           <div
-            className="flex flex-col items-center justify-center w-full will-change-transform"
+            className="relative flex flex-col items-center justify-center max-w-full mx-auto will-change-transform touch-pan-y"
             style={{
               transform: `translate3d(0, ${logoOffset}px, 0) scale(${logoScale})`,
               transformOrigin: 'center center',
@@ -247,7 +247,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
           >
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
-              className="absolute w-[260px] sm:w-[540px] h-[260px] sm:h-[540px] rounded-full bg-[#38bdf8]/20 blur-[80px] sm:blur-[120px] -z-10 pointer-events-none animate-pulse-glow-blue"
+              className="absolute w-[240px] sm:w-[540px] h-[240px] sm:h-[540px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[120px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
                 opacity: 0.7 + (1 - scrollProgress) * 0.4
               }}
@@ -257,10 +257,10 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             <img
               src={config.logo_url || '/uploads/branding/logo_hero_central.png'}
               alt="G11 Conceito Financeiro"
-              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[88vw] mx-auto select-none"
+              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[84vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? `clamp(210px, 66vw, ${logoMobileWidth}px)`
+                  ? `clamp(200px, 62vw, ${logoMobileWidth}px)`
                   : `clamp(320px, 45vw, ${logoDesktopWidth}px)`
               }}
             />

@@ -17,9 +17,9 @@ const PARTNERS: Partner[] = [
   { name: 'Icatu Seguros', url: 'https://portal.icatuseguros.com.br', logo: '/uploads/seguradoras/icatu_real_dark.png', logoLight: '/uploads/seguradoras/icatu_real_light.png' },
   { name: 'Tokio Marine', url: 'https://www.tokiomarine.com.br', logo: '/uploads/seguradoras/tokio_real_dark.svg', logoLight: '/uploads/seguradoras/tokio_real_light.svg' },
   { name: 'MAPFRE', url: 'https://www.mapfre.com.br', logo: '/uploads/seguradoras/mapfre_real_dark.svg', logoLight: '/uploads/seguradoras/mapfre_real_light.svg' },
-  { name: 'Embracon', url: 'https://www.embracon.com.br', logo: '/uploads/seguradoras/embracon_real_dark.png', logoLight: '/uploads/seguradoras/embracon_real_light.png' },
+  { name: 'Embracon', url: 'https://www.embracon.com.br', logo: '/uploads/seguradoras/embracon_real_dark.svg', logoLight: '/uploads/seguradoras/embracon_real_light.svg' },
   { name: 'AZOS', url: 'https://www.azos.com.br', logo: '/uploads/seguradoras/azos_real_dark.png', logoLight: '/uploads/seguradoras/azos_real_light.png' },
-  { name: 'Centauro Seguros', url: 'https://www.centauro-on.com.br', logo: '/uploads/seguradoras/centauro_real_dark.png', logoLight: '/uploads/seguradoras/centauro_real_light.png' },
+  { name: 'Centauro Seguros', url: 'https://www.centauro-on.com.br', logo: '/uploads/seguradoras/centauro_real_dark.svg', logoLight: '/uploads/seguradoras/centauro_real_light.svg' },
 ];
 
 export const PartnersMarquee: React.FC = () => {
