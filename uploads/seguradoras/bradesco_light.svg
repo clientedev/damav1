@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 60" fill="none">
+  <g transform="translate(10, 12)">
+    <path d="M5 32 V10 C5 4 12 0 18 0 C24 0 31 4 31 10 V32" stroke="#cc092f" stroke-width="3.5" fill="none"/>
+    <path d="M18 10 V32" stroke="#cc092f" stroke-width="3.5"/>
+    <circle cx="18" cy="3" r="3" fill="#cc092f"/>
+  </g>
+  <text x="55" y="32" fill="#cc092f" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="22" font-weight="700">Bradesco</text>
+  <text x="55" y="48" fill="#475569" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="13" font-weight="600" letter-spacing="2">SEGUROS</text>
+</svg>

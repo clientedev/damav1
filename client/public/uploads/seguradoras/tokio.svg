@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 60" fill="none">
+  <circle cx="26" cy="30" r="15" stroke="#38bdf8" stroke-width="3" fill="none"/>
+  <circle cx="26" cy="30" r="7" fill="#ef4444"/>
+  <text x="52" y="30" fill="#ffffff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="800" letter-spacing="1">TOKIO MARINE</text>
+  <text x="52" y="46" fill="#38bdf8" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="2">SEGURADORA</text>
+</svg>

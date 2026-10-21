@@ -1,0 +1,31 @@
+{
+  "data": {
+    "site": {
+      "metaSiteId": "ff28551d-dd70-469f-a182-d796644da73a",
+      "userId": "d4f942d9-b29c-4aa7-aedb-79a40f5dde88",
+      "siteId": "b2e96935-b0dc-43d0-8ed5-96d99780521d",
+      "externalBaseUrl": "https://www.g11conceitofinanceiro.com.br",
+      "siteRevision": 167,
+      "siteType": "UGC",
+      "dc": "virginia-pub",
+      "isResponsive": true,
+      "editorName": "Studio",
+      "sessionId": "097aaca0-b52f-4fe2-821c-61280bbdbf68",
+      "isSEO": false,
+      "appNameForBiEvents": "wix-studio"
+    },
+    "rollout": {
+      "siteAssetsVersionsRollout": false,
+      "isDACRollout": 1,
+      "isTBRollout": true
+    },
+    "fleetConfig": {
+      "fleetName": "thunderbolt-renderer",
+      "type": "Rollout",
+      "code": 1
+    },
+    "requestUrl": "https://www.g11conceitofinanceiro.com.br/",
+    "isInSEO": false,
+    "platformOnSite": true
+  }
+}

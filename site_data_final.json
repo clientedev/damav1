@@ -1,0 +1,960 @@
+{
+  "site_info": {
+    "title": "G11 Conceito Financeiro",
+    "tagline": "Soluções Financeiras Personalizadas para Corretores e Clientes de Alta Performance",
+    "description": "Fundada em 10 de agosto de 2021, a G11 nasceu para auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado e proporcionando suporte para que atuem de forma estratégica e eficiente.",
+    "founded_date": "10 de agosto de 2021",
+    "address": {
+      "street": "Av Antártica 675",
+      "neighborhood": "Jardim das Perdizes",
+      "city": "São Paulo",
+      "state": "SP",
+      "cep": "05003-020",
+      "full_formatted": "Av Antártica 675, Perdizes - SP, 05003-020",
+      "google_maps_url": "https://maps.google.com/?q=Av+Antartica+675+Perdizes+Sao+Paulo+SP"
+    },
+    "contact": {
+      "whatsapp": "+55 11 99160-6951",
+      "whatsapp_url": "https://wa.me/5511991606951?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!",
+      "instagram": "https://www.instagram.com/g11conceitofinanceiro/",
+      "business_hours": "De segunda a sexta-feira, das 9h às 18h (horário comercial)"
+    },
+    "branding": {
+      "logo_principal": "assets/images/branding/logo_principal.png",
+      "logo_nav_footer": "assets/images/branding/logo_nav_footer.png",
+      "logo_badge": "assets/images/branding/logo_badge_lg.png",
+      "parceiros_grid": "assets/images/branding/parceiros_g11_grid.png",
+      "parceiro_omint": "assets/images/branding/parceiro_omint.png"
+    }
+  },
+  "institucional": {
+    "conheca_g11": {
+      "title": "Conheça a G11 Conceito Financeiro",
+      "text": "Fundada em 10 de agosto de 2021, a G11 nasceu para auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado. Com inovação e suporte contínuo, a G11 se tornou referência, criando oportunidades para corretores construírem carreiras sólidas e rentáveis.",
+      "image": "assets/images/institucional/conheca_g11_equipe.jpg",
+      "hero_image": "assets/images/institucional/hero_home_banner.png"
+    },
+    "sobre_detalhado": {
+      "title": "Sobre a G11",
+      "banner_image": "assets/images/institucional/sobre_empresa_banner.jpg",
+      "art_image": "assets/images/institucional/sobre_g11_arte.png",
+      "missao": "Auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado e proporcionando suporte para que atuem de forma estratégica e eficiente.",
+      "visao": "Ser uma referência no setor, oferecendo oportunidades e soluções que contribuam para o crescimento e a consolidação dos corretores no mercado.",
+      "valores": [
+        {
+          "item": "Excelência",
+          "descricao": "Compromisso com a qualidade e a melhoria contínua."
+        },
+        {
+          "item": "Conexão",
+          "descricao": "Facilitação do acesso a instituições e oportunidades estratégicas."
+        },
+        {
+          "item": "Inovação",
+          "descricao": "Busca constante por soluções que agreguem valor ao mercado."
+        },
+        {
+          "item": "Transparência",
+          "descricao": "Atuação ética e clara em todas as relações."
+        },
+        {
+          "item": "Desenvolvimento",
+          "descricao": "Incentivo ao aprimoramento profissional e à evolução contínua."
+        }
+      ]
+    }
+  },
+  "produtos": [
+    {
+      "id": "vida",
+      "nome": "Seguro de Vida",
+      "tag": "Vida",
+      "descricao": "Segurança financeira para sua família em qualquer momento. Planos que garantem amparo e proteção quando mais importa.",
+      "card_image": "assets/images/produtos/card_produto_1_vida.png"
+    },
+    {
+      "id": "viagem",
+      "nome": "Seguro Viagem",
+      "tag": "Viagem",
+      "descricao": "Viaje com tranquilidade! Cobertura para imprevistos, como despesas médicas, bagagem extraviada e muito mais.",
+      "card_image": "assets/images/produtos/card_produto_2_viagem.png"
+    },
+    {
+      "id": "previdencia",
+      "nome": "Previdência Privada",
+      "tag": "Previdência",
+      "descricao": "Planeje seu futuro com segurança. Investimentos inteligentes para uma aposentadoria tranquila e estável.",
+      "card_image": "assets/images/produtos/card_produto_3_previdencia.png"
+    },
+    {
+      "id": "saude",
+      "nome": "Plano de Saúde",
+      "tag": "Saúde",
+      "descricao": "Cuide do que mais importa! Planos de saúde que oferecem acesso a uma rede de qualidade para você e sua família.",
+      "card_image": "assets/images/produtos/card_produto_4_saude.png"
+    }
+  ],
+  "beneficios_exclusivos": {
+    "title": "Benefícios Pagos & Exclusivos",
+    "description": "Além dos nossos serviços essenciais, oferecemos benefícios exclusivos para quem busca ainda mais proteção, conforto e segurança. Invista no seu bem-estar e no da sua família com opções personalizadas para cada necessidade.",
+    "itens": [
+      {
+        "nome": "Assistência 24h",
+        "descricao": "Suporte em emergências para garantir tranquilidade em qualquer momento."
+      },
+      {
+        "nome": "Seguro Residencial",
+        "descricao": "Proteja seu lar contra imprevistos com coberturas especiais."
+      },
+      {
+        "nome": "Seguro Odontológico",
+        "descricao": "Cuide da sua saúde bucal com planos acessíveis e ampla cobertura."
+      },
+      {
+        "nome": "Auxílio-Funeral",
+        "descricao": "Amparo financeiro e suporte em momentos difíceis."
+      },
+      {
+        "nome": "Descontos Exclusivos",
+        "descricao": "Acesso a vantagens em redes parceiras de saúde, lazer e bem-estar."
+      }
+    ]
+  },
+  "depoimentos": [
+    {
+      "nome": "André S.",
+      "cargo": "Corretor de Seguros",
+      "depoimento": "A G11 transformou minha forma de lidar com dinheiro! Como corretor, nunca tive um planejamento financeiro estruturado, e hoje me sinto muito mais seguro sobre meu futuro."
+    },
+    {
+      "nome": "Mariana R.",
+      "cargo": "Corretora Parceira",
+      "depoimento": "Graças à assessoria da G11, consegui organizar minhas comissões e investir de maneira inteligente. Agora sei que minha aposentadoria está garantida!"
+    },
+    {
+      "nome": "Carlos M.",
+      "cargo": "Cliente G11",
+      "depoimento": "Sempre tive dúvidas sobre seguro de vida e previdência privada, mas a equipe da G11 me explicou tudo com clareza e transparência. Hoje, minha família está protegida!"
+    },
+    {
+      "nome": "Fernanda L.",
+      "cargo": "Corretora de Alta Performance",
+      "depoimento": "O suporte da G11 foi essencial para otimizar meus ganhos como corretor. Além disso, me ajudaram a escolher um plano de saúde ideal para minha realidade!"
+    }
+  ],
+  "sinistro": {
+    "title": "Sobre Sinistro",
+    "o_que_e": {
+      "pergunta": "O que é um sinistro?",
+      "resposta": "Um sinistro é qualquer evento inesperado que cause danos e esteja previsto no contrato de seguro. Quando isso acontece, o segurado pode acionar a seguradora para obter indenização, reembolso ou reparo, conforme os termos da apólice."
+    },
+    "como_registrar": {
+      "pergunta": "Como registrar um sinistro?",
+      "passos": [
+        "Entre em contato com a seguradora imediatamente pelo telefone ou aplicativo.",
+        "Reúna a documentação necessária, como boletim de ocorrência, fotos do ocorrido e nota fiscal dos bens danificados.",
+        "Acompanhe a análise do sinistro pela seguradora e aguarde a resolução."
+      ]
+    },
+    "cta_contato": "Entrar em contato via WhatsApp (+55 11 99160-6951)"
+  },
+  "galeria_realizacoes": {
+    "title": "Realizações",
+    "description": "Viagens de incentivo, convenções internacionais, premiações e eventos exclusivos da G11 Conceito Financeiro.",
+    "capas_grid": [
+      {
+        "index": 1,
+        "item_id": "b898f6da-e2f1-40ae-b105-c83583126b49",
+        "media_url": "d4f942_69d1db04475d487d9936598746f09693~mv2.png",
+        "cover_filename": "capa_1_italia_capri.png",
+        "local_path": "assets/images/capas_eventos/capa_1_italia_capri.png",
+        "target_page_id": "bo9ex",
+        "album_info": {
+          "folder_name": "italia_capri",
+          "title": "Capri / Itália",
+          "destination": "Itália",
+          "route": "/projetos-1"
+        }
+      },
+      {
+        "index": 2,
+        "item_id": "d95947e3-99d1-4744-994d-9354a2cc194a",
+        "media_url": "d4f942_b72b28c1e93d4f36b3f06ad8a6d40c65~mv2.png",
+        "cover_filename": "capa_2_africa.png",
+        "local_path": "assets/images/capas_eventos/capa_2_africa.png",
+        "target_page_id": "fbpr1",
+        "album_info": {
+          "folder_name": "africa",
+          "title": "África do Sul",
+          "destination": "África",
+          "route": "/projetos-1-1-1-1-1"
+        }
+      },
+      {
+        "index": 3,
+        "item_id": "c7e196ad-3722-4130-9df1-b0ea07c08587",
+        "media_url": "d4f942_ef22e2789e25496cafe0122494954e8b~mv2.png",
+        "cover_filename": "capa_3_paris.png",
+        "local_path": "assets/images/capas_eventos/capa_3_paris.png",
+        "target_page_id": "n1lk3",
+        "album_info": {
+          "folder_name": "paris",
+          "title": "Paris / França",
+          "destination": "França",
+          "route": "/projetos-1-1-1"
+        }
+      },
+      {
+        "index": 4,
+        "item_id": "279dcca1-6759-47bb-a2e8-4e791913c9fa",
+        "media_url": "d4f942_1916dda2d7254904a2a10070b693e4d2~mv2.png",
+        "cover_filename": "capa_4_grecia.png",
+        "local_path": "assets/images/capas_eventos/capa_4_grecia.png",
+        "target_page_id": "xk38q",
+        "album_info": {
+          "folder_name": "grecia",
+          "title": "Grécia",
+          "destination": "Grécia",
+          "route": "/projetos-1-1-1-2"
+        }
+      },
+      {
+        "index": 5,
+        "item_id": "cbd1b8a4-89da-469f-9952-8d80fe344fdd",
+        "media_url": "d4f942_a1d8bb1ae02c4670aae558828c2b5b44~mv2.png",
+        "cover_filename": "capa_5_japao.png",
+        "local_path": "assets/images/capas_eventos/capa_5_japao.png",
+        "target_page_id": "fv7dp",
+        "album_info": {
+          "folder_name": "japao",
+          "title": "Japão",
+          "destination": "Japão",
+          "route": "/projetos-1-1-1-2-1"
+        }
+      },
+      {
+        "index": 6,
+        "item_id": "98bb38d6-a955-4650-8fc6-486b155f1d41",
+        "media_url": "d4f942_6f5dd8a2f2f14049b67def43ad3c3993~mv2.png",
+        "cover_filename": "capa_6_awards.png",
+        "local_path": "assets/images/capas_eventos/capa_6_awards.png",
+        "target_page_id": "d6byu",
+        "album_info": {
+          "folder_name": "awards",
+          "title": "Awards & Premiações",
+          "destination": "Awards",
+          "route": "/projetos-1-1-1-1"
+        }
+      },
+      {
+        "index": 7,
+        "item_id": "92e43594-e7ac-43bd-bb89-35eb11244275",
+        "media_url": "d4f942_3dbc427cff3644e1bd37e9fd25a208c9~mv2.png",
+        "cover_filename": "capa_7_novotel.png",
+        "local_path": "assets/images/capas_eventos/capa_7_novotel.png",
+        "target_page_id": "htq3m",
+        "album_info": {
+          "folder_name": "novotel",
+          "title": "Convenção Novotel",
+          "destination": "Novotel",
+          "route": "/projetos-1-1"
+        }
+      },
+      {
+        "index": 8,
+        "item_id": "58065d5c-dcce-4d71-9ef8-e1e570e398aa",
+        "media_url": "d4f942_a24a484b5b594e0d82def56f8c8f5521~mv2.png",
+        "cover_filename": "capa_8_evento_8.png",
+        "local_path": "assets/images/capas_eventos/capa_8_evento_8.png",
+        "target_page_id": "",
+        "album_info": {
+          "folder_name": "evento_8",
+          "title": "Evento / Viagem 8",
+          "destination": "Evento",
+          "route": null
+        }
+      }
+    ],
+    "albuns_completos": [
+      {
+        "page_id": "d6byu",
+        "folder_name": "awards",
+        "title": "Awards & Premiações",
+        "destination": "Awards",
+        "route": "/projetos-1-1-1-1",
+        "page_title": "Awards | G11",
+        "cover": {
+          "index": 6,
+          "item_id": "98bb38d6-a955-4650-8fc6-486b155f1d41",
+          "media_url": "d4f942_6f5dd8a2f2f14049b67def43ad3c3993~mv2.png",
+          "cover_filename": "capa_6_awards.png",
+          "local_path": "assets/images/capas_eventos/capa_6_awards.png",
+          "target_page_id": "d6byu",
+          "album_info": {
+            "folder_name": "awards",
+            "title": "Awards & Premiações",
+            "destination": "Awards",
+            "route": "/projetos-1-1-1-1"
+          }
+        },
+        "photo_count": 3,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_201355d03f0f4a8ebdf92fdaa076051a~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/awards/foto_01.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.55 (1).jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_f5191b9a21df4a54946d678d15bdaae7~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/awards/foto_02.jpeg",
+            "width": 1280,
+            "height": 852,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.54.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_ac37368063b34ff88c815f2d987c18b7~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/awards/foto_03.jpeg",
+            "width": 1170,
+            "height": 1419,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.55.jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "fbpr1",
+        "folder_name": "africa",
+        "title": "África do Sul",
+        "destination": "África",
+        "route": "/projetos-1-1-1-1-1",
+        "page_title": "Africa | G11",
+        "cover": {
+          "index": 2,
+          "item_id": "d95947e3-99d1-4744-994d-9354a2cc194a",
+          "media_url": "d4f942_b72b28c1e93d4f36b3f06ad8a6d40c65~mv2.png",
+          "cover_filename": "capa_2_africa.png",
+          "local_path": "assets/images/capas_eventos/capa_2_africa.png",
+          "target_page_id": "fbpr1",
+          "album_info": {
+            "folder_name": "africa",
+            "title": "África do Sul",
+            "destination": "África",
+            "route": "/projetos-1-1-1-1-1"
+          }
+        },
+        "photo_count": 10,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_7c650d9c3a1748829168f888d190b64e~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_01.jpeg",
+            "width": 720,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.07.jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_9207d9a6c7934b319760f05536646023~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_02.jpeg",
+            "width": 1280,
+            "height": 959,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.07 (1).jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_227dca0edcd04b159fb26c08455ea3f6~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_03.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.05.jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_f5e4ce8003e04aafba6a2a46589be7f0~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_04.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.06 (2).jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_b29da728030f4e55bb45fb67ea3e7ff8~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_05.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.06.jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_0593c6a9f3b14becbc21d39390ff44af~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_06.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.06 (1).jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_231e60dfc656438f920e72075f504e16~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_07.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.05 (2).jpeg"
+          },
+          {
+            "index": 8,
+            "media_url": "d4f942_77c9f5c0d02b4a3cbc3aab2121d65dda~mv2.jpeg",
+            "filename": "foto_08.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_08.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.05 (3).jpeg"
+          },
+          {
+            "index": 9,
+            "media_url": "d4f942_01f3dc5d6c284af88a726177232ed4d2~mv2.jpeg",
+            "filename": "foto_09.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_09.jpeg",
+            "width": 1280,
+            "height": 959,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.05 (1).jpeg"
+          },
+          {
+            "index": 10,
+            "media_url": "d4f942_6ae915f26c604ba49c7c58dc705840bb~mv2.jpeg",
+            "filename": "foto_10.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/africa/foto_10.jpeg",
+            "width": 720,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.04 (1).jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "bo9ex",
+        "folder_name": "italia_capri",
+        "title": "Capri / Itália",
+        "destination": "Itália",
+        "route": "/projetos-1",
+        "page_title": "Capri | G11",
+        "cover": {
+          "index": 1,
+          "item_id": "b898f6da-e2f1-40ae-b105-c83583126b49",
+          "media_url": "d4f942_69d1db04475d487d9936598746f09693~mv2.png",
+          "cover_filename": "capa_1_italia_capri.png",
+          "local_path": "assets/images/capas_eventos/capa_1_italia_capri.png",
+          "target_page_id": "bo9ex",
+          "album_info": {
+            "folder_name": "italia_capri",
+            "title": "Capri / Itália",
+            "destination": "Itália",
+            "route": "/projetos-1"
+          }
+        },
+        "photo_count": 8,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_45545d8cb1084ebca8173c09a03a30c5~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_01.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.15.jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_81d16273d9d34460b86817a9a73113f3~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_02.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.19.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_118aa892c92045caaecfd41ce7c7635f~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_03.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.20.jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_46cd178af68b4f74bca94057bb0d5c2e~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_04.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.20 (1).jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_5cda8a00b35343d5ac465b9aa9098fbe~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_05.jpeg",
+            "width": 1280,
+            "height": 1075,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.20 (2).jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_153d5afeda634d87ad84c465fa2cb69a~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_06.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.19 (2).jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_e5355cb314ee4847ad6e523f7c264530~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_07.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.18.jpeg"
+          },
+          {
+            "index": 8,
+            "media_url": "d4f942_3cd0543bb02a4be2a876e69165add361~mv2.jpeg",
+            "filename": "foto_08.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/italia_capri/foto_08.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.19 (1).jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "fv7dp",
+        "folder_name": "japao",
+        "title": "Japão",
+        "destination": "Japão",
+        "route": "/projetos-1-1-1-2-1",
+        "page_title": "Japão | G11",
+        "cover": {
+          "index": 5,
+          "item_id": "cbd1b8a4-89da-469f-9952-8d80fe344fdd",
+          "media_url": "d4f942_a1d8bb1ae02c4670aae558828c2b5b44~mv2.png",
+          "cover_filename": "capa_5_japao.png",
+          "local_path": "assets/images/capas_eventos/capa_5_japao.png",
+          "target_page_id": "fv7dp",
+          "album_info": {
+            "folder_name": "japao",
+            "title": "Japão",
+            "destination": "Japão",
+            "route": "/projetos-1-1-1-2-1"
+          }
+        },
+        "photo_count": 10,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_53033183fcb546cbaf3e00b2e558b1d1~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_01.jpeg",
+            "width": 1179,
+            "height": 1466,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.35 (1).jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_cb65a1ccacf643c4b30c61e7a26d4f85~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_02.jpeg",
+            "width": 1179,
+            "height": 1335,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.35.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_2aab174334544c069b38aaa1469cfe48~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_03.jpeg",
+            "width": 1179,
+            "height": 909,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.36.jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_4da11fcd32d846e091b923e1c9dfa00a~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_04.jpeg",
+            "width": 1179,
+            "height": 1516,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.36 (1).jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_c8c239c20dcd4a28961a81377cb3d8ab~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_05.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.39.jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_678f02242409442c801bd235df6bc268~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_06.jpeg",
+            "width": 959,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.38 (1).jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_923ab3d1fadd4db7a27f706e32f2f9ba~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_07.jpeg",
+            "width": 1179,
+            "height": 1466,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.35 (2).jpeg"
+          },
+          {
+            "index": 8,
+            "media_url": "d4f942_3df990c1b676461892553d0b32372a39~mv2.jpeg",
+            "filename": "foto_08.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_08.jpeg",
+            "width": 1179,
+            "height": 1503,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.37 (1).jpeg"
+          },
+          {
+            "index": 9,
+            "media_url": "d4f942_65a4b83bd6ab447baf86c6e09686e450~mv2.jpeg",
+            "filename": "foto_09.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_09.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.39 (1).jpeg"
+          },
+          {
+            "index": 10,
+            "media_url": "d4f942_e18b10b92b2f445d90665aafae632a7c~mv2.jpeg",
+            "filename": "foto_10.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/japao/foto_10.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.37.jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "n1lk3",
+        "folder_name": "paris",
+        "title": "Paris / França",
+        "destination": "França",
+        "route": "/projetos-1-1-1",
+        "page_title": "Paris | G11",
+        "cover": {
+          "index": 3,
+          "item_id": "c7e196ad-3722-4130-9df1-b0ea07c08587",
+          "media_url": "d4f942_ef22e2789e25496cafe0122494954e8b~mv2.png",
+          "cover_filename": "capa_3_paris.png",
+          "local_path": "assets/images/capas_eventos/capa_3_paris.png",
+          "target_page_id": "n1lk3",
+          "album_info": {
+            "folder_name": "paris",
+            "title": "Paris / França",
+            "destination": "França",
+            "route": "/projetos-1-1-1"
+          }
+        },
+        "photo_count": 9,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_ff3693a1bb764bb2bfd6d8b6c8468796~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_01.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.13.jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_5551c6a454a545068aac90d5939d0896~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_02.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.08.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_d48453d8d6ec466ea3a9f5dc8a0b9f82~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_03.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.14 (1).jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_5304a35ac5a647359b6c9ddda5c55295~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_04.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.14.jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_702a7a16cd08416fa5b6523aede324d5~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_05.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.16 (2).jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_7baecac21f4b4ed6a44cc28671a1d64b~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_06.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.16.jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_c6de46c37f174ba78e1f8a9674edccef~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_07.jpeg",
+            "width": 959,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.16 (1).jpeg"
+          },
+          {
+            "index": 8,
+            "media_url": "d4f942_4e85c24a49aa4f1e9f48c5b4a6e39113~mv2.jpeg",
+            "filename": "foto_08.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_08.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.21.15.jpeg"
+          },
+          {
+            "index": 9,
+            "media_url": "d4f942_d56c19699b5a46b5ae3d92cafa60a076~mv2.jpeg",
+            "filename": "foto_09.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/paris/foto_09.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.07 (2).jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "htq3m",
+        "folder_name": "novotel",
+        "title": "Convenção Novotel",
+        "destination": "Novotel",
+        "route": "/projetos-1-1",
+        "page_title": "novotel | G11",
+        "cover": {
+          "index": 7,
+          "item_id": "92e43594-e7ac-43bd-bb89-35eb11244275",
+          "media_url": "d4f942_3dbc427cff3644e1bd37e9fd25a208c9~mv2.png",
+          "cover_filename": "capa_7_novotel.png",
+          "local_path": "assets/images/capas_eventos/capa_7_novotel.png",
+          "target_page_id": "htq3m",
+          "album_info": {
+            "folder_name": "novotel",
+            "title": "Convenção Novotel",
+            "destination": "Novotel",
+            "route": "/projetos-1-1"
+          }
+        },
+        "photo_count": 7,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_9c30889057eb4651aab4a7f458f64e7d~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_01.jpeg",
+            "width": 960,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.41.jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_816a22e998d147f68b8e132c5ac66130~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_02.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.42.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_78a05101839642678a07ad6949e59473~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_03.jpeg",
+            "width": 937,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.32.jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_a7d2e448c4f6447fb59123c5635d1c8d~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_04.jpeg",
+            "width": 1280,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.21.jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_ba634e4125784d1299fc5c93cf2accd1~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_05.jpeg",
+            "width": 1227,
+            "height": 960,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.19.21 (1).jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_ce8ee2920b5f4de0ba389090bed28f76~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_06.jpeg",
+            "width": 985,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.33.jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_2ff714a7b5ab4a528f0a9aaf17887aa6~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/novotel/foto_07.jpeg",
+            "width": 839,
+            "height": 1147,
+            "original_fileName": "WhatsApp Image 2025-03-14 at 13.20.33 (1).jpeg"
+          }
+        ]
+      },
+      {
+        "page_id": "xk38q",
+        "folder_name": "grecia",
+        "title": "Grécia",
+        "destination": "Grécia",
+        "route": "/projetos-1-1-1-2",
+        "page_title": "Grécia | G11",
+        "cover": {
+          "index": 4,
+          "item_id": "279dcca1-6759-47bb-a2e8-4e791913c9fa",
+          "media_url": "d4f942_1916dda2d7254904a2a10070b693e4d2~mv2.png",
+          "cover_filename": "capa_4_grecia.png",
+          "local_path": "assets/images/capas_eventos/capa_4_grecia.png",
+          "target_page_id": "xk38q",
+          "album_info": {
+            "folder_name": "grecia",
+            "title": "Grécia",
+            "destination": "Grécia",
+            "route": "/projetos-1-1-1-2"
+          }
+        },
+        "photo_count": 9,
+        "photos": [
+          {
+            "index": 1,
+            "media_url": "d4f942_206cc4365ec8455ba4a6db00f48a3861~mv2.jpeg",
+            "filename": "foto_01.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_01.jpeg",
+            "width": 4032,
+            "height": 3024,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.41.jpeg"
+          },
+          {
+            "index": 2,
+            "media_url": "d4f942_9058652f851846d3a9f4ab3bddbb5bf7~mv2.jpeg",
+            "filename": "foto_02.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_02.jpeg",
+            "width": 1200,
+            "height": 1600,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.40.jpeg"
+          },
+          {
+            "index": 3,
+            "media_url": "d4f942_776b063b46c545c2ade8b4c269453f9b~mv2.jpeg",
+            "filename": "foto_03.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_03.jpeg",
+            "width": 1179,
+            "height": 893,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.34.jpeg"
+          },
+          {
+            "index": 4,
+            "media_url": "d4f942_8b777e7f114f4f87afe03233842ac542~mv2.jpeg",
+            "filename": "foto_04.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_04.jpeg",
+            "width": 1179,
+            "height": 810,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.33 (1).jpeg"
+          },
+          {
+            "index": 5,
+            "media_url": "d4f942_c137069b8d04469c84eb1ae01bee6d22~mv2.jpeg",
+            "filename": "foto_05.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_05.jpeg",
+            "width": 1179,
+            "height": 1085,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.33 (2).jpeg"
+          },
+          {
+            "index": 6,
+            "media_url": "d4f942_b200f49387264525ba7102ddc789098d~mv2.jpeg",
+            "filename": "foto_06.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_06.jpeg",
+            "width": 1179,
+            "height": 864,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.33.jpeg"
+          },
+          {
+            "index": 7,
+            "media_url": "d4f942_b1d960ef1a6d454fa6a09ab748215f58~mv2.jpeg",
+            "filename": "foto_07.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_07.jpeg",
+            "width": 969,
+            "height": 1280,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.40 (1).jpeg"
+          },
+          {
+            "index": 8,
+            "media_url": "d4f942_7e824d3677384d5f89e8e9bbe69d3ca0~mv2.jpeg",
+            "filename": "foto_08.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_08.jpeg",
+            "width": 3840,
+            "height": 2160,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.43.jpeg"
+          },
+          {
+            "index": 9,
+            "media_url": "d4f942_8f45bb0dccc544f7bd7df5e2108aebcf~mv2.jpeg",
+            "filename": "foto_09.jpeg",
+            "local_path": "assets/images/eventos_e_viagens/grecia/foto_09.jpeg",
+            "width": 3024,
+            "height": 4032,
+            "original_fileName": "WhatsApp Image 2026-03-16 at 12.54.43 (1).jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

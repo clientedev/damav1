@@ -1,0 +1,1544 @@
+{
+  "platform": {
+    "ssrPropsUpdates": [],
+    "ssrStyleUpdates": [],
+    "ssrStructureUpdates": []
+  },
+  "pages": {
+    "compIdToTypeMap": {
+      "masterPage": "MasterPage",
+      "BACKGROUND_GROUP": "BackgroundGroup",
+      "SCROLL_TO_TOP": "Anchor",
+      "SCROLL_TO_BOTTOM": "Anchor",
+      "SKIP_TO_CONTENT_BTN": "SkipToContentButton",
+      "SITE_PAGES": "PageGroup",
+      "SITE_HEADER": "HeaderContainer",
+      "SITE_FOOTER": "FooterContainer",
+      "PAGES_CONTAINER": "PagesContainer",
+      "c1dmp": "Page",
+      "Containerc1dmp": "ResponsiveContainer",
+      "comp-kbgakxea-pinned-layer": "PinnedLayer",
+      "comp-kbgakxea": "RefComponent",
+      "comp-kbgakxea_r_comp-kbgajy18": "HeaderSection",
+      "comp-kbgakxea_r_comp-kbgajy18_relative": "ResponsiveContainer",
+      "comp-kbgakxea_r_comp-m7e139ob": "ImageX",
+      "comp-kbgakxea_r_comp-m7e1vqot": "Menu",
+      "portal-comp-kbgakxea_r_comp-m7e1vqot": "MenuContent",
+      "comp-kbgakxea_r_comp-lkb5lx4s": "SiteButton",
+      "comp-kbgakxea_r_comp-kkmqi5lg": "VectorImage",
+      "PAGE_SECTIONSc1dmp": "PageSections",
+      "comp-m9wxyu1a": "Section",
+      "comp-m9wxyu1a_relative": "ResponsiveContainer",
+      "comp-m9wxyu1m": "Container",
+      "comp-m9wxyu1m_relative": "ResponsiveContainer",
+      "comp-m9wxyu1o": "Container",
+      "comp-m9wxyu1o_relative": "ResponsiveContainer",
+      "comp-m9wxyu1q3": "WRichText",
+      "comp-m9wxyu1s": "WRichText",
+      "comp-m9wxyu1u": "Container",
+      "comp-m9wxyu1u_relative": "ResponsiveContainer",
+      "comp-m9wxyu1v5": "Container",
+      "comp-m9wxyu1v5_relative": "ResponsiveContainer",
+      "comp-m9wxyu1x3": "WRichText",
+      "comp-m9wxyu202": "WRichText",
+      "comp-m9wxyu224": "Container",
+      "comp-m9wxyu224_relative": "ResponsiveContainer",
+      "comp-m9wyvsej": "Container",
+      "comp-m9wyvsej_relative": "ResponsiveContainer",
+      "comp-m9wyvsep": "WRichText",
+      "comp-m9wyvses": "WRichText",
+      "comp-m9wxyu286": "Container",
+      "comp-m9wxyu286_relative": "ResponsiveContainer",
+      "comp-m9wzt9qz": "GoogleMap",
+      "comp-m9wztggo": "GoogleMap",
+      "comp-kbgaghri": "Section",
+      "comp-kbgaghri_relative": "ResponsiveContainer",
+      "comp-m7jg3cvv": "Container",
+      "comp-m7jg3cvv_relative": "ResponsiveContainer",
+      "comp-m7jcm56q": "ImageX",
+      "comp-lkb7gt9x": "SiteButton",
+      "comp-lkb756mh": "Section",
+      "comp-lkb756mh_relative": "ResponsiveContainer",
+      "comp-lkb77268": "Container",
+      "comp-lkb77268_relative": "ResponsiveContainer",
+      "comp-lkc2ktjq": "Container",
+      "comp-lkc2ktjq_relative": "ResponsiveContainer",
+      "comp-lkc2ija4": "WRichText",
+      "comp-lkc2j5ka": "WRichText",
+      "comp-lkc2jznh": "SiteButton",
+      "comp-m7jg56j1": "Container",
+      "comp-m7jg56j1_relative": "ResponsiveContainer",
+      "comp-m7jbxmzr": "ImageX",
+      "comp-m7jg7yo0": "Section",
+      "comp-m7jg7yo0_relative": "ResponsiveContainer",
+      "comp-lkc98e7e": "Section",
+      "comp-lkc98e7e_relative": "ResponsiveContainer",
+      "comp-lkjt01sn": "Container",
+      "comp-lkjt01sn_relative": "ResponsiveContainer",
+      "comp-lkjszpl8": "WRichText",
+      "comp-lkjsznem": "tpaWidgetNative",
+      "comp-lkc3gw2c": "Section",
+      "comp-lkc3gw2c_relative": "ResponsiveContainer",
+      "comp-lkc3vx73": "Container",
+      "comp-lkc3vx73_relative": "ResponsiveContainer",
+      "comp-lkc3vx79": "WRichText",
+      "comp-lkc5su85": "Section",
+      "comp-lkc5su85_relative": "ResponsiveContainer",
+      "comp-lkc5v98t": "Container",
+      "comp-lkc5v98t_relative": "ResponsiveContainer",
+      "comp-lkc8qj28": "WRichText",
+      "comp-lkc8r9vg": "WRichText",
+      "comp-lkc8sinq": "WRichText",
+      "comp-lkc5v99y": "Container",
+      "comp-lkc5v99y_relative": "ResponsiveContainer",
+      "comp-lkc8ll7d": "ImageX",
+      "comp-lkc5vcki": "Container",
+      "comp-lkc5vcki_relative": "ResponsiveContainer",
+      "comp-lkc8xdkt": "WRichText",
+      "comp-lkc8xdkt1": "WRichText",
+      "comp-lkc8xdks": "WRichText",
+      "comp-lkc5vlx6": "Section",
+      "comp-lkc5vlx6_relative": "ResponsiveContainer",
+      "comp-lkc5vlz81": "Container",
+      "comp-lkc5vlz81_relative": "ResponsiveContainer",
+      "comp-lkc8ze5l1": "WRichText",
+      "comp-lkc8ze5k": "WRichText",
+      "comp-lkc8ze5l": "WRichText",
+      "comp-lkc5vv5p": "Container",
+      "comp-lkc5vv5p_relative": "ResponsiveContainer",
+      "comp-lkc9154x1": "WRichText",
+      "comp-lkc9154w": "WRichText",
+      "comp-lkc9154x": "WRichText",
+      "comp-lkc5vlz92": "Container",
+      "comp-lkc5vlz92_relative": "ResponsiveContainer",
+      "comp-lkc8lr51": "ImageX",
+      "comp-m7qwf9cr": "Section",
+      "comp-m7qwf9cr_relative": "ResponsiveContainer",
+      "comp-m7qwf9cw1": "Container",
+      "comp-m7qwf9cw1_relative": "ResponsiveContainer",
+      "comp-m7qwf9cy": "WRichText",
+      "comp-m7qwf9d0": "Container",
+      "comp-m7qwf9d0_relative": "ResponsiveContainer",
+      "comp-m7qwf9d12": "Repeater",
+      "comp-m7qwf9d33": "Container",
+      "comp-m7qwf9d33_relative": "ResponsiveContainer",
+      "comp-m7qwf9d75": "Container",
+      "comp-m7qwf9d75_relative": "ResponsiveContainer",
+      "comp-m7qwf9d9": "ImageX",
+      "comp-m7qwf9da2": "StylableButton",
+      "comp-m7qwf9de8": "WRichText",
+      "comp-m7jcqtik": "Section",
+      "comp-m7jcqtik_relative": "ResponsiveContainer",
+      "comp-m7jd4hww": "Container",
+      "comp-m7jd4hww_relative": "ResponsiveContainer",
+      "comp-m7jd4hxf": "WRichText",
+      "comp-m7jd4hxk": "WRichText",
+      "comp-m7jcta2d": "tpaWidgetNative",
+      "comp-m7qxdc7v": "Section",
+      "comp-m7qxdc7v_relative": "ResponsiveContainer",
+      "comp-m7qxdc7x3": "Container",
+      "comp-m7qxdc7x3_relative": "ResponsiveContainer",
+      "comp-m7qxdnjg": "Container",
+      "comp-m7qxdnjg_relative": "ResponsiveContainer",
+      "comp-m7qxdnjj": "WRichText",
+      "comp-m7qxdnjk6": "WRichText",
+      "comp-m7qymuea": "Container",
+      "comp-m7qymuea_relative": "ResponsiveContainer",
+      "comp-m7qxdc7y3": "Container",
+      "comp-m7qxdc7y3_relative": "ResponsiveContainer",
+      "comp-m7qxqprz": "WRichText",
+      "comp-m87xbmh5": "Section",
+      "comp-m87xbmh5_relative": "ResponsiveContainer",
+      "comp-m87xbmhe": "Container",
+      "comp-m87xbmhe_relative": "ResponsiveContainer",
+      "comp-m87xbmhf6": "Container",
+      "comp-m87xbmhf6_relative": "ResponsiveContainer",
+      "comp-m87xbmhg7": "WRichText",
+      "comp-m87xbmhl": "WRichText",
+      "comp-m87xbmhq2": "Container",
+      "comp-m87xbmhq2_relative": "ResponsiveContainer",
+      "comp-m87xbwoo": "Container",
+      "comp-m87xbwoo_relative": "ResponsiveContainer",
+      "comp-m87xbwoq2": "WRichText",
+      "comp-m87xbwor11": "WRichText",
+      "comp-m87xbwot": "SiteButton",
+      "comp-m87z1qec": "Container",
+      "comp-m87z1qec_relative": "ResponsiveContainer",
+      "comp-m87xcipz": "Section",
+      "comp-m87xcipz_relative": "ResponsiveContainer",
+      "comp-m87xciq24": "Container",
+      "comp-m87xciq24_relative": "ResponsiveContainer",
+      "comp-m87xd4mn": "WRichText",
+      "comp-m87yrzra": "Section",
+      "comp-m87yrzra_relative": "ResponsiveContainer",
+      "comp-m87yrzrd4": "Container",
+      "comp-m87yrzrd4_relative": "ResponsiveContainer",
+      "comp-kbgakxmn": "RefComponent",
+      "comp-kbgakxmn_r_comp-kbgakgyt": "FooterSection",
+      "comp-kbgakxmn_r_comp-kbgakgyt_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkfal54v": "Container",
+      "comp-kbgakxmn_r_comp-lkfal54v_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkgm1wxk": "Container",
+      "comp-kbgakxmn_r_comp-lkgm1wxk_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-m7eq8yt7": "ImageX",
+      "comp-kbgakxmn_r_comp-lkfaccx3": "WRichText",
+      "comp-kbgakxmn_r_comp-lkfal5bq": "Container",
+      "comp-kbgakxmn_r_comp-lkfal5bq_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkgkvx58": "Container",
+      "comp-kbgakxmn_r_comp-lkgkvx58_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkgkveyi": "WRichText",
+      "comp-kbgakxmn_r_comp-lkgkmqkf": "ExpandableMenu",
+      "comp-kbgakxmn_r_comp-m7e2ny60": "Container",
+      "comp-kbgakxmn_r_comp-m7e2ny60_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkgklbvz": "Container",
+      "comp-kbgakxmn_r_comp-lkgklbvz_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lkgklbwj": "WRichText",
+      "comp-kbgakxmn_r_comp-lkgklbwg3": "WRichText",
+      "comp-kbgakxmn_r_comp-m8aa5u2j": "WRichText",
+      "comp-kbgakxmn_r_comp-lkfalaxt": "Container",
+      "comp-kbgakxmn_r_comp-lkfalaxt_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lowoy3x3": "Container",
+      "comp-kbgakxmn_r_comp-lowoy3x3_relative": "ResponsiveContainer",
+      "comp-kbgakxmn_r_comp-lowovc46": "WRichText",
+      "comp-kbgakxmn_r_comp-lowowk9e": "WRichText",
+      "comp-kbgakxmn_r_comp-lkfald1g": "WRichText",
+      "comp-kd5px9q0-pinned-layer": "PinnedLayer",
+      "comp-kd5px9q0": "RefComponent",
+      "comp-kd5px9q0_r_comp-kd5px9hr": "MenuContainer",
+      "comp-kd5px9q0_r_comp-kd5px9kk": "ExpandableMenu",
+      "comp-kd5px9q0_r_comp-kkmqi5tc": "VectorImage",
+      "DYNAMIC_STRUCTURE_CONTAINER": "DynamicStructureContainer",
+      "site-root": "DivWithChildren",
+      "main_MF": "DivWithChildren",
+      "c1dmp_wrapper": "PageMountUnmount"
+    }
+  },
+  "appsWarmupData": {
+    "225dd912-7dea-4738-8688-4b8c6955ffc2": {
+      "form-viewer-comp-m7jcta2d": {
+        "formsById": {
+          "6acb981f-5fd7-42a3-ba2d-53281c5e95d1": {
+            "id": "6acb981f-5fd7-42a3-ba2d-53281c5e95d1",
+            "fields": [
+              {
+                "id": "2ad87b8c-8355-47a4-aa5e-1df6d13cb655",
+                "pii": false,
+                "hidden": false,
+                "view": {
+                  "submitText": "Enviar",
+                  "thankYouMessageDuration": 8,
+                  "thankYouMessageText": {
+                    "nodes": [
+                      {
+                        "id": "uj9ew3",
+                        "type": "PARAGRAPH",
+                        "nodes": [
+                          {
+                            "id": "",
+                            "type": "TEXT",
+                            "nodes": [],
+                            "textData": {
+                              "text": "Recebemos o seu formulário.",
+                              "decorations": []
+                            }
+                          }
+                        ],
+                        "paragraphData": {
+                          "textStyle": {
+                            "textAlignment": "CENTER"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "nextText": "Próximo",
+                  "submitAction": "THANK_YOU_MESSAGE",
+                  "fieldType": "SUBMIT_BUTTON",
+                  "previousText": "Voltar"
+                },
+                "readOnly": false
+              },
+              {
+                "id": "b575b500-f0d6-4ae3-4a69-370bef114d53",
+                "target": "nome_72df",
+                "validation": {
+                  "string": {
+                    "format": "UNDEFINED",
+                    "enum": []
+                  },
+                  "required": true
+                },
+                "pii": true,
+                "hidden": false,
+                "view": {
+                  "label": "Nome",
+                  "fieldType": "CONTACTS_FIRST_NAME"
+                },
+                "readOnly": false
+              },
+              {
+                "id": "098e5d47-aca3-4a3f-33e7-bf7c4028abd4",
+                "target": "email_c217",
+                "validation": {
+                  "string": {
+                    "format": "EMAIL",
+                    "enum": []
+                  },
+                  "required": true
+                },
+                "pii": true,
+                "hidden": false,
+                "view": {
+                  "label": "Email",
+                  "fieldType": "CONTACTS_EMAIL"
+                },
+                "readOnly": false
+              },
+              {
+                "id": "b5df2744-5f0f-4ed8-d4f4-28c3d87dcf1f",
+                "target": "telefone_e6d9",
+                "validation": {
+                  "string": {
+                    "format": "PHONE",
+                    "enum": []
+                  },
+                  "required": false
+                },
+                "pii": true,
+                "hidden": false,
+                "view": {
+                  "label": "Telefone",
+                  "fieldType": "CONTACTS_PHONE"
+                },
+                "readOnly": false
+              },
+              {
+                "id": "f3c1e15d-9eb4-492c-05a7-600922bc849d",
+                "target": "qual_seguro_e_do_seu_interesse",
+                "validation": {
+                  "string": {
+                    "format": "UNDEFINED",
+                    "enum": [
+                      "Seguro de Vida",
+                      "Seguro Viagem",
+                      "Previdência",
+                      "Saúde"
+                    ]
+                  },
+                  "required": true
+                },
+                "pii": false,
+                "hidden": false,
+                "view": {
+                  "label": "Qual seguro é do seu interesse?",
+                  "options": [
+                    {
+                      "id": "0c9d3dfe-645b-4970-25e0-2be8b3acc651",
+                      "label": "Seguro de Vida",
+                      "value": "Seguro de Vida"
+                    },
+                    {
+                      "id": "a80dc6f2-b1fa-4881-4be3-ec8d925954ee",
+                      "label": "Seguro Viagem",
+                      "value": "Seguro Viagem"
+                    },
+                    {
+                      "id": "aebf1bf2-4815-4056-2501-e8f9c914e850",
+                      "label": "Previdência",
+                      "value": "Previdência"
+                    },
+                    {
+                      "id": "d5ee1dad-e9df-4985-a153-05f11013be5b",
+                      "label": "Saúde",
+                      "value": "Saúde"
+                    }
+                  ],
+                  "fieldType": "DROPDOWN"
+                },
+                "readOnly": false
+              },
+              {
+                "id": "6066f75d-9497-4829-3f83-b9f8712aaab1",
+                "target": "data_de_nascimento",
+                "validation": {
+                  "string": {
+                    "format": "DATE",
+                    "enum": []
+                  },
+                  "required": true
+                },
+                "pii": false,
+                "hidden": false,
+                "view": {
+                  "label": "Data de Nascimento",
+                  "fieldType": "DATE_INPUT"
+                },
+                "readOnly": false
+              }
+            ],
+            "formFields": [
+              {
+                "id": "2ad87b8c-8355-47a4-aa5e-1df6d13cb655",
+                "hidden": false,
+                "identifier": "SUBMIT_BUTTON",
+                "fieldType": "DISPLAY",
+                "displayOptions": {
+                  "displayFieldType": "PAGE_NAVIGATION",
+                  "pageNavigationOptions": {
+                    "nextPageText": "Próximo",
+                    "previousPageText": "Voltar",
+                    "submitText": "Enviar"
+                  }
+                }
+              },
+              {
+                "id": "b575b500-f0d6-4ae3-4a69-370bef114d53",
+                "hidden": false,
+                "identifier": "CONTACTS_FIRST_NAME",
+                "fieldType": "INPUT",
+                "inputOptions": {
+                  "target": "nome_72df",
+                  "pii": true,
+                  "required": true,
+                  "inputType": "STRING",
+                  "contactMapping": {
+                    "contactField": "FIRST_NAME"
+                  },
+                  "readOnly": false,
+                  "stringOptions": {
+                    "validation": {
+                      "format": "UNKNOWN_FORMAT",
+                      "enum": []
+                    },
+                    "componentType": "TEXT_INPUT",
+                    "textInputOptions": {
+                      "label": "Nome",
+                      "showLabel": true,
+                      "mediaSettings": {
+                        "imagePosition": "ABOVE",
+                        "imageAlignment": "CENTER",
+                        "imageFit": "COVER"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": "098e5d47-aca3-4a3f-33e7-bf7c4028abd4",
+                "hidden": false,
+                "identifier": "CONTACTS_EMAIL",
+                "fieldType": "INPUT",
+                "inputOptions": {
+                  "target": "email_c217",
+                  "pii": true,
+                  "required": true,
+                  "inputType": "STRING",
+                  "contactMapping": {
+                    "contactField": "EMAIL",
+                    "emailInfo": {
+                      "tag": "UNTAGGED"
+                    }
+                  },
+                  "readOnly": false,
+                  "stringOptions": {
+                    "validation": {
+                      "format": "EMAIL",
+                      "enum": []
+                    },
+                    "componentType": "TEXT_INPUT",
+                    "textInputOptions": {
+                      "label": "Email",
+                      "showLabel": true,
+                      "mediaSettings": {
+                        "imagePosition": "ABOVE",
+                        "imageAlignment": "CENTER",
+                        "imageFit": "COVER"
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "id": "b5df2744-5f0f-4ed8-d4f4-28c3d87dcf1f",
+                "hidden": false,
+                "identifier": "CONTACTS_PHONE",
+                "fieldType": "INPUT",
+                "inputOptions": {
+                  "target": "telefone_e6d9",
+                  "pii": true,
+                  "required": false,
+                  "inputType": "STRING",
+                  "contactMapping": {
+                    "contactField": "PHONE",
+                    "phoneInfo": {
+                      "tag": "UNTAGGED"
+                    }
+                  },
+                  "readOnly": false,
+                  "stringOptions": {
+                    "validation": {
+                      "format": "PHONE",
+                      "enum": []
+                    },
+                    "componentType": "PHONE_INPUT",
+                    "phoneInputOptions": {
+                      "label": "Telefone",
+                      "showLabel": true,
+                      "showCountryFlag": false
+                    }
+                  }
+                }
+              },
+              {
+                "id": "f3c1e15d-9eb4-492c-05a7-600922bc849d",
+                "hidden": false,
+                "identifier": "DROPDOWN",
+                "fieldType": "INPUT",
+                "inputOptions": {
+                  "target": "qual_seguro_e_do_seu_interesse",
+                  "pii": false,
+                  "required": true,
+                  "inputType": "STRING",
+                  "readOnly": false,
+                  "stringOptions": {
+                    "validation": {
+                      "format": "UNKNOWN_FORMAT",
+                      "enum": [
+                        "Seguro de Vida",
+                        "Seguro Viagem",
+                        "Previdência",
+                        "Saúde"
+                      ]
+                    },
+                    "componentType": "DROPDOWN",
+                    "dropdownOptions": {
+                      "label": "Qual seguro é do seu interesse?",
+                      "options": [
+                        {
+                          "label": "Seguro de Vida",
+                          "value": "Seguro de Vida",
+                          "default": false,
+                          "id": "0c9d3dfe-645b-4970-25e0-2be8b3acc651"
+                        },
+                        {
+                          "label": "Seguro Viagem",
+                          "value": "Seguro Viagem",
+                          "default": false,
+                          "id": "a80dc6f2-b1fa-4881-4be3-ec8d925954ee"
+                        },
+                        {
+                          "label": "Previdência",
+                          "value": "Previdência",
+                          "default": false,
+                          "id": "aebf1bf2-4815-4056-2501-e8f9c914e850"
+                        },
+                        {
+                          "label": "Saúde",
+                          "value": "Saúde",
+                          "default": false,
+                          "id": "d5ee1dad-e9df-4985-a153-05f11013be5b"
+                        }
+                      ],
+                      "showLabel": true
+                    }
+                  }
+                }
+              },
+              {
+                "id": "6066f75d-9497-4829-3f83-b9f8712aaab1",
+                "hidden": false,
+                "identifier": "DATE_INPUT",
+                "fieldType": "INPUT",
+                "inputOptions": {
+                  "target": "data_de_nascimento",
+                  "pii": false,
+                  "required": true,
+                  "inputType": "STRING",
+                  "readOnly": false,
+                  "stringOptions": {
+                    "validation": {
+                      "format": "DATE",
+                      "enum": []
+                    },
+                    "componentType": "DATE_INPUT",
+                    "dateInputOptions": {
+                      "label": "Data de Nascimento",
+                      "showLabel": true,
+                      "showPlaceholder": true,
+                      "showDateLabels": true
+                    }
+                  }
+                }
+              }
+            ],
+            "steps": [
+              {
+                "id": "184f2688-0f6f-4adc-f31c-f23c67cec96e",
+                "name": "Página 1",
+                "hidden": false,
+                "layout": {
+                  "large": {
+                    "items": [
+                      {
+                        "fieldId": "2ad87b8c-8355-47a4-aa5e-1df6d13cb655",
+                        "row": 5,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      },
+                      {
+                        "fieldId": "b575b500-f0d6-4ae3-4a69-370bef114d53",
+                        "row": 1,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      },
+                      {
+                        "fieldId": "098e5d47-aca3-4a3f-33e7-bf7c4028abd4",
+                        "row": 2,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      },
+                      {
+                        "fieldId": "b5df2744-5f0f-4ed8-d4f4-28c3d87dcf1f",
+                        "row": 3,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      },
+                      {
+                        "fieldId": "f3c1e15d-9eb4-492c-05a7-600922bc849d",
+                        "row": 0,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      },
+                      {
+                        "fieldId": "6066f75d-9497-4829-3f83-b9f8712aaab1",
+                        "row": 4,
+                        "column": 0,
+                        "width": 12,
+                        "height": 1
+                      }
+                    ],
+                    "sections": []
+                  }
+                }
+              }
+            ],
+            "rules": [],
+            "revision": "4",
+            "createdDate": "2025-02-24T17:55:25.679Z",
+            "updatedDate": "2025-04-02T11:37:45.348Z",
+            "properties": {
+              "name": "Contato 1",
+              "disabled": false
+            },
+            "deletedFields": [],
+            "deletedFormFields": [],
+            "kind": "REGULAR",
+            "postSubmissionTriggers": {
+              "upsertContact": {
+                "fieldsMapping": {
+                  "nome_72df": {
+                    "contactField": "FIRST_NAME"
+                  },
+                  "email_c217": {
+                    "contactField": "EMAIL",
+                    "emailInfo": {
+                      "tag": "UNTAGGED"
+                    }
+                  },
+                  "telefone_e6d9": {
+                    "contactField": "PHONE",
+                    "phoneInfo": {
+                      "tag": "UNTAGGED"
+                    }
+                  }
+                },
+                "labels": []
+              }
+            },
+            "extendedFields": {
+              "namespaces": {
+                "@forms/form-app": {
+                  "automationId": "acd429aa-3573-4acc-9d6d-7d08e9fa6623"
+                }
+              }
+            },
+            "namespace": "wix.form_app.form",
+            "nestedForms": [],
+            "spamFilterProtectionLevel": "ADVANCED",
+            "requiredIndicatorProperties": {
+              "requiredIndicator": "ASTERISK",
+              "requiredIndicatorPlacement": "AFTER_FIELD_TITLE"
+            },
+            "submitSettings": {
+              "submitSuccessAction": "THANK_YOU_MESSAGE",
+              "thankYouMessageOptions": {
+                "durationInSeconds": 8,
+                "richContent": {
+                  "nodes": [
+                    {
+                      "type": "PARAGRAPH",
+                      "id": "c6tnt4",
+                      "nodes": [
+                        {
+                          "type": "TEXT",
+                          "id": "",
+                          "nodes": [],
+                          "textData": {
+                            "text": "Recebemos o seu formulário.",
+                            "decorations": []
+                          }
+                        }
+                      ],
+                      "paragraphData": {
+                        "textStyle": {
+                          "textAlignment": "CENTER"
+                        }
+                      }
+                    }
+                  ],
+                  "metadata": {
+                    "version": 1,
+                    "createdTimestamp": "2025-02-24T17:51:09.877Z",
+                    "updatedTimestamp": "2025-02-24T17:51:09.877Z",
+                    "id": "c2124a98-1396-41db-9673-e8d0b1661a1c"
+                  }
+                }
+              }
+            },
+            "fieldGroups": [],
+            "enabled": true,
+            "name": "Contato 1",
+            "formRules": [],
+            "autoFillContact": "FORM_INPUT",
+            "submissionAccess": "OWNER_AND_COLLABORATORS"
+          }
+        },
+        "translations": {
+          "field-description.a11y.aria-label": "{linkText} link de descrição",
+          "form.submit-button.next-step": "Próximo",
+          "multiline-address.a11y.group-name": "Campo de endereço",
+          "error.could-not-load-form.button.label": "Atualizar",
+          "submit.failed.message.SUBMISSION_LIMIT_PER_USER_EXCEEDED": "You've reached the submission limit for this form.",
+          "form.a11y.step.index.title": "Etapa {index} de {total}",
+          "form.disabled.fallback-message": "Sorry, but the form is closed.",
+          "submit.failed.message.DISABLED_FORM_ERROR": "Esse formulário expirou e não está aceitando envios.",
+          "bookings-address.a11y.group-name": "Address field",
+          "error.could-not-load-form.title": "Não foi possível carregar esse formulário",
+          "form.submit-button.state.in-progress": "Enviando formulário...",
+          "checkbox.input.error.message.required": "Marque a caixa para continuar.",
+          "submit.failed.message.SITE_MUST_ACCEPT_PAYMENTS_TO_CREATE_CHECKOUT": "Não podemos aceitar pagamentos online no momento. Contate-nos para concluir sua transação.",
+          "error.could-not-load-form.description": "Ocorreu um problema temporário no nosso sistema. Aguarde alguns minutos e atualize a página para tentar novamente.",
+          "form.submit-button.previous-step": "Voltar",
+          "contacts-url-input.input.error.message.format-error": "Insira um URL, como https://www.exemplo.com.",
+          "field-context-menu.cut": "Cortar",
+          "input.error.message.incomplete-date-error.day-time": "Insira um dia e horário.",
+          "field.signature.a11y.action-description.type": "Use o teclado para digitar.",
+          "input.error.message.invalid-default-value-error": "Enter a valid default value",
+          "input.error.message.required-error-forced": "Este campo é obrigatório.",
+          "field-context-menu.show-field": "Mostrar campo",
+          "date-picker.input.error.message.format-error": "Escolha uma data.",
+          "form.login-bar.actions.login": "Login",
+          "date-picker.a11y.clear-button": "Limpar",
+          "form.file-upload.uploading": "Carregando {count, plural, =0 {...} other {#%...}}",
+          "rating-input.a11y.reaction-label": "{count, plural, one {{count} estrela} other {{count} estrelas}}",
+          "contacts-company.input.error.message.required-error": "Insira o nome de uma empresa.",
+          "dext-phone.input.error.message.required-error": "Insira um número de telefone.",
+          "field.signature.clear-button.label": "Limpar",
+          "input.error.message.type-error": "Escolha um {type}.",
+          "payment-input.input.error.message.required-error": "Insira um valor de pagamento.",
+          "form.login-bar.action.logout": "Sair",
+          "date-picker.a11y.arrow-left": "Ir para o mês anterior",
+          "mla-subdivision.input.error.message.required-error.tr": "Escolha uma cidade.",
+          "settings.scheduling.sync-external-calendars.modal.tooltip.kb-link": "https://support.wix.com/pt/article/wix-meetings-syncing-personal-calendars-with-wix-meetings",
+          "input.error.message.value-range-error": "Insira um número de {minLimit} a {maxLimit}.",
+          "input.error.message.incomplete-date-error.year-month": "Insira um mês e ano.",
+          "mla-address-line.input.error.message.required-error": "Insira um endereço.",
+          "contacts-position.input.error.message.required-error": "Insira uma posição ou cargo.",
+          "bookings-phone.input.error.message.format-error": "Insira um número de telefone válido.",
+          "input.error.message.incomplete-date-error.year-month-time": "Insira um mês, horário e ano.",
+          "field.number.aria-role-description": "Número",
+          "signature.input.error.message.required-error": "Faça login na caixa acima.",
+          "field.date.label.month": "Mês",
+          "field.rich-text.read-more-button.label": "Ler mais",
+          "field.time.label.period": "Configuração AM/PM",
+          "submit.failed.message": "Não foi possível enviar seu formulário. Tente novamente mais tarde.",
+          "image-choice.input.error.message.required-error": "Escolha uma opção.",
+          "dext-email.input.error.message.required-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "mla-city.input.error.message.required-error.tr": "Insira um distrito.",
+          "date-picker.a11y.calendar-button.role-description": "Pop-up da caixa de diálogo do calendário recolhido",
+          "field.signature.a11y.action-description.draw-or-type": "Assine na caixa ou use o teclado para digitar.",
+          "settings.scheduling.meeting-type.round-robin": "Round Robin",
+          "field.time.perdiod.AM": "AM",
+          "form.login-bar.title.logged-out-state": "Tem uma conta? ",
+          "form.appointment.slots-not-found.text": "Não há disponibilidade para esta data. Tente selecionar outra data.",
+          "input.error.message.format-error": "Use o formato \"{format}\".",
+          "input.email.mistype-check.warning": "This email domain looks like a typo. Please double-check it.",
+          "contacts-address.input.error.message.required-error": "Insira um endereço.",
+          "field-context-menu.copy": "Copiar para área de transferência",
+          "field.signature.a11y.state.empty": "O campo de assinatura está vazio.",
+          "dext-date-picker.input.error.message.min-value-error": "Insira uma data válida após a data de hoje.",
+          "payment-input.input.error.message.min-value-error": "Insira um valor de pagamento maior que {currency}{limit}.",
+          "input.error.message.incomplete-date-error.year-time": "Insira um ano e horário com 4 dígitos.",
+          "field.signature.a11y.state.signed": "Assinado.",
+          "field.quiz-answer-feedback.wrong": "Incorreta",
+          "mla-city.input.error.message.required-error": "Insira uma cidade.",
+          "full-name.input.error.message.required-error": "Insira um nome e sobrenome.",
+          "field.rich-text.read-less-button.label": "Ler menos",
+          "form.appointment.accessibility.calendar.previous-week.aria-label": "Mostrar semana anterior",
+          "field.signature.mode.upload.description": "Modo Upload selecionado. Faça upload de uma imagem da sua assinatura.",
+          "field.quiz-file-upload.skipped": "Esta pergunta foi ignorada. ",
+          "ecom.email.label": "Email",
+          "input.error.message.incomplete-date-error.year-month-day": "Insira um mês, dia e ano.",
+          "field-context-menu.make-optional": "Tornar opcional",
+          "settings.scheduling.meeting-type.info-icon.round-robin.description": " - Reuniões se revezam entre organizadores.",
+          "contacts-subscribe.input.error.message.not-allowed-value": "Marque a caixa para continuar.",
+          "input.email.mistype-check.suggestion": "Você quis dizer <0>{email}</0>?",
+          "field.signature.mode.draw.description": "Modo Desenho selecionado. Desenhar requer um mouse ou touchpad. Para acessibilidade do teclado, selecione Digitação ou Upload.",
+          "checkbox.input.error.message.required-error": "Marque a caixa para continuar.",
+          "date-picker.input.error.message.required-error": "Escolha uma data.",
+          "dext-tags.input.error.message.required-error": "Escolha uma opção.",
+          "field-context-menu.delete": "Excluir",
+          "field.date.label.year": "Ano",
+          "mla-address-line-2.input.error.message.required-error": "Insira uma segunda linha de endereço (por exemplo: apartamento, andar).",
+          "form.login-bar.title.logged-in-state": "Conectado como {user}",
+          "payment-input.input.error.message.max-value-error": "Insira um valor de pagamento menor que {currency}{limit}.",
+          "ecom-phone.input.error.message.required-error": "Insira um número de telefone.",
+          "payment-input.input.error.message.value-range-error": "Insira um valor de pagamento entre {currency}{minLimit} e {currency}{maxLimit}.",
+          "settings.appointment.sync-external-calendars.hosts-title": "Sincronizar calendário para organizadores",
+          "input.error.message.incomplete-date-error.year-day": "Insira um dia e ano.",
+          "submission-table.signature.not-signed": "Não assinado",
+          "dext-url-input.input.error.message.format-error": "Insira um URL, como https://www.exemplo.com.",
+          "ecom-phone.input.error.message.pattern-error": "Insira um número de telefone válido.",
+          "contacts-phone.input.error.message.not-allowed-value": "Números de telefone com esse código de país não são aceitos.",
+          "vat-id.input.error.message.required-error.il": "Insira um ID válido de 9 dígitos (\"teudat zehut\") ou um número de empresa (\"het pey\").",
+          "input.error.message.incomplete-date-error.day": "Insira um dia.",
+          "date-input.input.error.message.min-value-error": "Insira uma data válida após a data de hoje.",
+          "input.error.message.invalid-location-id-error": "Location is invalid",
+          "input.error.message.max-length-error": "{limit, plural, one {Insira menos de {limit,number} caractere.} other {Insira menos de {limit,number} caracteres.}}",
+          "field.date.placeholder.day": "Dia",
+          "services-dropdown.input.error.message.required-error": "Selecione um serviço",
+          "ecom-email.input.error.message.required-error": "Insira um endereço de email, como exemplo@meusite.com.",
+          "dext-phone.input.error.message.not-allowed-value": "Números de telefone com esse código de país não são aceitos.",
+          "dext-url-input.input.error.message.required-error": "Insira um URL, como https://www.exemplo.com.",
+          "contacts-date-input.input.error.message.format-error": "Insira um mês, dia e ano.",
+          "signature.input.error.message.required-error.with-upload": "Assine na caixa acima ou faça upload da sua assinatura.",
+          "forms.widget.modals.show-password-tooltip": "Mostrar senha",
+          "contacts-phone.input.error.message.required-error": "Insira o número de telefone.",
+          "field.phone.country-selector-button.aria-label": "Selecione o código do país",
+          "field-context-menu.move-up": "Mover para cima",
+          "dext-text-input.input.error.message.required-error": "Insira uma resposta.",
+          "settings.required-indicator-text": "(Obrigatório)",
+          "file-upload.dropzone.overlay.button": " Solte seus arquivos aqui",
+          "platform-quiz-radio-group.input.error.message.required-error": "Choose an option.",
+          "field.time.perdiod.PM": "PM",
+          "contacts-birthdate.input.error.message.format-error": "Insira um mês, dia e ano.",
+          "field.quiz-answer-feedback.correct": "Correto",
+          "settings.appointment.duration.custom": "Personalizado",
+          "vat-id.input.error.message.required-error": "Insira um número de CPF/CNPJ.",
+          "bookings-email.input.error.message.format-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "input.error.message.character-length-range-error": "Insira entre {minLimit} e {maxLimit} caracteres.",
+          "bookings-phone.input.error.message.not-allowed-value": "Números de telefone com esse código de país não são aceitos.",
+          "contacts-email.input.error.message.format-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "dropdown.input.error.message.required-error": "Escolha uma opção.",
+          "dext-text-area.input.error.message.required-error": "Insira uma resposta.",
+          "field.signature.settings.upload-button.label": "Fazer upload de imagem",
+          "field.date.placeholder.month": "Mês",
+          "form.error.prefix.a11y": "Erro:",
+          "contacts-tax-id.input.error.message.required-error": "Insira um número de ID do IVA.",
+          "signature.text.placeholder": "Type your signature",
+          "contacts-number-input.input.error.message.required-error": "Enter a number.",
+          "date-picker.a11y.aria-label": "Mostrar seletor de data",
+          "field.phone.country-search-input.aria-label": "Buscar",
+          "field.signature.a11y.state.drawing": "Escrevendo assinatura",
+          "input.error.message.unknown-value-error": "Deve ter propriedades adicionais.",
+          "phone.input.error.message.pattern-error": "Insira um número de telefone válido.",
+          "dext-date-picker.input.error.message.max-value-error": "Insira uma data válida de 1 de janeiro de 1000 até hoje.",
+          "form.appointment.empty-state.notification.text": "Atualmente, não há horários disponíveis para agendar. Entre em contato para concluir sua solicitação.",
+          "mla-country.input.error.message.required-error": "Escolha um país/região.",
+          "field.time.label.hours": "Horas",
+          "file-upload.delete-file.aria-label": "Excluir arquivo",
+          "field.vat-id.label-br": "CPF/CNPJ",
+          "ecom-header.contact-details": "Informações do cliente",
+          "input.error.message.invalid-staff-id-error": "Este campo é inválido.",
+          "date-input.input.error.message.format-error": "Insira um mês, dia e ano.",
+          "contacts-first-name.input.error.message.required-error": "Insira um nome.",
+          "file-upload.dropzone.title": "Faça upload do seu arquivo",
+          "field-context-menu.move-down": "Mover para baixo",
+          "contacts-url-input.input.error.message.required-error": "Insira um URL, como https://www.exemplo.com.",
+          "field.time.label.minutes": "Minutos",
+          "dext-phone.input.error.message.format-error": "Insira um número de telefone válido.",
+          "bookings-phone.input.error.message.required-error": "Insira o número de telefone.",
+          "form.file-upload.explanation-text": "{count, plural, one {{count,number} arquivo carregado} other {{count,number} arquivos carregados}}",
+          "settings.scheduling.meeting-type.info-icon.intro": "Como os organizadores são atribuídos:",
+          "pikachu.input.error.message.required-error": "Choose an option.",
+          "contacts-last-name.input.error.message.required-error": "Insira um sobrenome.",
+          "forms.widget.modals.hide-password-tooltip": "Ocultar senha",
+          "field.signature.mode.selector.aria-label": "Modo de entrada de assinatura",
+          "phone.input.error.message.not-allowed-value": "Números de telefone com este código do país não são aceitos.",
+          "field.signature.mode.draw.label": "Desenho",
+          "mla-postal-code.input.error.message.pattern-error": "Insira um código postal (CEP) válido.",
+          "date-picker.a11y.dropdown-year": "Selecionar ano",
+          "time-input.input.error.message.format-error": "Insira o horário.",
+          "field-context-menu.hide-field": "Ocultar campo",
+          "input.error.message.not-allowed-value": "O valor escolhido não é permitido.",
+          "input.error.message.min-value-error": "Insira um número que seja {limit} ou mais.",
+          "input.error.message.incomplete-date-error.month-day": "Insira um mês e dia.",
+          "field.date.placeholder.time": "HH:MM",
+          "submit.checkout.message": "Redirecionando para o checkout...",
+          "form.file-upload.error.unsupported-file-format": "Este tipo de arquivo não é compatível.",
+          "settings.scheduling.meeting-type.info-icon.single-host.description": " - Um organizador organiza cada reunião.",
+          "input.error.message.invalid-phone-country-code-error": "Insira um código de país válido.",
+          "mla-street-name.input.error.message.required-error": "Insira um nome de rua.",
+          "settings.scheduling.sync-external-calendars.not-current-user.kb-link": "https://support.wix.com/pt/article/wix-meetings-syncing-personal-calendars-with-wix-meetings",
+          "bookings-first-name.input.error.message.required-error": "Insira um nome.",
+          "vat-id.input.error.message.format-error": "Insira um CPF/CNPJ válido.",
+          "form.appointment.accessibility.calendar.next-week.aria-label": "Mostrar a próxima semana",
+          "donation.input.error.message.required-error": "Escolha um valor de doação.",
+          "settings.appointment.duration.hours-error": "Horas devem ser entre 0 e 99.",
+          "input.email.mistype-check.fix-aria-label": "Usar email sugerido {email}",
+          "input.error.message.incomplete-date-error.month": "Insira um mês.",
+          "input.error.message.incomplete-date-error.year": "Insira um ano com 4 dígitos.",
+          "vat-id.input.error.message.format-error.il": "Insira um ID válido de 9 dígitos (\"teudat zehut\") ou um número de empresa (\"het pey\").",
+          "settings.appointment.duration.hours-label": "Horas",
+          "field.phone.aria-label": "Telefone",
+          "field.signature.canvas.aria-label.empty": "Área de desenho de assinatura (vazia)",
+          "file-upload.dropzone.limit-reached.title": "Você atingiu o limite de upload de arquivos.",
+          "form.appointment.accessibility.calendar.has-availability.aria-label": "Este dia tem horários disponíveis.",
+          "bookings-phone.input.error.message.pattern-error": "Insira um número de telefone válido.",
+          "input.error.message.incomplete-date-error.month-time": "Insira um mês e horário.",
+          "product-list.input.error.message.required-error": "Escolha uma opção.",
+          "field-context-menu.move-to-next-page": "Mover para a próxima página",
+          "mla-postal-code.input.error.message.required-error": "Insira um código postal (CEP).",
+          "file-upload.input.error.message.required-error": "Faça upload de um arquivo.",
+          "vat-id.input.error.message.format-error.br": "Enter a valid CPF/CNPJ number.",
+          "input.error.message.exact-character-length-error": "{limit, plural, one {Insira exatamente {limit,number} caractere.} other {Insira exatamente {limit,number} caracteres.}}",
+          "submission-table.signature.signed": "Assinado",
+          "input.error.message.incomplete-date-error": "Insira um mês, dia e ano.",
+          "ecom-email.input.error.message.format-error": "Insira um endereço de email, como exemplo@meusite.com.",
+          "field.vat-id.label-il": "ID/número da empresa",
+          "text-input.input.error.message.required-error": "Insira uma resposta.",
+          "url-input.input.error.message.required-error": "Insira um URL, como https://www.exemplo.com.",
+          "ecom-header.shipping-details": "Detalhes da entrega",
+          "service-dropdown.input.error.message.required-error": "Selecione um serviço.",
+          "field.signature.mode.type.description": "Modo Digitação selecionado. Digite sua assinatura usando o teclado.",
+          "input.error.message.incomplete-date-error.year-day-time": "Insira um dia, horário e ano.",
+          "number-input.input.error.message.required-error": "Insira um número.",
+          "field.signature.mode.upload.label": "Upload",
+          "input.error.message.unknown-error": "Erro desconhecido, entre em contato com o Apoio ao Cliente.",
+          "input.error.message.max-items-error": "{limit, plural, one {Escolha até {limit,number} opção.} other {Escolha até {limit,number} opções.}}",
+          "file-upload.popover.aria-label": "Lista de arquivos carregados",
+          "input.error.message.multiple-of-value-error": "Escolha um múltiplo de {multipleOf}.",
+          "full-name-last-name.input.error.message.required-error": "Insira um sobrenome.",
+          "field-context-menu.paste": "Colar",
+          "input.error.message.pattern-error": "Corresponda ao padrão \"{pattern}\".",
+          "dext-number-input.input.error.message.required-error": "Insira um número.",
+          "field-context-menu.ai-assistant": "AI Assistant",
+          "field-context-menu.move-to-previous-page": "Mover para a página anterior",
+          "dext-date-picker.input.error.message.required-error": "Escolha uma data.",
+          "settings.appointment.duration.minutes-error": "Minutos devem ser entre 0 e 59.",
+          "date-input.input.error.message.max-value-error": "Insira uma data válida de 1 de janeiro de 1000 até hoje.",
+          "dext-checkbox-group.input.error.message.required-error": "Escolha uma opção.",
+          "file-upload.dropzone.subtitle": "Escolha um arquivo ou arraste-o e solte-o aqui.",
+          "dext-radio-group.input.error.message.required-error": "Escolha uma opção.",
+          "checkbox.input.error.message.not-allowed-value": "Marque a caixa para continuar.",
+          "contacts-birthdate.input.error.message.max-value-error": "Insira uma data de 1 de janeiro de 1900 até hoje.",
+          "input.error.message.incomplete-date-error.month-day-time": "Insira um mês, dia e horário.",
+          "file-upload.aria-roledescription": "Upload de arquivo",
+          "settings.appointment.duration.minutes-label": "Minutos",
+          "contacts-phone.input.error.message.pattern-error": "Insira um número de telefone válido.",
+          "mla-street-number.input.error.message.required-error": "Insira um número válido.",
+          "date-picker.a11y.dropdown-month": "Selecionar mês",
+          "field.signature.mode.type.label": "Digitação",
+          "settings.default-value-conflict.min-value-error": "Min characters must be at least the default text length. Update the character limit or shorten the text.",
+          "date-picker.input.error.message.min-value-error": "Insira uma data válida após a data de hoje.",
+          "settings.scheduling.meeting-type.personal": "Organizador único",
+          "date-time-input.input.error.message.min-value-error": "Insira uma data válida após a data de hoje.",
+          "dext-checkbox.input.error.message.required-error": "Marque a caixa para continuar.",
+          "url-input.input.error.message.format-error": "Insira um URL, como https://www.exemplo.com.",
+          "file-upload.file.uploading-spinner.aria-label": "Carregando arquivo",
+          "field.phone.country-code.aria-label": "Código do país",
+          "add-other.default-other-option-label": "Outro",
+          "dext-checkbox.input.error.message.not-allowed-value": "Marque a caixa para continuar.",
+          "field.date.placeholder.year": "Ano",
+          "date-picker.input.error.message.max-value-error": "Insira uma data válida de 1 de janeiro de 1000 até hoje.",
+          "field.signature.text.placeholder": "Digite sua assinatura",
+          "dext-date-picker.input.error.message.format-error": "Escolha uma data.",
+          "form.file-upload.error.upload-limit": "{limit, plural, one {Há um limite de upload de {limit,number} arquivo.} other {Há um limite de upload de {limit,number} arquivos.}}",
+          "checkbox-group.input.error.message.required-error": "Escolha uma opção.",
+          "rating-input.input.error.message.required-error": "Escolha uma avaliação por estrelas.",
+          "field.mla-apartment.label": "Apartamento",
+          "text-area.input.error.message.required-error": "Insira uma resposta.",
+          "field.phone.country-search-input.placeholder": "Buscar",
+          "submission-table.appointment.meeting-tool-tip": "Ir para reuniões agendadas",
+          "donation.other-option.placeholder": "Insira um valor",
+          "dext-rating-input.input.error.message.required-error": "Escolha uma avaliação por estrelas.",
+          "field.signature.a11y.action-description.draw": "Assine na caixa.",
+          "contacts-birthdate.input.error.message.min-value-error": "Insira uma data de 1 de janeiro de 1900 até hoje.",
+          "mla-subdivision.input.error.message.required-error": "Escolha uma opção.",
+          "dext-dropdown.input.error.message.required-error": "Escolha uma opção.",
+          "contacts-text-input.input.error.message.required-error": "Enter an answer.",
+          "field.date.label.day": "Dia",
+          "vat-id.input.error.message.required-error.br": "Enter a CPF/CNPJ number.",
+          "date-picker.calendar.close-button": "Fechar",
+          "settings.appointment.duration.zero-error": "A duração deve ter pelo menos 1 minuto.",
+          "phone.input.error.message.required-error": "Insira um número de telefone.",
+          "phone.input.error.message.format-error": "Insira um número de telefone válido.",
+          "input.error.message.invalid-value-for-pattern": "Insira uma resposta válida.",
+          "radio-group.input.error.message.required-error": "Escolha uma opção.",
+          "input.error.message.min-items-error": "{limit, plural, one {Escolha pelo menos {limit,number} opção.} other {Escolha pelo menos {limit,number} opções.}}",
+          "ecom.form.field-type.ecom-subscriptions.label": "Concordo em receber notícias no endereço de email e/ou números de telefone adicionados",
+          "input.error.message.decimal_point_error": "Adicione {number} número(s) após a vírgula decimal.",
+          "bookings-email.input.error.message.required-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "contacts-subscribe.input.error.message.required-error": "Marque a caixa para continuar.",
+          "form.appointment.show-more-slots.text": "Mostrar mais horários",
+          "form.file-upload.error.upload-failed": "Falha no upload do arquivo.",
+          "dext-email.input.error.message.format-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "full-name-first-name.input.error.message.required-error": "Insira um nome.",
+          "field-context-menu.settings": "Configurações",
+          "settings.default-value-conflict.max-value-error": "Max characters must be at least the default text length. Update the character limit or shorten the text.",
+          "bookings-last-name.input.error.message.required-error": "Insira um sobrenome.",
+          "appointment.input.error.message.required-error": "Este campo é obrigatório.",
+          "field-context-menu.make-required": "Tornar obrigatório",
+          "date-time-input.input.error.message.format-error": "Insira um mês, dia e ano.",
+          "field.date.label.time": "Horário",
+          "input.error.message.required-error": "Este campo é obrigatório.",
+          "field.phone.country-selector-dropdown.no-result": "Nenhum resultado encontrado",
+          "input.error.message.exact-items-number-error": "{limit, plural, one {Escolha {limit,number} opção.} other {Escolha {limit,number} opções.}}",
+          "form.appointment.timezone.label": "Fuso horário",
+          "dext-date-time-input.input.error.message.required-error": "Insira um mês, dia e ano.",
+          "actions.rules.button.label": "Rules",
+          "date-time-input.input.error.message.max-value-error": "Insira uma data válida de 1 de janeiro de 1000 até hoje.",
+          "date-picker.a11y.arrow-right": "Ir para o próximo mês",
+          "input.error.message.incomplete-date-error.time": "Insira um horário.",
+          "field.signature.canvas.aria-label.signed": "Área de desenho de assinatura (assinada)",
+          "settings.default-value-conflict.regex-error": "The regex must be viable for the entered default value. Update the regex or change the text.",
+          "contacts-phone.input.error.message.format-error": "Insira um número de telefone válido.",
+          "tags.input.error.message.required-error": "Escolha uma opção.",
+          "file-upload.dropzone.limit-reached.subtitle": "Exclua um arquivo para adicionar outro.",
+          "input.error.message.max-value-error": "Insira um número que seja {limit} ou menos.",
+          "input.error.message.min-length-error": "{limit, plural, one {Insira pelo menos {limit,number} caractere.} other {Insira pelo menos {limit,number} caracteres.}}",
+          "form.appointment.meeting-format.in-person-location-method-os-location": "Localização do negócio",
+          "form.file-upload.error.limit": "Você atingiu seu limite de upload de {limit,number} arquivos.",
+          "contacts-email.input.error.message.required-error": "Insira um endereço de email como exemplo@meusite.com.",
+          "field-context-menu.duplicate": "Duplicar"
+        },
+        "localeDataset": {
+          "locale-dataset.countries.BWA": "Botsuana",
+          "locale-dataset.countries.STP": "São Tomé e Príncipe",
+          "locale-dataset.countries.BES": "Bonaire",
+          "locale-dataset.countries.WSM": "Samoa",
+          "locale-dataset.countries.CZE": "República Tcheca",
+          "locale-dataset.countries.GIN": "Guiné",
+          "locale-dataset.countries.ZAF": "África do Sul",
+          "locale-dataset.countries.COK": "Ilhas Cook",
+          "locale-dataset.countries.SRB": "Sérvia",
+          "locale-dataset.countries.BLZ": "Belize",
+          "locale-dataset.countries.IRL": "Irlanda",
+          "locale-dataset.countries.LBR": "Libéria",
+          "locale-dataset.countries.AUT": "Áustria",
+          "locale-dataset.countries.SJM": "Svalbard e Jan Mayen",
+          "locale-dataset.countries.ERI": "Eritreia",
+          "locale-dataset.countries.CYM": "Ilhas Cayman",
+          "locale-dataset.countries.ROU": "Romênia",
+          "locale-dataset.countries.DOM": "República Dominicana",
+          "locale-dataset.countries.TON": "Tonga",
+          "locale-dataset.countries.CUB": "Cuba",
+          "locale-dataset.countries.MNE": "Montenegro",
+          "locale-dataset.countries.PRT": "Portugal",
+          "locale-dataset.countries.BMU": "Bermuda",
+          "locale-dataset.countries.TTO": "Trinidad e Tobago",
+          "locale-dataset.countries.DNK": "Dinamarca",
+          "locale-dataset.countries.GNB": "Guiné-Bissau",
+          "locale-dataset.countries.POL": "Polônia",
+          "locale-dataset.countries.ASM": "Samoa Americana",
+          "locale-dataset.countries.GUY": "Guiana",
+          "locale-dataset.countries.BIH": "Bósnia e Herzegovina",
+          "locale-dataset.countries.ARE": "Emirados Árabes Unidos",
+          "locale-dataset.countries.MDV": "Maldivas",
+          "locale-dataset.countries.SDN": "Sudão",
+          "locale-dataset.countries.USA": "Estados Unidos",
+          "locale-dataset.countries.SSD": "Sudão do Sul",
+          "locale-dataset.countries.#N/": "Macao S.A.R., China",
+          "locale-dataset.countries.COD": "Congo (Kinshasa) ",
+          "locale-dataset.countries.EGY": "Egito",
+          "locale-dataset.countries.CYP": "Chipre",
+          "locale-dataset.countries.OMN": "Omã",
+          "locale-dataset.countries.DZA": "Algeria",
+          "locale-dataset.countries.BRB": "Barbados",
+          "locale-dataset.countries.KWT": "Kuwait",
+          "locale-dataset.countries.TGO": "Togo",
+          "locale-dataset.countries.SXM": "Sint Maarten",
+          "locale-dataset.countries.NPL": "Nepal",
+          "locale-dataset.countries.MRT": "Mauritânia",
+          "locale-dataset.countries.NZL": "Nova Zelândia",
+          "locale-dataset.countries.IRQ": "Iraque",
+          "locale-dataset.countries.THA": "Tailândia",
+          "locale-dataset.countries.DMA": "Dominica",
+          "locale-dataset.countries.ZMB": "Zâmbia",
+          "locale-dataset.countries.NRU": "Nauru",
+          "locale-dataset.countries.LSO": "Lesoto",
+          "locale-dataset.countries.FIN": "Finlândia",
+          "locale-dataset.countries.SVK": "Eslováquia",
+          "locale-dataset.countries.RUS": "Rússia",
+          "locale-dataset.countries.ESH": "Saara Ocidental",
+          "locale-dataset.countries.SPM": "Saint Pierre and Miquelon",
+          "locale-dataset.countries.LCA": "Saint Lucia",
+          "locale-dataset.countries.BDI": "Burundi",
+          "locale-dataset.countries.ETH": "Etiópia",
+          "locale-dataset.countries.AFG": "Afeganistão",
+          "locale-dataset.countries.RWA": "Ruanda",
+          "locale-dataset.countries.GTM": "Guatemala",
+          "locale-dataset.countries.EST": "Estônia",
+          "locale-dataset.countries.NLD": "Holanda",
+          "locale-dataset.countries.KHM": "Cambódia",
+          "locale-dataset.countries.ISR": "Israel",
+          "locale-dataset.countries.AZE": "Azerbaijão",
+          "locale-dataset.countries.TKM": "Turcomenistão",
+          "locale-dataset.countries.PNG": "Papua Nova Guiné",
+          "locale-dataset.countries.COL": "Colômbia",
+          "locale-dataset.countries.GBR": "Reino Unido",
+          "locale-dataset.countries.KAZ": "Cazaquistão",
+          "locale-dataset.countries.GMB": "Gâmbia",
+          "locale-dataset.countries.ZWE": "Zimbabwe",
+          "locale-dataset.countries.GRC": "Grécia",
+          "locale-dataset.countries.SLB": "Ilhas Salomão",
+          "locale-dataset.countries.BOL": "Bolívia",
+          "locale-dataset.countries.HUN": "Hungria",
+          "locale-dataset.countries.MWI": "Malawi",
+          "locale-dataset.countries.VGB": "Ilhas Virgens Britânicas",
+          "locale-dataset.countries.GAB": "Gabão",
+          "locale-dataset.countries.ECU": "Equador",
+          "locale-dataset.countries.HND": "Honduras",
+          "locale-dataset.countries.SLE": "Serra Leoa",
+          "locale-dataset.countries.UGA": "Uganda",
+          "locale-dataset.countries.ATG": "Antígua e Barbuda",
+          "locale-dataset.countries.SHN": "Santa Helena",
+          "locale-dataset.countries.ATA": "Antártica",
+          "locale-dataset.countries.HTI": "Haiti",
+          "locale-dataset.countries.GRL": "Groenlândia",
+          "locale-dataset.countries.TLS": "Timor Leste",
+          "locale-dataset.countries.VUT": "Vanuatu",
+          "locale-dataset.countries.MAR": "Marrocos",
+          "locale-dataset.countries.MNG": "Mongólia",
+          "locale-dataset.countries.MDA": "Moldávia",
+          "locale-dataset.countries.MLT": "Malta",
+          "locale-dataset.countries.BLR": "Bielorússia",
+          "locale-dataset.countries.MHL": "Ilhas Marshall",
+          "locale-dataset.countries.PCN": "Ilhas Pitcairn",
+          "locale-dataset.countries.PAK": "Paquistão",
+          "locale-dataset.countries.GNQ": "Guiné Equatorial",
+          "locale-dataset.countries.BRN": "Brunei",
+          "locale-dataset.countries.COM": "Comoros",
+          "locale-dataset.countries.FRO": "Ilhas Faroe",
+          "locale-dataset.countries.ANT": "Antilhas Holandesas",
+          "locale-dataset.countries.LUX": "Luxemburgo",
+          "locale-dataset.countries.BRA": "Brasil",
+          "locale-dataset.countries.AUS": "Austrália",
+          "locale-dataset.countries.TUR": "Turquia",
+          "locale-dataset.countries.MYT": "Mayotte",
+          "locale-dataset.countries.SAU": "Arábia Saudita",
+          "locale-dataset.countries.PRK": "Coreia do Norte",
+          "locale-dataset.countries.NFK": "Ilha Norfolk",
+          "locale-dataset.countries.SUR": "Suriname",
+          "locale-dataset.countries.KGZ": "Quirguistão",
+          "locale-dataset.countries.COG": "Congo (Brazzaville)",
+          "locale-dataset.countries.SMR": "San Marino",
+          "locale-dataset.countries.VNM": "Vietnã",
+          "locale-dataset.countries.CHN": "China",
+          "locale-dataset.countries.YEM": "Iêmen",
+          "locale-dataset.countries.IRN": "Irã",
+          "locale-dataset.countries.SYR": "Síria",
+          "locale-dataset.countries.ARM": "Arménia",
+          "locale-dataset.countries.BEN": "Benim",
+          "locale-dataset.countries.LBN": "Líbano",
+          "locale-dataset.countries.SVN": "Eslovênia",
+          "locale-dataset.countries.BLM": "São Bartolomeu",
+          "locale-dataset.countries.DJI": "Djibouti",
+          "locale-dataset.countries.TUN": "Tunisia",
+          "locale-dataset.countries.ARG": "Argentina",
+          "locale-dataset.countries.VEN": "Venezuela",
+          "locale-dataset.countries.GRD": "Grenada",
+          "locale-dataset.countries.HMD": "Ilha Heard e Ilhas McDonald",
+          "locale-dataset.countries.FJI": "Fiji",
+          "locale-dataset.countries.MTQ": "Martinica",
+          "locale-dataset.countries.CXR": "Ilhas Christmas",
+          "locale-dataset.countries.LBY": "Líbia",
+          "locale-dataset.countries.JAM": "Jamaica",
+          "locale-dataset.countries.MMR": "Myanmar",
+          "locale-dataset.countries.CCK": "Ilhas Cocos (Keeling)",
+          "locale-dataset.countries.PER": "Peru",
+          "locale-dataset.countries.FLK": "Ilhas Falkland (Malvinas)",
+          "locale-dataset.countries.LVA": "Látvia",
+          "locale-dataset.countries.TJK": "Tadjiquistão",
+          "locale-dataset.countries.BVT": "Ilha Bouvet",
+          "locale-dataset.countries.MUS": "Maurício",
+          "locale-dataset.countries.KOS": "República do Kosovo",
+          "locale-dataset.countries.BHS": "Bahamas",
+          "locale-dataset.countries.TKL": "Tokelau",
+          "locale-dataset.countries.GUF": "Guiana Francesa",
+          "locale-dataset.countries.CIV": "República da Costa do Marfim",
+          "locale-dataset.countries.IOT": "Território Britânico do Oceano Índico",
+          "locale-dataset.countries.ISL": "Islândia",
+          "locale-dataset.countries.BGR": "Bulgária",
+          "locale-dataset.countries.TZA": "Tanzânia",
+          "locale-dataset.countries.IDN": "Indonésia",
+          "locale-dataset.countries.LIE": "Liechtenstein",
+          "locale-dataset.countries.CAN": "Canadá",
+          "locale-dataset.countries.GHA": "Gana",
+          "locale-dataset.countries.DEU": "Alemanha",
+          "locale-dataset.countries.GIB": "Gibraltar",
+          "locale-dataset.countries.TUV": "Tuvalu",
+          "locale-dataset.countries.PRY": "Paraguai",
+          "locale-dataset.countries.PYF": "Polinésia Francesa",
+          "locale-dataset.countries.NIU": "Niue",
+          "locale-dataset.countries.KOR": "Coréia do Sul",
+          "locale-dataset.countries.VIR": "Ilhas Virgens dos EUA",
+          "locale-dataset.countries.ALB": "Albânia",
+          "locale-dataset.countries.MDG": "Madagascar",
+          "locale-dataset.countries.UZB": "Uzbequistão",
+          "locale-dataset.countries.BTN": "Butão",
+          "locale-dataset.countries.GLP": "Guadalupe",
+          "locale-dataset.countries.VCT": "Saint Vincent and the Grenadines",
+          "locale-dataset.countries.NAM": "Namíbia",
+          "locale-dataset.countries.MKD": "Macedônia",
+          "locale-dataset.countries.GUM": "Guão",
+          "locale-dataset.countries.MYS": "Malásia",
+          "locale-dataset.countries.SEN": "Senegal",
+          "locale-dataset.countries.MLI": "Mali",
+          "locale-dataset.countries.FSM": "Micronésia",
+          "locale-dataset.countries.BGD": "Bangladesh",
+          "locale-dataset.countries.WLF": "Wallis e Futuna",
+          "locale-dataset.countries.AND": "Andorra",
+          "locale-dataset.countries.AGO": "Angola",
+          "locale-dataset.countries.JOR": "Jordânia",
+          "locale-dataset.countries.PAN": "Panamá",
+          "locale-dataset.countries.SGS": "Geórgia do Sul e Ilhas Sandwich do Sul",
+          "locale-dataset.countries.NIC": "Nicarágua",
+          "locale-dataset.countries.SOM": "Somália",
+          "locale-dataset.countries.CAF": "República Africana Central",
+          "locale-dataset.countries.PSE": "Territórios palestinos",
+          "locale-dataset.countries.PHL": "Filipinas",
+          "locale-dataset.countries.SYC": "Seychelles",
+          "locale-dataset.countries.JEY": "Jersey",
+          "locale-dataset.countries.KIR": "Kiribati",
+          "locale-dataset.countries.URY": "Uruguai",
+          "locale-dataset.countries.FRA": "França",
+          "locale-dataset.countries.CRI": "Costa Rica",
+          "locale-dataset.countries.MAC": "Macau",
+          "locale-dataset.countries.ABW": "Aruba",
+          "locale-dataset.countries.SWZ": "Suazilândia",
+          "locale-dataset.countries.NCL": "Nova Caledônia",
+          "locale-dataset.countries.CPV": "Cabo Verde",
+          "locale-dataset.countries.REU": "Ilha Reunião",
+          "locale-dataset.countries.SLV": "El Salvador",
+          "locale-dataset.countries.NOR": "Noruega",
+          "locale-dataset.countries.CUW": "Curaçao",
+          "locale-dataset.countries.CHE": "Suíça",
+          "locale-dataset.countries.ESP": "Espanha",
+          "locale-dataset.countries.PLW": "Palau",
+          "locale-dataset.countries.QAT": "Catar",
+          "locale-dataset.countries.SWE": "Suécia",
+          "locale-dataset.countries.properties.taxName.default": "Imposto",
+          "locale-dataset.countries.NGA": "Nigéria",
+          "locale-dataset.countries.UMI": "United States Minor Outlying Islands",
+          "locale-dataset.countries.LTU": "Lituânia",
+          "locale-dataset.countries.BHR": "Barém",
+          "locale-dataset.countries.UKR": "Ucrânia",
+          "locale-dataset.countries.JPN": "Japão",
+          "locale-dataset.countries.LKA": "Sri Lanka",
+          "locale-dataset.countries.KNA": "São Cristóvão e Névis",
+          "locale-dataset.countries.LAO": "Laos",
+          "locale-dataset.countries.BEL": "Bélgica",
+          "locale-dataset.countries.IND": "Índia",
+          "locale-dataset.countries.MEX": "México",
+          "locale-dataset.countries.KEN": "Quênia",
+          "locale-dataset.countries.AIA": "Anguila",
+          "locale-dataset.countries.MOZ": "Moçambique",
+          "locale-dataset.countries.MSR": "Montserrat",
+          "locale-dataset.countries.ATF": "Territórios Franceses do Sul",
+          "locale-dataset.countries.PRI": "Porto Rico",
+          "locale-dataset.countries.CMR": "Camarões",
+          "locale-dataset.countries.NER": "Niger",
+          "locale-dataset.countries.TCA": "Ilhas Turcas e Caicos",
+          "locale-dataset.countries.VAT": "Vaticano",
+          "locale-dataset.countries.BFA": "Burquina Fasso",
+          "locale-dataset.countries.ITA": "Itália",
+          "locale-dataset.countries.HKG": "Hong Kong",
+          "locale-dataset.countries.TWN": "Taiwan",
+          "locale-dataset.countries.GGY": "Guernsey",
+          "locale-dataset.countries.MAF": "Saint Martin",
+          "locale-dataset.countries.MCO": "Mônaco",
+          "locale-dataset.countries.SGP": "Singapura",
+          "locale-dataset.countries.IMN": "Ilha de Man",
+          "locale-dataset.countries.CHL": "Chile",
+          "locale-dataset.countries.TCD": "Chade",
+          "locale-dataset.countries.ALA": "Ilhas Åland",
+          "locale-dataset.countries.MNP": "Ilhas Marianas do Norte",
+          "locale-dataset.countries.GEO": "Geórgia",
+          "locale-dataset.countries.HRV": "Croácia"
+        },
+        "fieldInitialData": {}
+      }
+    },
+    "14271d6f-ba62-d045-549b-ab972ae1f70e": {
+      "comp-lkjsznem_appSettings": {
+        "pageId": "d34uk",
+        "styleId": "style-jyem87tx",
+        "upgrades": {
+          "fullscreen": {
+            "date": "Tue Dec 11 2018 18:15:52 GMT+0300 (Москва, стандартное время)"
+          }
+        },
+        "galleryId": "a5c57b07-0de2-4076-9de1-0a1d4a02e3c2",
+        "layoutTeaserShowed": true
+      },
+      "comp-lkjsznem_galleryData": {
+        "items": [
+          {
+            "itemId": "b898f6da-e2f1-40ae-b105-c83583126b49",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:06.000Z",
+            "orderIndex": 1741907345358,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#bo9ex",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Capri"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "1.png",
+              "name": "d4f942_69d1db04475d487d9936598746f09693~mv2.png"
+            },
+            "mediaUrl": "d4f942_69d1db04475d487d9936598746f09693~mv2.png"
+          },
+          {
+            "itemId": "d95947e3-99d1-4744-994d-9354a2cc194a",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:29.000Z",
+            "orderIndex": 1741907351043.75,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#fbpr1",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Africa"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "4.png",
+              "name": "d4f942_b72b28c1e93d4f36b3f06ad8a6d40c65~mv2.png"
+            },
+            "mediaUrl": "d4f942_b72b28c1e93d4f36b3f06ad8a6d40c65~mv2.png"
+          },
+          {
+            "itemId": "c7e196ad-3722-4130-9df1-b0ea07c08587",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:29.000Z",
+            "orderIndex": 1741907356729.5,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#n1lk3",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Paris"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "5.png",
+              "name": "d4f942_ef22e2789e25496cafe0122494954e8b~mv2.png"
+            },
+            "mediaUrl": "d4f942_ef22e2789e25496cafe0122494954e8b~mv2.png"
+          },
+          {
+            "itemId": "279dcca1-6759-47bb-a2e8-4e791913c9fa",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:29.000Z",
+            "orderIndex": 1741907368101,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#xk38q",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Grécia"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "6.png",
+              "name": "d4f942_1916dda2d7254904a2a10070b693e4d2~mv2.png"
+            },
+            "mediaUrl": "d4f942_1916dda2d7254904a2a10070b693e4d2~mv2.png"
+          },
+          {
+            "itemId": "cbd1b8a4-89da-469f-9952-8d80fe344fdd",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:29.000Z",
+            "orderIndex": 1741907368201,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#fv7dp",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Japão"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "7.png",
+              "name": "d4f942_a1d8bb1ae02c4670aae558828c2b5b44~mv2.png"
+            },
+            "mediaUrl": "d4f942_a1d8bb1ae02c4670aae558828c2b5b44~mv2.png"
+          },
+          {
+            "itemId": "98bb38d6-a955-4650-8fc6-486b155f1d41",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:47.000Z",
+            "orderIndex": 1741907386414,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#d6byu",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page Awards"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "2.png",
+              "name": "d4f942_6f5dd8a2f2f14049b67def43ad3c3993~mv2.png"
+            },
+            "mediaUrl": "d4f942_6f5dd8a2f2f14049b67def43ad3c3993~mv2.png"
+          },
+          {
+            "itemId": "92e43594-e7ac-43bd-bb89-35eb11244275",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:09:47.000Z",
+            "orderIndex": 1741907386515,
+            "metaData": {
+              "title": "",
+              "link": {
+                "target": "_self",
+                "type": "wix",
+                "data": {
+                  "pageId": "#htq3m",
+                  "target": "_self",
+                  "rel": [],
+                  "type": "PageLink"
+                },
+                "text": "Go to Page novotel"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "3.png",
+              "name": "d4f942_3dbc427cff3644e1bd37e9fd25a208c9~mv2.png"
+            },
+            "mediaUrl": "d4f942_3dbc427cff3644e1bd37e9fd25a208c9~mv2.png"
+          },
+          {
+            "itemId": "58065d5c-dcce-4d71-9ef8-e1e570e398aa",
+            "isSecure": false,
+            "createdDate": "2025-03-13T23:10:26.000Z",
+            "orderIndex": 1741907424898,
+            "metaData": {
+              "title": "",
+              "link": {
+                "type": "none",
+                "target": "_blank"
+              },
+              "alt": "",
+              "sourceName": "private",
+              "tags": [
+                "_fileOrigin_uploaded"
+              ],
+              "height": 1350,
+              "width": 1080,
+              "fileName": "8.png",
+              "name": "d4f942_a24a484b5b594e0d82def56f8c8f5521~mv2.png"
+            },
+            "mediaUrl": "d4f942_a24a484b5b594e0d82def56f8c8f5521~mv2.png"
+          }
+        ],
+        "totalItemsCount": 8
+      }
+    }
+  },
+  "ooi": {
+    "failedInSsr": {}
+  },
+  "builderComponentsWarmupData": {}
+}

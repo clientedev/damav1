@@ -1,0 +1,1151 @@
+{
+  "hero": {
+    "config": {
+      "slideshow_enabled": true,
+      "transition_duration": 6000,
+      "transition_effect": "fade",
+      "overlay_darkness": 65,
+      "logo_url": "/uploads/branding/logo_hero_central.png",
+      "logo_size_desktop": 490,
+      "logo_size_mobile": 280,
+      "tagline": "G11 Conceito Financeiro",
+      "subtitle": "Assessoria Especializada e Soluções Estratégicas para Corretores de Alta Performance",
+      "cta_primary_text": "Fale com um Especialista",
+      "cta_primary_link": "https://wa.me/5511991606951?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!",
+      "cta_secondary_text": "Conheça Nossas Soluções",
+      "cta_secondary_link": "#solucoes",
+      "video_enabled": false,
+      "video_url": "/uploads/hero/hero_cinematic_loop.mp4"
+    },
+    "slides": [
+      {
+        "id": 7,
+        "image_desktop": "/uploads/hero/1792515220424-3794_Silhuetas_em_reuniA_o_com_arranhaa___20261020135320.mp4",
+        "image_mobile": "/uploads/hero/1792515220424-3794_Silhuetas_em_reuniA_o_com_arranhaa___20261020135320.mp4",
+        "order_index": 6,
+        "is_active": 1
+      },
+      {
+        "id": 10,
+        "image_desktop": "/uploads/hero/1792516295941-4929_Handshake_with_city_lights_animaa___20261020140206.mp4",
+        "image_mobile": "/uploads/hero/1792516295941-4929_Handshake_with_city_lights_animaa___20261020140206.mp4",
+        "order_index": 9,
+        "is_active": 1
+      },
+      {
+        "id": 11,
+        "image_desktop": "/uploads/hero/1792516307361-813_People_discussing_in_business_mea___20261020140706.mp4",
+        "image_mobile": "/uploads/hero/1792516307361-813_People_discussing_in_business_mea___20261020140706.mp4",
+        "order_index": 10,
+        "is_active": 1
+      },
+      {
+        "id": 12,
+        "image_desktop": "/uploads/hero/1792516324635-7293_Nuvens_movendo_sobre_arranha-cA_us_1080p_20261020141148.mp4",
+        "image_mobile": "/uploads/hero/1792516324635-7293_Nuvens_movendo_sobre_arranha-cA_us_1080p_20261020141148.mp4",
+        "order_index": 11,
+        "is_active": 1
+      }
+    ]
+  },
+  "settings": {
+    "company_name": "G11 Conceito Financeiro",
+    "founded_date": "10 de agosto de 2021",
+    "description": "Fundada em 10 de agosto de 2021, a G11 nasceu para auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado e proporcionando suporte para que atuem de forma estratégica e eficiente.",
+    "address_full": "Av Antártica 675, Perdizes - SP, 05003-020",
+    "address_street": "Av Antártica 675",
+    "address_neighborhood": "Jardim das Perdizes",
+    "address_city": "São Paulo",
+    "address_state": "SP",
+    "address_cep": "05003-020",
+    "google_maps_url": "https://maps.google.com/?q=Av+Antartica+675+Perdizes+Sao+Paulo+SP",
+    "whatsapp": "+55 11 99160-6951",
+    "whatsapp_url": "https://wa.me/5511991606951?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!",
+    "instagram_url": "https://www.instagram.com/g11conceitofinanceiro/",
+    "business_hours": "De segunda a sexta-feira, das 9h às 18h (horário comercial)",
+    "logo_principal": "/uploads/branding/logo_principal.png",
+    "logo_nav_footer": "/uploads/branding/logo_nav_footer.png",
+    "logo_badge": "/uploads/branding/logo_badge_lg.png",
+    "parceiros_grid": "/uploads/branding/parceiros_g11_grid.png",
+    "parceiro_omint": "/uploads/branding/parceiro_omint.png",
+    "meta_title": "G11 Conceito Financeiro | Assessoria de Alta Performance",
+    "meta_description": "Assessoria especializada que conecta corretores de alta performance às principais instituições financeiras, previdência, saúde e seguros.",
+    "meta_keywords": "seguros, corretor de seguros, previdência privada, plano de saúde, consultoria financeira, g11 conceito financeiro"
+  },
+  "about": {
+    "title": "Conheça a G11 Conceito Financeiro",
+    "text_conheca": "Fundada em 10 de agosto de 2021, a G11 nasceu para auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado. Com inovação e suporte contínuo, a G11 se tornou referência, criando oportunidades para corretores construírem carreiras sólidas e rentáveis.",
+    "image_equipe": "/uploads/institucional/conheca_g11_equipe.jpg",
+    "banner_sobre": "/uploads/institucional/sobre_empresa_banner.jpg",
+    "arte_sobre": "/uploads/institucional/sobre_g11_arte.png",
+    "missao": "Auxiliar corretores de alta performance na transição de carreira, conectando-os às principais instituições do mercado e proporcionando suporte para que atuem de forma estratégica e eficiente.",
+    "visao": "Ser uma referência no setor, oferecendo oportunidades e soluções que contribuam para o crescimento e a consolidação dos corretores no mercado.",
+    "valores": [
+      {
+        "item": "Excelência",
+        "descricao": "Compromisso com a qualidade e a melhoria contínua."
+      },
+      {
+        "item": "Conexão",
+        "descricao": "Facilitação do acesso a instituições e oportunidades estratégicas."
+      },
+      {
+        "item": "Inovação",
+        "descricao": "Busca constante por soluções que agreguem valor ao mercado."
+      },
+      {
+        "item": "Transparência",
+        "descricao": "Atuação ética e clara em todas as relações."
+      },
+      {
+        "item": "Desenvolvimento",
+        "descricao": "Incentivo ao aprimoramento profissional e à evolução contínua."
+      }
+    ]
+  },
+  "albums": [
+    {
+      "id": 1,
+      "slug": "awards",
+      "title": "Awards & Premiações",
+      "destination": "Awards",
+      "category": "Eventos & Premiações",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_6_awards.png",
+      "description": "Galeria oficial de fotos da experiência Awards & Premiações pela G11 Conceito Financeiro.",
+      "order_index": 0,
+      "is_active": 1,
+      "photo_count": 3,
+      "photos": [
+        {
+          "id": 1,
+          "album_id": 1,
+          "url": "/uploads/eventos_e_viagens/awards/foto_01.jpeg",
+          "title": "Awards & Premiações - Foto #1",
+          "alt_text": "Fotografia 1 de Awards & Premiações - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Awards",
+          "width": 960,
+          "height": 1280,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 2,
+          "album_id": 1,
+          "url": "/uploads/eventos_e_viagens/awards/foto_02.jpeg",
+          "title": "Awards & Premiações - Foto #2",
+          "alt_text": "Fotografia 2 de Awards & Premiações - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Awards",
+          "width": 1280,
+          "height": 852,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 3,
+          "album_id": 1,
+          "url": "/uploads/eventos_e_viagens/awards/foto_03.jpeg",
+          "title": "Awards & Premiações - Foto #3",
+          "alt_text": "Fotografia 3 de Awards & Premiações - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Awards",
+          "width": 1170,
+          "height": 1419,
+          "order_index": 2,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "africa",
+      "title": "África do Sul",
+      "destination": "África",
+      "category": "Viagens Internacionais",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_2_africa.png",
+      "description": "Galeria oficial de fotos da experiência África do Sul pela G11 Conceito Financeiro.",
+      "order_index": 1,
+      "is_active": 1,
+      "photo_count": 10,
+      "photos": [
+        {
+          "id": 4,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_01.jpeg",
+          "title": "África do Sul - Foto #1",
+          "alt_text": "Fotografia 1 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 720,
+          "height": 1280,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 5,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_02.jpeg",
+          "title": "África do Sul - Foto #2",
+          "alt_text": "Fotografia 2 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 959,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 6,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_03.jpeg",
+          "title": "África do Sul - Foto #3",
+          "alt_text": "Fotografia 3 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 960,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 7,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_04.jpeg",
+          "title": "África do Sul - Foto #4",
+          "alt_text": "Fotografia 4 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 960,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 8,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_05.jpeg",
+          "title": "África do Sul - Foto #5",
+          "alt_text": "Fotografia 5 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 960,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 9,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_06.jpeg",
+          "title": "África do Sul - Foto #6",
+          "alt_text": "Fotografia 6 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 960,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 10,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_07.jpeg",
+          "title": "África do Sul - Foto #7",
+          "alt_text": "Fotografia 7 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 960,
+          "height": 1280,
+          "order_index": 6,
+          "is_active": 1
+        },
+        {
+          "id": 11,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_08.jpeg",
+          "title": "África do Sul - Foto #8",
+          "alt_text": "Fotografia 8 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 960,
+          "order_index": 7,
+          "is_active": 1
+        },
+        {
+          "id": 12,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_09.jpeg",
+          "title": "África do Sul - Foto #9",
+          "alt_text": "Fotografia 9 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 1280,
+          "height": 959,
+          "order_index": 8,
+          "is_active": 1
+        },
+        {
+          "id": 13,
+          "album_id": 2,
+          "url": "/uploads/eventos_e_viagens/africa/foto_10.jpeg",
+          "title": "África do Sul - Foto #10",
+          "alt_text": "Fotografia 10 de África do Sul - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em África",
+          "width": 720,
+          "height": 1280,
+          "order_index": 9,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "italia_capri",
+      "title": "Capri / Itália",
+      "destination": "Itália",
+      "category": "Viagens Internacionais",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_1_italia_capri.png",
+      "description": "Galeria oficial de fotos da experiência Capri / Itália pela G11 Conceito Financeiro.",
+      "order_index": 2,
+      "is_active": 1,
+      "photo_count": 8,
+      "photos": [
+        {
+          "id": 14,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_01.jpeg",
+          "title": "Capri / Itália - Foto #1",
+          "alt_text": "Fotografia 1 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 15,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_02.jpeg",
+          "title": "Capri / Itália - Foto #2",
+          "alt_text": "Fotografia 2 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 16,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_03.jpeg",
+          "title": "Capri / Itália - Foto #3",
+          "alt_text": "Fotografia 3 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 17,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_04.jpeg",
+          "title": "Capri / Itália - Foto #4",
+          "alt_text": "Fotografia 4 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 18,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_05.jpeg",
+          "title": "Capri / Itália - Foto #5",
+          "alt_text": "Fotografia 5 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 1075,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 19,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_06.jpeg",
+          "title": "Capri / Itália - Foto #6",
+          "alt_text": "Fotografia 6 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 20,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_07.jpeg",
+          "title": "Capri / Itália - Foto #7",
+          "alt_text": "Fotografia 7 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 6,
+          "is_active": 1
+        },
+        {
+          "id": 21,
+          "album_id": 3,
+          "url": "/uploads/eventos_e_viagens/italia_capri/foto_08.jpeg",
+          "title": "Capri / Itália - Foto #8",
+          "alt_text": "Fotografia 8 de Capri / Itália - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Itália",
+          "width": 1280,
+          "height": 960,
+          "order_index": 7,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "japao",
+      "title": "Japão",
+      "destination": "Japão",
+      "category": "Viagens Internacionais",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_5_japao.png",
+      "description": "Galeria oficial de fotos da experiência Japão pela G11 Conceito Financeiro.",
+      "order_index": 3,
+      "is_active": 1,
+      "photo_count": 10,
+      "photos": [
+        {
+          "id": 22,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_01.jpeg",
+          "title": "Japão - Foto #1",
+          "alt_text": "Fotografia 1 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 1466,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 23,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_02.jpeg",
+          "title": "Japão - Foto #2",
+          "alt_text": "Fotografia 2 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 1335,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 24,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_03.jpeg",
+          "title": "Japão - Foto #3",
+          "alt_text": "Fotografia 3 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 909,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 25,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_04.jpeg",
+          "title": "Japão - Foto #4",
+          "alt_text": "Fotografia 4 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 1516,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 26,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_05.jpeg",
+          "title": "Japão - Foto #5",
+          "alt_text": "Fotografia 5 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 960,
+          "height": 1280,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 27,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_06.jpeg",
+          "title": "Japão - Foto #6",
+          "alt_text": "Fotografia 6 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 959,
+          "height": 1280,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 28,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_07.jpeg",
+          "title": "Japão - Foto #7",
+          "alt_text": "Fotografia 7 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 1466,
+          "order_index": 6,
+          "is_active": 1
+        },
+        {
+          "id": 29,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_08.jpeg",
+          "title": "Japão - Foto #8",
+          "alt_text": "Fotografia 8 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 1179,
+          "height": 1503,
+          "order_index": 7,
+          "is_active": 1
+        },
+        {
+          "id": 30,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_09.jpeg",
+          "title": "Japão - Foto #9",
+          "alt_text": "Fotografia 9 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 960,
+          "height": 1280,
+          "order_index": 8,
+          "is_active": 1
+        },
+        {
+          "id": 31,
+          "album_id": 4,
+          "url": "/uploads/eventos_e_viagens/japao/foto_10.jpeg",
+          "title": "Japão - Foto #10",
+          "alt_text": "Fotografia 10 de Japão - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Japão",
+          "width": 960,
+          "height": 1280,
+          "order_index": 9,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "paris",
+      "title": "Paris / França",
+      "destination": "França",
+      "category": "Viagens Internacionais",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_3_paris.png",
+      "description": "Galeria oficial de fotos da experiência Paris / França pela G11 Conceito Financeiro.",
+      "order_index": 4,
+      "is_active": 1,
+      "photo_count": 9,
+      "photos": [
+        {
+          "id": 32,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_01.jpeg",
+          "title": "Paris / França - Foto #1",
+          "alt_text": "Fotografia 1 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 960,
+          "height": 1280,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 33,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_02.jpeg",
+          "title": "Paris / França - Foto #2",
+          "alt_text": "Fotografia 2 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 1280,
+          "height": 960,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 34,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_03.jpeg",
+          "title": "Paris / França - Foto #3",
+          "alt_text": "Fotografia 3 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 960,
+          "height": 1280,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 35,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_04.jpeg",
+          "title": "Paris / França - Foto #4",
+          "alt_text": "Fotografia 4 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 1280,
+          "height": 960,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 36,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_05.jpeg",
+          "title": "Paris / França - Foto #5",
+          "alt_text": "Fotografia 5 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 960,
+          "height": 1280,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 37,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_06.jpeg",
+          "title": "Paris / França - Foto #6",
+          "alt_text": "Fotografia 6 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 1280,
+          "height": 960,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 38,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_07.jpeg",
+          "title": "Paris / França - Foto #7",
+          "alt_text": "Fotografia 7 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 959,
+          "height": 1280,
+          "order_index": 6,
+          "is_active": 1
+        },
+        {
+          "id": 39,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_08.jpeg",
+          "title": "Paris / França - Foto #8",
+          "alt_text": "Fotografia 8 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 1280,
+          "height": 960,
+          "order_index": 7,
+          "is_active": 1
+        },
+        {
+          "id": 40,
+          "album_id": 5,
+          "url": "/uploads/eventos_e_viagens/paris/foto_09.jpeg",
+          "title": "Paris / França - Foto #9",
+          "alt_text": "Fotografia 9 de Paris / França - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em França",
+          "width": 960,
+          "height": 1280,
+          "order_index": 8,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "novotel",
+      "title": "Convenção Novotel",
+      "destination": "Novotel",
+      "category": "Eventos & Premiações",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_7_novotel.png",
+      "description": "Galeria oficial de fotos da experiência Convenção Novotel pela G11 Conceito Financeiro.",
+      "order_index": 5,
+      "is_active": 1,
+      "photo_count": 7,
+      "photos": [
+        {
+          "id": 41,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_01.jpeg",
+          "title": "Convenção Novotel - Foto #1",
+          "alt_text": "Fotografia 1 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 960,
+          "height": 1280,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 42,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_02.jpeg",
+          "title": "Convenção Novotel - Foto #2",
+          "alt_text": "Fotografia 2 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 1280,
+          "height": 960,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 43,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_03.jpeg",
+          "title": "Convenção Novotel - Foto #3",
+          "alt_text": "Fotografia 3 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 937,
+          "height": 1280,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 44,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_04.jpeg",
+          "title": "Convenção Novotel - Foto #4",
+          "alt_text": "Fotografia 4 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 1280,
+          "height": 960,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 45,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_05.jpeg",
+          "title": "Convenção Novotel - Foto #5",
+          "alt_text": "Fotografia 5 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 1227,
+          "height": 960,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 46,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_06.jpeg",
+          "title": "Convenção Novotel - Foto #6",
+          "alt_text": "Fotografia 6 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 985,
+          "height": 1280,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 47,
+          "album_id": 6,
+          "url": "/uploads/eventos_e_viagens/novotel/foto_07.jpeg",
+          "title": "Convenção Novotel - Foto #7",
+          "alt_text": "Fotografia 7 de Convenção Novotel - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Novotel",
+          "width": 839,
+          "height": 1147,
+          "order_index": 6,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "grecia",
+      "title": "Grécia",
+      "destination": "Grécia",
+      "category": "Viagens Internacionais",
+      "year": "2024-2025",
+      "cover_image": "/uploads/capas_eventos/capa_4_grecia.png",
+      "description": "Galeria oficial de fotos da experiência Grécia pela G11 Conceito Financeiro.",
+      "order_index": 6,
+      "is_active": 1,
+      "photo_count": 9,
+      "photos": [
+        {
+          "id": 48,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_01.jpeg",
+          "title": "Grécia - Foto #1",
+          "alt_text": "Fotografia 1 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 4032,
+          "height": 3024,
+          "order_index": 0,
+          "is_active": 1
+        },
+        {
+          "id": 49,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_02.jpeg",
+          "title": "Grécia - Foto #2",
+          "alt_text": "Fotografia 2 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 1200,
+          "height": 1600,
+          "order_index": 1,
+          "is_active": 1
+        },
+        {
+          "id": 50,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_03.jpeg",
+          "title": "Grécia - Foto #3",
+          "alt_text": "Fotografia 3 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 1179,
+          "height": 893,
+          "order_index": 2,
+          "is_active": 1
+        },
+        {
+          "id": 51,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_04.jpeg",
+          "title": "Grécia - Foto #4",
+          "alt_text": "Fotografia 4 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 1179,
+          "height": 810,
+          "order_index": 3,
+          "is_active": 1
+        },
+        {
+          "id": 52,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_05.jpeg",
+          "title": "Grécia - Foto #5",
+          "alt_text": "Fotografia 5 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 1179,
+          "height": 1085,
+          "order_index": 4,
+          "is_active": 1
+        },
+        {
+          "id": 53,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_06.jpeg",
+          "title": "Grécia - Foto #6",
+          "alt_text": "Fotografia 6 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 1179,
+          "height": 864,
+          "order_index": 5,
+          "is_active": 1
+        },
+        {
+          "id": 54,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_07.jpeg",
+          "title": "Grécia - Foto #7",
+          "alt_text": "Fotografia 7 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 969,
+          "height": 1280,
+          "order_index": 6,
+          "is_active": 1
+        },
+        {
+          "id": 55,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_08.jpeg",
+          "title": "Grécia - Foto #8",
+          "alt_text": "Fotografia 8 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 3840,
+          "height": 2160,
+          "order_index": 7,
+          "is_active": 1
+        },
+        {
+          "id": 56,
+          "album_id": 7,
+          "url": "/uploads/eventos_e_viagens/grecia/foto_09.jpeg",
+          "title": "Grécia - Foto #9",
+          "alt_text": "Fotografia 9 de Grécia - G11 Conceito Financeiro",
+          "caption": "Momento exclusivo registrado em Grécia",
+          "width": 3024,
+          "height": 4032,
+          "order_index": 8,
+          "is_active": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "experiencias-exclusivas",
+      "title": "Experiências & Reconhecimento",
+      "destination": "Brasil & Mundo",
+      "category": "Eventos & Premiações",
+      "year": "2025",
+      "cover_image": "/uploads/capas_eventos/capa_8_evento_8.png",
+      "description": "Momentos únicos e experiências exclusivas promovidas pela G11 Conceito Financeiro para parceiros e corretores de elite.",
+      "order_index": 7,
+      "is_active": 1,
+      "photo_count": 0,
+      "photos": []
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "vida",
+      "title": "Seguro de Vida",
+      "tag": "Vida",
+      "description": "Segurança financeira para sua família em qualquer momento. Planos que garantem amparo e proteção quando mais importa.",
+      "card_image": "/uploads/produtos/card_produto_1_vida.jpg",
+      "features": [
+        "Cobertura personalizada",
+        "Assessoria e suporte integral",
+        "Agilidade no atendimento e sinistros"
+      ],
+      "order_index": 0,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "slug": "viagem",
+      "title": "Seguro Viagem",
+      "tag": "Viagem",
+      "description": "Viaje com tranquilidade! Cobertura para imprevistos, como despesas médicas, bagagem extraviada e muito mais.",
+      "card_image": "/uploads/produtos/card_produto_2_viagem.jpg",
+      "features": [
+        "Cobertura personalizada",
+        "Assessoria e suporte integral",
+        "Agilidade no atendimento e sinistros"
+      ],
+      "order_index": 1,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "slug": "previdencia",
+      "title": "Previdência Privada",
+      "tag": "Previdência",
+      "description": "Planeje seu futuro com segurança. Investimentos inteligentes para uma aposentadoria tranquila e estável.",
+      "card_image": "/uploads/produtos/card_produto_3_previdencia.jpg",
+      "features": [
+        "Cobertura personalizada",
+        "Assessoria e suporte integral",
+        "Agilidade no atendimento e sinistros"
+      ],
+      "order_index": 2,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "slug": "saude",
+      "title": "Plano de Saúde",
+      "tag": "Saúde",
+      "description": "Cuide do que mais importa! Planos de saúde que oferecem acesso a uma rede de qualidade para você e sua família.",
+      "card_image": "/uploads/produtos/card_produto_4_saude.jpg",
+      "features": [
+        "Cobertura personalizada",
+        "Assessoria e suporte integral",
+        "Agilidade no atendimento e sinistros"
+      ],
+      "order_index": 3,
+      "is_active": 1
+    }
+  ],
+  "benefits": [
+    {
+      "id": 1,
+      "title": "Assistência 24h",
+      "description": "Suporte em emergências para garantir tranquilidade em qualquer momento.",
+      "icon": "Clock",
+      "order_index": 0,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "title": "Seguro Residencial",
+      "description": "Proteja seu lar contra imprevistos com coberturas especiais.",
+      "icon": "Home",
+      "order_index": 1,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "title": "Seguro Odontológico",
+      "description": "Cuide da sua saúde bucal com planos acessíveis e ampla cobertura.",
+      "icon": "Smile",
+      "order_index": 2,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "title": "Auxílio-Funeral",
+      "description": "Amparo financeiro e suporte em momentos difíceis.",
+      "icon": "HeartHandshake",
+      "order_index": 3,
+      "is_active": 1
+    },
+    {
+      "id": 5,
+      "title": "Descontos Exclusivos",
+      "description": "Acesso a vantagens em redes parceiras de saúde, lazer e bem-estar.",
+      "icon": "Sparkles",
+      "order_index": 4,
+      "is_active": 1
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "André S.",
+      "role": "Corretor de Seguros",
+      "quote": "A G11 transformou minha forma de lidar com dinheiro! Como corretor, nunca tive um planejamento financeiro estruturado, e hoje me sinto muito mais seguro sobre meu futuro.",
+      "stars": 5,
+      "order_index": 0,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "name": "Mariana R.",
+      "role": "Corretora Parceira",
+      "quote": "Graças à assessoria da G11, consegui organizar minhas comissões e investir de maneira inteligente. Agora sei que minha aposentadoria está garantida!",
+      "stars": 5,
+      "order_index": 1,
+      "is_active": 1
+    },
+    {
+      "id": 3,
+      "name": "Carlos M.",
+      "role": "Cliente G11",
+      "quote": "Sempre tive dúvidas sobre seguro de vida e previdência privada, mas a equipe da G11 me explicou tudo com clareza e transparência. Hoje, minha família está protegida!",
+      "stars": 5,
+      "order_index": 2,
+      "is_active": 1
+    },
+    {
+      "id": 4,
+      "name": "Fernanda L.",
+      "role": "Corretora de Alta Performance",
+      "quote": "O suporte da G11 foi essencial para otimizar meus ganhos como corretor. Além disso, me ajudaram a escolher um plano de saúde ideal para minha realidade!",
+      "stars": 5,
+      "order_index": 3,
+      "is_active": 1
+    }
+  ],
+  "claims": [
+    {
+      "id": 1,
+      "question": "O que é um sinistro?",
+      "answer": "Um sinistro é qualquer evento inesperado que cause danos e esteja previsto no contrato de seguro. Quando isso acontece, o segurado pode acionar a seguradora para obter indenização, reembolso ou reparo, conforme os termos da apólice.",
+      "steps": [],
+      "order_index": 0,
+      "is_active": 1
+    },
+    {
+      "id": 2,
+      "question": "Como registrar um sinistro?",
+      "answer": "Siga as instruções abaixo para registrar seu sinistro com total tranquilidade:",
+      "steps": [
+        "Entre em contato com a seguradora imediatamente pelo telefone ou aplicativo.",
+        "Reúna a documentação necessária, como boletim de ocorrência, fotos do ocorrido e nota fiscal dos bens danificados.",
+        "Acompanhe a análise do sinistro pela seguradora e aguarde a resolução."
+      ],
+      "order_index": 1,
+      "is_active": 1
+    }
+  ],
+  "instagram": [
+    {
+      "id": 14,
+      "post_url": "https://www.instagram.com/p/DZu-d5_pH7y/",
+      "title": "Germano Saldanha | Portofinno Corretora de Seguros (@portofinno_corretora)",
+      "category": "Institucional",
+      "embed_html": "<blockquote class=\"instagram-media\" data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/reel/DZu-d5_pH7y/?utm_source=ig_embed&amp;utm_campaign=loading\" data-instgrm-version=\"14\" style=\" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);\"><div style=\"padding:16px;\"> <a href=\"https://www.instagram.com/reel/DZu-d5_pH7y/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;\" target=\"_blank\"> <div style=\" display: flex; flex-direction: row; align-items: center;\"> <div style=\"background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;\"></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;\"></div></div></div><div style=\"padding: 19% 0;\"></div> <div style=\"display:block; height:50px; margin:0 auto 12px; width:50px;\"><svg width=\"50px\" height=\"50px\" viewBox=\"0 0 60 60\" version=\"1.1\" xmlns=\"https://www.w3.org/2000/svg\" xmlns:xlink=\"https://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g transform=\"translate(-511.000000, -20.000000)\" fill=\"#000000\"><g><path d=\"M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631\"></path></g></g></g></svg></div><div style=\"padding-top: 8px;\"> <div style=\" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;\">Ver esta publicação no Instagram</div></div><div style=\"padding: 12.5% 0;\"></div> <div style=\"display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;\"><div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);\"></div> <div style=\"background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;\"></div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);\"></div></div><div style=\"margin-left: 8px;\"> <div style=\" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;\"></div> <div style=\" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)\"></div></div><div style=\"margin-left: auto;\"> <div style=\" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);\"></div> <div style=\" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);\"></div> <div style=\" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);\"></div></div></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;\"></div></div></a><p style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;\"><a href=\"https://www.instagram.com/reel/DZu-d5_pH7y/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;\" target=\"_blank\">Uma publicação partilhada por Germano Saldanha | Portofinno Corretora de Seguros (@portofinno_corretora)</a></p></div></blockquote>\n<script async src=\"//www.instagram.com/embed.js\"></script>",
+      "image_url": "/uploads/instagram/reel_1.mp4",
+      "order_index": 3,
+      "is_active": 1
+    },
+    {
+      "id": 15,
+      "post_url": "https://www.instagram.com/p/DZvalkfJ4Gq/",
+      "title": "G11 Conceito Financeiro (@g11conceitofinanceiro)",
+      "category": "Institucional",
+      "embed_html": "<blockquote class=\"instagram-media\" data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/reel/DZvalkfJ4Gq/?utm_source=ig_embed&amp;utm_campaign=loading\" data-instgrm-version=\"14\" style=\" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);\"><div style=\"padding:16px;\"> <a href=\"https://www.instagram.com/reel/DZvalkfJ4Gq/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;\" target=\"_blank\"> <div style=\" display: flex; flex-direction: row; align-items: center;\"> <div style=\"background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;\"></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;\"></div></div></div><div style=\"padding: 19% 0;\"></div> <div style=\"display:block; height:50px; margin:0 auto 12px; width:50px;\"><svg width=\"50px\" height=\"50px\" viewBox=\"0 0 60 60\" version=\"1.1\" xmlns=\"https://www.w3.org/2000/svg\" xmlns:xlink=\"https://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g transform=\"translate(-511.000000, -20.000000)\" fill=\"#000000\"><g><path d=\"M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631\"></path></g></g></g></svg></div><div style=\"padding-top: 8px;\"> <div style=\" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;\">Ver esta publicação no Instagram</div></div><div style=\"padding: 12.5% 0;\"></div> <div style=\"display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;\"><div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);\"></div> <div style=\"background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;\"></div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);\"></div></div><div style=\"margin-left: 8px;\"> <div style=\" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;\"></div> <div style=\" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)\"></div></div><div style=\"margin-left: auto;\"> <div style=\" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);\"></div> <div style=\" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);\"></div> <div style=\" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);\"></div></div></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;\"></div></div></a><p style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;\"><a href=\"https://www.instagram.com/reel/DZvalkfJ4Gq/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;\" target=\"_blank\">Uma publicação partilhada por G11 Conceito Financeiro (@g11conceitofinanceiro)</a></p></div></blockquote>\n<script async src=\"//www.instagram.com/embed.js\"></script>",
+      "image_url": "/uploads/instagram/reel_2.mp4",
+      "order_index": 4,
+      "is_active": 1
+    },
+    {
+      "id": 16,
+      "post_url": "https://www.instagram.com/p/DZSi1nAJGko/",
+      "title": "G11 Conceito Financeiro (@g11conceitofinanceiro)",
+      "category": "Institucional",
+      "embed_html": "<blockquote class=\"instagram-media\" data-instgrm-captioned data-instgrm-permalink=\"https://www.instagram.com/reel/DZSi1nAJGko/?utm_source=ig_embed&amp;utm_campaign=loading\" data-instgrm-version=\"14\" style=\" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);\"><div style=\"padding:16px;\"> <a href=\"https://www.instagram.com/reel/DZSi1nAJGko/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;\" target=\"_blank\"> <div style=\" display: flex; flex-direction: row; align-items: center;\"> <div style=\"background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;\"></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;\"></div></div></div><div style=\"padding: 19% 0;\"></div> <div style=\"display:block; height:50px; margin:0 auto 12px; width:50px;\"><svg width=\"50px\" height=\"50px\" viewBox=\"0 0 60 60\" version=\"1.1\" xmlns=\"https://www.w3.org/2000/svg\" xmlns:xlink=\"https://www.w3.org/1999/xlink\"><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><g transform=\"translate(-511.000000, -20.000000)\" fill=\"#000000\"><g><path d=\"M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631\"></path></g></g></g></svg></div><div style=\"padding-top: 8px;\"> <div style=\" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;\">Ver esta publicação no Instagram</div></div><div style=\"padding: 12.5% 0;\"></div> <div style=\"display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;\"><div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);\"></div> <div style=\"background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;\"></div> <div style=\"background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);\"></div></div><div style=\"margin-left: 8px;\"> <div style=\" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;\"></div> <div style=\" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)\"></div></div><div style=\"margin-left: auto;\"> <div style=\" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);\"></div> <div style=\" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);\"></div> <div style=\" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);\"></div></div></div> <div style=\"display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;\"> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;\"></div> <div style=\" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;\"></div></div></a><p style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;\"><a href=\"https://www.instagram.com/reel/DZSi1nAJGko/?utm_source=ig_embed&amp;utm_campaign=loading\" style=\" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;\" target=\"_blank\">Uma publicação partilhada por G11 Conceito Financeiro (@g11conceitofinanceiro)</a></p></div></blockquote>\n<script async src=\"//www.instagram.com/embed.js\"></script>",
+      "image_url": "/uploads/instagram/reel_3.mp4",
+      "order_index": 5,
+      "is_active": 1
+    }
+  ],
+  "sections_order": [
+    {
+      "id": "hero",
+      "name": "Hero Section (Apresentação, Logotipo & Vídeo)",
+      "description": "Primeira dobra com logotipo centralizado, vídeo/slideshow em tela cheia e botões de ação.",
+      "is_active": true
+    },
+    {
+      "id": "parceiros",
+      "name": "Seguradoras Parceiras (Letreiro Contínuo)",
+      "description": "Logos oficiais das principais seguradoras parceiras em letreiro infinito com pausa ao passar o mouse.",
+      "is_active": true
+    },
+    {
+      "id": "sobre",
+      "name": "Sobre a G11 Conceito Financeiro",
+      "description": "História institucional, pilares estratégicos, missão, visão e valores fundamentais.",
+      "is_active": true
+    },
+    {
+      "id": "instagram",
+      "name": "Feed & Incorporações do Instagram",
+      "description": "Publicações oficiais e vídeos incorporados diretamente do Instagram.",
+      "is_active": true
+    },
+    {
+      "id": "galeria",
+      "name": "Galerias de Viagens & Eventos",
+      "description": "Pastas e álbuns fotográficos das convenções e experiências internacionais.",
+      "is_active": true
+    },
+    {
+      "id": "produtos",
+      "name": "Soluções & Produtos Estratégicos",
+      "description": "Grade de produtos (Vida, Saúde, Previdência, Consórcios) e benefícios exclusivos.",
+      "is_active": true
+    },
+    {
+      "id": "depoimentos",
+      "name": "Depoimentos de Parceiros & Corretores",
+      "description": "Avaliações e histórias reais de corretores e clientes estratégicos.",
+      "is_active": true
+    },
+    {
+      "id": "sinistros",
+      "name": "Central de Atendimento a Sinistros & FAQ",
+      "description": "Orientações práticas passo a passo e perguntas frequentes para suporte.",
+      "is_active": true
+    },
+    {
+      "id": "contato",
+      "name": "Localização, Mapa Google & Contato",
+      "description": "Endereço corporativo, horários de atendimento, mapa interativo e WhatsApp.",
+      "is_active": true
+    }
+  ]
+}

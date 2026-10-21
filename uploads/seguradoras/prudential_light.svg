@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
+  <circle cx="28" cy="30" r="16" stroke="#003366" stroke-width="2.5" fill="none"/>
+  <path d="M20 38 L25 24 L29 28 L32 20 L37 38 Z" fill="#003366"/>
+  <text x="55" y="38" fill="#003366" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="23" font-weight="700" letter-spacing="0.5">Prudential</text>
+</svg>
