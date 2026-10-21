@@ -17,23 +17,23 @@ const PRODUCT_FALLBACK_IMAGES: Record<string, string> = {
 
 export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, benefits, whatsappUrl }) => {
   return (
-    <section id="solucoes" className="py-28 bg-[#050a14] relative">
+    <section id="solucoes" className="py-16 sm:py-24 bg-[#050a14] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <p className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400 mb-3">
+        <div className="max-w-3xl mb-10 sm:mb-16">
+          <p className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400 mb-2 sm:mb-3">
             Portfólio & Soluções
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-light text-white tracking-tight">
             Estruturação patrimonial e <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500">gestão de riscos</span>
           </h2>
-          <p className="text-sm text-sky-100/70 mt-3 font-light max-w-2xl">
+          <p className="text-xs sm:text-sm text-sky-100/70 mt-2 sm:mt-3 font-light max-w-2xl">
             Soluções desenhadas com arquitetura aberta para proteção familiar, blindagem jurídica e planejamento financeiro de longo prazo.
           </p>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-7 mb-14 sm:mb-20">
           {products.map((prod) => {
             const imageSrc = prod.card_image || PRODUCT_FALLBACK_IMAGES[prod.slug] || '/uploads/produtos/card_produto_1_vida.jpg';
 
@@ -44,7 +44,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
               >
                 <div>
                   {/* Distinct Ultra-HD Contextual Photo per Solution */}
-                  <div className="relative h-56 w-full overflow-hidden bg-[#050a14]">
+                  <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-[#050a14]">
                     <img
                       src={imageSrc}
                       alt={prod.title}
@@ -54,17 +54,17 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1324] via-transparent to-transparent opacity-90" />
-                    <span className="absolute top-4 right-4 text-[10px] uppercase font-semibold tracking-widest px-3 py-1 rounded-full bg-[#050a14]/85 text-sky-300 border border-sky-400/30 backdrop-blur-md">
+                    <span className="absolute top-3.5 right-3.5 text-[10px] uppercase font-semibold tracking-widest px-3 py-1 rounded-full bg-[#050a14]/85 text-sky-300 border border-sky-400/30 backdrop-blur-md keep-white">
                       {prod.tag || 'Exclusivo'}
                     </span>
                   </div>
 
                   {/* Details */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-medium text-white group-hover:text-sky-300 transition-colors mb-2">
+                  <div className="p-5 sm:p-6">
+                    <h3 className="text-lg sm:text-xl font-medium text-white group-hover:text-sky-400 transition-colors mb-2">
                       {prod.title}
                     </h3>
-                    <p className="text-xs text-sky-100/70 font-light leading-relaxed mb-5">
+                    <p className="text-xs text-sky-100/70 font-light leading-relaxed mb-4 sm:mb-5">
                       {prod.description}
                     </p>
 
@@ -83,12 +83,12 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
               </div>
 
               {/* Bottom CTA */}
-              <div className="p-6 pt-0">
+              <div className="p-5 sm:p-6 pt-0">
                 <a
                   href={`${whatsappUrl}&text=Olá%2C%20gostaria%20de%20consultoria%20sobre%20o%20${encodeURIComponent(prod.title)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 px-4 rounded-xl bg-sky-500/10 hover:bg-sky-500 text-sky-200 hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2 border border-sky-500/20 hover:border-sky-400"
+                  className="w-full py-2.5 px-4 rounded-xl bg-sky-500/10 hover:bg-sky-500 text-sky-400 hover:text-white font-medium text-xs tracking-wider uppercase transition-all duration-300 flex items-center justify-center gap-2 border border-sky-500/20 hover:border-sky-400 cursor-pointer"
                 >
                   <span>Consultar Solução</span>
                   <ArrowUpRight className="w-3.5 h-3.5" />
@@ -100,12 +100,12 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
         </div>
 
         {/* Exclusive Benefits Box - Editorial Layout */}
-        <div className="rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-[#0a1324] via-[#08152c] to-[#050a14] border border-sky-500/20 shadow-2xl">
-          <div className="max-w-3xl mb-10">
+        <div className="rounded-3xl p-6 sm:p-12 bg-gradient-to-br from-[#0a1324] via-[#08152c] to-[#050a14] border border-sky-500/20 shadow-2xl">
+          <div className="max-w-3xl mb-8 sm:mb-10">
             <span className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400 block mb-2">
               Diferenciais de Cobertura
             </span>
-            <h3 className="text-2xl sm:text-3xl font-light text-white leading-tight">
+            <h3 className="text-xl sm:text-3xl font-light text-white leading-tight">
               Proteção adicional e extensões personalizadas de apólice
             </h3>
             <p className="text-xs sm:text-sm text-sky-100/70 mt-2 font-light">
@@ -113,11 +113,11 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {benefits.map((ben, bIdx) => (
               <div
                 key={ben.id}
-                className="p-6 rounded-2xl bg-[#050a14]/60 border border-sky-500/15 hover:border-sky-400/40 transition-all flex flex-col justify-between"
+                className="p-5 sm:p-6 rounded-2xl bg-[#050a14]/60 border border-sky-500/15 hover:border-sky-400/40 transition-all flex flex-col justify-between"
               >
                 <div>
                   <span className="text-xs font-mono text-sky-400 font-bold mb-2 block">
@@ -130,7 +130,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
             ))}
           </div>
 
-          <div className="mt-10 pt-8 border-t border-sky-500/15 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-sky-500/15 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
             <p className="text-xs text-sky-100/60 text-center sm:text-left">
               Consulte nossos assessores para adequação técnica de cláusulas e apólices.
             </p>
@@ -138,10 +138,10 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ products, bene
               href={`${whatsappUrl}&text=Olá%2C%20gostaria%20de%20orientação%20sobre%20os%20Benefícios%20e%20Coberturas`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold px-7 py-3 rounded-full text-xs uppercase tracking-wider flex items-center gap-2 hover:opacity-95 transition-all shrink-0 shadow-lg shadow-sky-500/20"
+              className="bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold px-7 py-3 rounded-full text-xs uppercase tracking-wider flex items-center gap-2 hover:opacity-95 transition-all shrink-0 shadow-lg shadow-sky-500/20 keep-white cursor-pointer"
             >
               <MessageCircle className="w-3.5 h-3.5 fill-white" />
-              <span>Falar com Assessor</span>
+              <span className="text-white">Falar com Assessor</span>
             </a>
           </div>
         </div>

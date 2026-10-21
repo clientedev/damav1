@@ -107,10 +107,10 @@ export const Navbar: React.FC<NavbarProps> = ({ settings, theme, onToggleTheme }
               href={settings.whatsapp_url || `https://wa.me/${settings.whatsapp?.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-sky-400 via-blue-600 to-cyan-500 text-white font-semibold px-4 py-2 rounded-full text-xs tracking-wider uppercase flex items-center gap-2 hover:opacity-95 transition-all shadow-md shadow-sky-500/20 cursor-pointer"
+              className="bg-gradient-to-r from-sky-400 via-blue-600 to-cyan-500 text-white font-semibold px-4 py-2 rounded-full text-xs tracking-wider uppercase flex items-center gap-2 hover:opacity-95 transition-all shadow-md shadow-sky-500/20 cursor-pointer keep-white"
             >
               <MessageCircle className="w-4 h-4 fill-white" />
-              <span>Fale Conosco</span>
+              <span className="text-white">Fale Conosco</span>
             </a>
           </div>
 
@@ -128,7 +128,7 @@ export const Navbar: React.FC<NavbarProps> = ({ settings, theme, onToggleTheme }
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-200 hover:text-white focus:outline-none"
+              className={`p-2 focus:outline-none ${isLight ? 'text-slate-700 hover:text-black' : 'text-slate-200 hover:text-white'}`}
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -165,10 +165,10 @@ export const Navbar: React.FC<NavbarProps> = ({ settings, theme, onToggleTheme }
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold py-3 rounded-xl text-center text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg"
+              className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold py-3 rounded-xl text-center text-xs tracking-wider uppercase flex items-center justify-center gap-2 shadow-lg keep-white"
             >
               <MessageCircle className="w-4 h-4 fill-white" />
-              <span>Atendimento WhatsApp</span>
+              <span className="text-white">Atendimento WhatsApp</span>
             </a>
           </div>
         </div>

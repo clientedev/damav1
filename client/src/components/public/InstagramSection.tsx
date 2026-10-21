@@ -99,7 +99,7 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
   };
 
   return (
-    <div className="relative rounded-2xl overflow-hidden bg-black/90 aspect-[9/14] sm:aspect-[4/5] flex items-center justify-center group shadow-2xl border border-white/10 hover:border-sky-500/40 transition-all duration-300">
+    <div className="relative rounded-2xl overflow-hidden bg-black/90 aspect-[9/14] sm:aspect-[4/5] flex items-center justify-center group shadow-2xl border border-white/10 hover:border-sky-500/40 transition-all duration-300 keep-white media-card">
       {/* Autoplay Video Element */}
       <video
         ref={videoRef}
@@ -123,14 +123,14 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
       <div className="absolute inset-0 bg-gradient-to-t from-[#050a14]/95 via-transparent to-black/40 pointer-events-none" />
 
       {/* Top Floating Badge: Status & Category */}
-      <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-none">
+      <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-none keep-white">
         <span className="text-[10px] uppercase font-bold tracking-wider text-sky-400 bg-[#050a14]/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-sky-500/30">
           {post.category || 'Reel Oficial'}
         </span>
 
         <div className="flex items-center gap-1.5 bg-black/75 backdrop-blur-md px-2.5 py-1 rounded-full text-[10px] text-white font-medium border border-white/15">
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span>Autoplay Ativo</span>
+          <span className="text-white">Autoplay Ativo</span>
         </div>
       </div>
 
@@ -140,7 +140,7 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
           type="button"
           onClick={togglePlay}
           aria-label="Reproduzir vídeo"
-          className="absolute inset-0 m-auto w-14 h-14 rounded-full bg-black/70 hover:bg-sky-500 text-white flex items-center justify-center backdrop-blur-sm border border-white/20 transition-all cursor-pointer z-30 shadow-xl"
+          className="absolute inset-0 m-auto w-14 h-14 rounded-full bg-black/70 hover:bg-sky-500 text-white flex items-center justify-center backdrop-blur-sm border border-white/20 transition-all cursor-pointer z-30 shadow-xl keep-white"
         >
           <Play className="w-6 h-6 fill-white ml-1" />
         </button>
@@ -152,18 +152,18 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
         onClick={toggleSound}
         title={isMuted ? 'Ativar som' : 'Silenciar'}
         aria-label={isMuted ? 'Ativar som' : 'Silenciar'}
-        className="absolute bottom-16 right-3.5 z-30 w-9 h-9 rounded-full bg-black/75 hover:bg-sky-500 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all cursor-pointer shadow-lg hover:scale-105"
+        className="absolute bottom-16 right-3.5 z-30 w-9 h-9 rounded-full bg-black/75 hover:bg-sky-500 text-white flex items-center justify-center backdrop-blur-md border border-white/20 transition-all cursor-pointer shadow-lg hover:scale-105 keep-white"
       >
         {isMuted ? <VolumeX className="w-4 h-4 text-slate-300" /> : <Volume2 className="w-4 h-4 text-white" />}
       </button>
 
       {/* Bottom Content Bar inside Card */}
-      <div className="absolute bottom-0 inset-x-0 p-4 z-20 flex flex-col gap-2">
-        <p className="text-xs text-white/95 font-medium line-clamp-2 leading-relaxed drop-shadow-sm">
+      <div className="absolute bottom-0 inset-x-0 p-4 z-20 flex flex-col gap-2 keep-white">
+        <p className="text-xs text-white font-medium line-clamp-2 leading-relaxed drop-shadow-sm keep-white">
           {displayTitle}
         </p>
 
-        <div className="flex items-center justify-between pt-1 border-t border-white/10">
+        <div className="flex items-center justify-between pt-1 border-t border-white/10 keep-white">
           <div className="flex items-center gap-1.5 text-[11px] text-sky-400 font-medium">
             <InstagramIcon className="w-3.5 h-3.5" />
             <span>@g11conceitofinanceiro</span>
@@ -173,9 +173,9 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
             href={cleanUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-[11px] text-slate-300 hover:text-white font-semibold transition-colors"
+            className="inline-flex items-center gap-1 text-[11px] text-slate-200 hover:text-white font-semibold transition-colors keep-white"
           >
-            <span>Ver no Insta</span>
+            <span className="text-white">Ver no Insta</span>
             <ExternalLink className="w-3 h-3 text-sky-400" />
           </a>
         </div>
@@ -231,16 +231,16 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
   };
 
   return (
-    <section className="py-24 bg-[#0a0c10] border-t border-white/5 relative">
+    <section className="py-16 sm:py-24 bg-[#050a14] border-t border-sky-500/15 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-6">
           <div>
             <p className="text-xs uppercase tracking-[0.25em] font-semibold text-sky-400 mb-2 flex items-center gap-2">
               <InstagramIcon className="w-4 h-4 text-sky-400" />
               Redes Sociais Oficiais
             </p>
-            <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-light text-white tracking-tight">
               Acompanhe a <span className="font-semibold text-sky-400">@g11conceitofinanceiro</span>
             </h2>
             <p className="text-xs sm:text-sm text-slate-400 mt-2 font-light max-w-xl">
@@ -252,7 +252,7 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
             href={instagramUrl || 'https://www.instagram.com/g11conceitofinanceiro/'}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full border border-sky-500/40 bg-white/5 hover:bg-sky-500 text-slate-200 hover:text-white transition-all text-xs uppercase tracking-wider font-semibold self-start md:self-auto shrink-0 shadow-lg hover:shadow-sky-500/20 cursor-pointer"
+            className="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full border border-sky-500/40 bg-sky-500/10 hover:bg-sky-500 text-sky-300 hover:text-white transition-all text-xs uppercase tracking-wider font-semibold self-start md:self-auto shrink-0 shadow-lg hover:shadow-sky-500/20 cursor-pointer"
           >
             <InstagramIcon className="w-4 h-4" />
             <span>Seguir no Instagram</span>
@@ -261,7 +261,7 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
         </div>
 
         {/* Instagram Posts Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {activePosts.map((post) => {
             const cleanUrl = post.post_url?.replace(/\/$/, '') || 'https://www.instagram.com/g11conceitofinanceiro/';
             const displayTitle = getDisplayTitle(post);
@@ -274,10 +274,10 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
             return (
               <div
                 key={post.id}
-                className="rounded-2xl overflow-hidden bg-[#0f1115] border border-white/10 hover:border-sky-500/40 transition-all p-5 shadow-xl flex flex-col justify-between"
+                className="rounded-2xl overflow-hidden bg-[#0a1324] border border-sky-500/15 hover:border-sky-400/40 transition-all p-5 shadow-xl flex flex-col justify-between group"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3 pb-3 border-b border-white/5">
+                  <div className="flex items-center justify-between mb-3 pb-3 border-b border-sky-500/10">
                     <span className="text-[10px] uppercase font-bold tracking-wider text-sky-400 bg-sky-500/10 px-2.5 py-0.5 rounded-full">
                       {post.category || 'Institucional'}
                     </span>
@@ -305,19 +305,19 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
                         dangerouslySetInnerHTML={{ __html: post.embed_html }}
                       />
                       {!isExpanded && (
-                        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0f1115] via-[#0f1115]/90 to-transparent pointer-events-none rounded-b-xl z-10" />
+                        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a1324] via-[#0a1324]/90 to-transparent pointer-events-none rounded-b-xl z-10" />
                       )}
                     </div>
                   ) : post.image_url ? (
-                    <div className="relative rounded-xl overflow-hidden bg-black/60 group aspect-square flex flex-col justify-end">
+                    <div className="relative rounded-xl overflow-hidden bg-black/60 group aspect-square flex flex-col justify-end keep-white">
                       <img
                         src={post.image_url}
                         alt={post.title}
                         className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-                      <div className="relative p-4 z-10">
-                        <span className="text-[10px] text-white/80 line-clamp-2 mb-2 font-light">
+                      <div className="relative p-4 z-10 keep-white">
+                        <span className="text-[10px] text-white/90 line-clamp-2 mb-2 font-light">
                           {displayTitle}
                         </span>
                         <a

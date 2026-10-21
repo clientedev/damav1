@@ -66,91 +66,136 @@
 }
 
 /* Light mode specific element styles */
-html.light .bg-\[\#050a14\] {
+html.light .bg-\[\#050a14\]:not(#inicio):not(#inicio *):not(.keep-dark):not(.keep-dark *):not(.media-dark-overlay) {
   background-color: #f8fafc !important;
 }
 
-html.light .bg-\[\#0a1324\] {
+html.light .bg-\[\#0a1324\]:not(.keep-dark):not(.keep-dark *) {
   background-color: #ffffff !important;
   box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.06);
 }
 
-html.light .bg-\[\#09283d\] {
+html.light .bg-\[\#09283d\]:not(#inicio *):not(.keep-dark):not(.keep-dark *) {
   background-color: #f1f5f9 !important;
 }
 
-html.light .bg-\[\#070e1c\] {
+html.light .bg-\[\#070e1c\]:not(.keep-dark):not(.keep-dark *) {
   background-color: #ffffff !important;
 }
 
-html.light .text-white {
-  color: #0a192f !important;
+html.light .bg-\[\#0a0c10\]:not(.keep-dark):not(.keep-dark *) {
+  background-color: #f8fafc !important;
 }
 
-html.light .text-slate-100 {
-  color: #0f172a !important;
+html.light .bg-\[\#0f1115\]:not(.keep-dark):not(.keep-dark *) {
+  background-color: #ffffff !important;
 }
 
-html.light .text-slate-200 {
-  color: #1e293b !important;
+html.light .bg-\[\#08152c\]:not(.keep-dark):not(.keep-dark *) {
+  background-color: #f1f5f9 !important;
 }
 
-html.light .text-slate-300 {
-  color: #334155 !important;
+html.light .bg-\[\#050a14\]\/85:not(.keep-dark):not(.keep-dark *),
+html.light .bg-\[\#050a14\]\/90:not(.keep-dark):not(.keep-dark *),
+html.light .bg-\[\#050a14\]\/60:not(.keep-dark):not(.keep-dark *) {
+  background-color: rgba(255, 255, 255, 0.92) !important;
 }
 
-html.light .text-slate-400 {
-  color: #64748b !important;
-}
-
-html.light .text-\[\#e0f2fe\] {
-  color: #0f172a !important;
-}
-
-html.light .text-\[\#bae6fd\] {
-  color: #334155 !important;
-}
-
-html.light .text-sky-100\/60,
-html.light .text-sky-100\/70,
-html.light .text-sky-100\/80,
-html.light .text-sky-100 {
-  color: #334155 !important;
-}
-
-html.light .text-sky-200 {
-  color: #1e293b !important;
-}
-
-html.light .text-sky-300 {
-  color: #0284c7 !important;
-}
-
-html.light .text-sky-400 {
-  color: #0369a1 !important;
-}
-
-html.light .bg-\[\#050a14\]\/85,
-html.light .bg-\[\#050a14\]\/90,
-html.light .bg-\[\#050a14\]\/60 {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-}
-
-html.light .from-\[\#0a1324\] {
+html.light .from-\[\#0a1324\]:not(.keep-dark) {
   --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important;
 }
-html.light .via-\[\#08152c\] {
+html.light .via-\[\#08152c\]:not(.keep-dark) {
   --tw-gradient-via: #f8fafc var(--tw-gradient-via-position) !important;
 }
-html.light .to-\[\#050a14\] {
+html.light .to-\[\#050a14\]:not(.keep-dark) {
   --tw-gradient-to: #f1f5f9 var(--tw-gradient-to-position) !important;
 }
 
+/* Typography in Light Mode: Adaptive ONLY on light surfaces, NEVER on buttons or dark overlays */
+html.light h1:not(#inicio h1):not(.keep-white),
+html.light h2:not(#inicio h2):not(.keep-white),
+html.light h3:not(#inicio h3):not(.keep-white):not(.media-title),
+html.light h4:not(#inicio h4):not(.keep-white):not(.media-title) {
+  color: #0a192f !important;
+}
+
+html.light .text-white:not(.keep-white):not(.blue-gradient-btn):not(.blue-gradient-btn *):not(button):not(button *):not(a[class*="bg-"]):not(a[class*="bg-"] *):not(#inicio *):not(.keep-dark *):not(.media-card *):not(.media-overlay *) {
+  color: #0a192f;
+}
+
+html.light .text-slate-100:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-200:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #64748b !important;
+}
+
+html.light .text-\[\#e0f2fe\]:not(#inicio *):not(.keep-white):not(.keep-dark *):not(.blue-gradient-btn) {
+  color: #0f172a !important;
+}
+
+html.light .text-\[\#bae6fd\]:not(#inicio *):not(.keep-white):not(.keep-dark *):not(.media-card *) {
+  color: #334155 !important;
+}
+
+html.light .text-sky-100\/60:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *),
+html.light .text-sky-100\/70:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *),
+html.light .text-sky-100\/80:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *),
+html.light .text-sky-100:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #475569 !important;
+}
+
+html.light .text-sky-200:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #1e293b !important;
+}
+
+html.light .text-sky-300:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #0284c7 !important;
+}
+
+html.light .text-sky-400:not(.keep-white):not(#inicio *):not(.keep-dark *):not(.media-card *) {
+  color: #0369a1 !important;
+}
+
+/* Critical: All Buttons and CTAs MUST keep white text */
+.blue-gradient-btn,
+.blue-gradient-btn *,
+html.light .blue-gradient-btn,
+html.light .blue-gradient-btn *,
+.keep-white,
+.keep-white *,
+html.light .keep-white,
+html.light .keep-white *,
+button[class*="bg-gradient"] *,
+a[class*="bg-gradient"] *,
+html.light button[class*="bg-gradient"] *,
+html.light a[class*="bg-gradient"] * {
+  color: #ffffff !important;
+}
+
 /* Hero Section: Always Dark Film and Vibrant White/Cyan Content */
+#inicio,
+#inicio *,
 html.light #inicio,
-html.light .hero-dark-section,
-html.light .hero-dark-film {
-  background-color: #050a14 !important;
+html.light #inicio .hero-dark-section,
+html.light #inicio .hero-dark-film {
+  background-color: transparent;
+}
+
+html.light #inicio h1,
+html.light #inicio h2,
+html.light #inicio p,
+html.light #inicio span {
+  /* Retain hero colors */
 }
 
 html.light #inicio h1 {
@@ -230,7 +275,7 @@ html.light .glass-panel {
 
 .blue-gradient-btn {
   background: linear-gradient(135deg, #38bdf8 0%, #2563eb 60%, #0047ab 100%);
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .blue-border-glow {
@@ -268,17 +313,34 @@ html.light .glass-panel {
   display: flex;
   flex-shrink: 0;
   width: max-content;
-  animation: marqueeScroll 32s linear infinite;
+  animation: marqueeScroll 36s linear infinite;
+}
+
+/* Slower tracks requested by user for partners and trips */
+.marquee-track-partners {
+  display: flex;
+  flex-shrink: 0;
+  width: max-content;
+  animation: marqueeScroll 65s linear infinite;
+}
+
+.marquee-track-albums {
+  display: flex;
+  flex-shrink: 0;
+  width: max-content;
+  animation: marqueeScroll 80s linear infinite;
 }
 
 .marquee-track-slow {
   display: flex;
   flex-shrink: 0;
   width: max-content;
-  animation: marqueeScroll 45s linear infinite;
+  animation: marqueeScroll 60s linear infinite;
 }
 
 .marquee-track:hover,
+.marquee-track-partners:hover,
+.marquee-track-albums:hover,
 .marquee-track-slow:hover {
   animation-play-state: paused !important;
 }

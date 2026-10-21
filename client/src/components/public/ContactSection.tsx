@@ -32,29 +32,29 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
   const mapsDirectUrl = settings.google_maps_url || 'https://maps.google.com/?q=Av+Antartica+675+Perdizes+Sao+Paulo';
 
   return (
-    <section id="contato" className="py-24 bg-[#050a14] relative">
+    <section id="contato" className="py-16 sm:py-24 bg-[#050a14] relative">
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-96 h-96 bg-sky-500/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="max-w-3xl mb-16">
-          <p className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400 mb-3">
+        <div className="max-w-3xl mb-10 sm:mb-16">
+          <p className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400 mb-2 sm:mb-3">
             Atendimento & Sede
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-light text-white tracking-tight">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-light text-white tracking-tight">
             Nossa <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500">Localização & Contato</span>
           </h2>
-          <p className="text-sm text-sky-100/70 mt-3 font-light">
+          <p className="text-xs sm:text-sm text-sky-100/70 mt-2 sm:mt-3 font-light">
             Visite nossa sede em Perdizes ou inicie um diálogo com nossos assessores financeiros.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 mb-12 sm:mb-16">
           {/* Left Column: Location & Info Cards */}
-          <div className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-2xl bg-[#0a1324] border border-sky-500/15 space-y-6 shadow-xl">
+          <div className="lg:col-span-5 space-y-4 sm:space-y-6">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#0a1324] border border-sky-500/15 space-y-6 shadow-xl">
               {/* Address */}
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center shrink-0">
@@ -214,10 +214,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-sky-400 via-blue-600 to-cyan-500 text-white font-semibold py-3 px-6 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 cursor-pointer"
+                    className="w-full bg-gradient-to-r from-sky-400 via-blue-600 to-cyan-500 text-white font-semibold py-3.5 px-6 rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 cursor-pointer keep-white"
                   >
-                    <Send className="w-3.5 h-3.5" />
-                    <span>Enviar Mensagem</span>
+                    <Send className="w-3.5 h-3.5 fill-white text-white" />
+                    <span className="text-white">Enviar Mensagem</span>
                   </button>
                 </form>
               )}
@@ -248,7 +248,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ settings }) => {
             </a>
           </div>
 
-          <div className="w-full h-[400px] relative bg-[#050a14]">
+          <div className="w-full h-[280px] sm:h-[400px] relative bg-[#050a14]">
             <iframe
               title="Localização G11 Conceito Financeiro"
               src={mapsEmbedUrl}

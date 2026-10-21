@@ -16,26 +16,26 @@ export const ClaimsSection: React.FC<ClaimsSectionProps> = ({ claims, whatsappUr
   };
 
   return (
-    <section id="sinistro" className="py-28 bg-[#050a14] border-t border-sky-500/10 relative">
+    <section id="sinistro" className="py-16 sm:py-24 bg-[#050a14] border-t border-sky-500/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-16 items-start">
           {/* Left Column: Context & Emergency CTA */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-5 space-y-4 sm:space-y-6">
             <p className="text-[11px] uppercase tracking-[0.3em] font-semibold text-sky-400">
               Suporte Técnico & Pós-Venda
             </p>
-            <h2 className="text-3xl sm:text-4xl font-light text-white tracking-tight">
+            <h2 className="text-2xl sm:text-4xl font-light text-white tracking-tight">
               Central de <span className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-cyan-300 to-blue-500">Sinistros & Assistência</span>
             </h2>
-            <p className="text-sm text-sky-100/70 font-light leading-relaxed">
+            <p className="text-xs sm:text-sm text-sky-100/70 font-light leading-relaxed">
               Em momentos de acionamento, nossa equipe atua diretamente na intermediação técnica e documental junto às seguradoras parceiras, garantindo máxima celeridade no processo de indenização.
             </p>
 
             {/* Emergency Action Box */}
-            <div className="p-7 rounded-3xl bg-[#0a1324] border border-sky-500/20 shadow-xl space-y-4">
+            <div className="p-6 sm:p-7 rounded-3xl bg-[#0a1324] border border-sky-500/20 shadow-xl space-y-4">
               <div>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-sky-400">Canal de Emergência</span>
-                <h3 className="text-lg font-medium text-white mt-1">Abertura e Triagem de Sinistro</h3>
+                <h3 className="text-base sm:text-lg font-medium text-white mt-1">Abertura e Triagem de Sinistro</h3>
                 <p className="text-xs text-sky-200/60 font-light mt-1">
                   Atendimento direto aos segurados e corretores vinculados.
                 </p>
@@ -46,10 +46,10 @@ export const ClaimsSection: React.FC<ClaimsSectionProps> = ({ claims, whatsappUr
                   href={`${whatsappUrl}&text=Olá%2C%20preciso%20de%20suporte%20urgente%20para%20abertura%20de%20Sinistro`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold py-3 px-5 rounded-full text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-lg shadow-sky-500/20 cursor-pointer"
+                  className="w-full bg-gradient-to-r from-sky-400 to-blue-600 text-white font-semibold py-3.5 px-5 rounded-full text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-95 transition-all shadow-lg shadow-sky-500/20 cursor-pointer keep-white"
                 >
                   <MessageCircle className="w-4 h-4 fill-white" />
-                  <span>Acionar Sinistro pelo WhatsApp</span>
+                  <span className="text-white">Acionar Sinistro pelo WhatsApp</span>
                 </a>
               </div>
             </div>
