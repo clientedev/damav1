@@ -22,29 +22,33 @@ export const initialSiteData: SiteDataResponse = {
     "slides": [
       {
         "id": 7,
-        "image_desktop": "/uploads/hero/1792515220424-3794_Silhuetas_em_reuniA_o_com_arranhaa___20261020135320.mp4",
-        "image_mobile": "/uploads/hero/1792515220424-3794_Silhuetas_em_reuniA_o_com_arranhaa___20261020135320.mp4",
+        "image_desktop": "/uploads/hero/slide_1_faststart.mp4",
+        "image_mobile": "/uploads/hero/slide_1_mobile.mp4",
+        "poster": "/uploads/hero/slide_1_poster.jpg",
         "order_index": 6,
         "is_active": 1
       },
       {
         "id": 10,
-        "image_desktop": "/uploads/hero/1792516295941-4929_Handshake_with_city_lights_animaa___20261020140206.mp4",
-        "image_mobile": "/uploads/hero/1792516295941-4929_Handshake_with_city_lights_animaa___20261020140206.mp4",
+        "image_desktop": "/uploads/hero/slide_2_faststart.mp4",
+        "image_mobile": "/uploads/hero/slide_2_mobile.mp4",
+        "poster": "/uploads/hero/slide_2_poster.jpg",
         "order_index": 9,
         "is_active": 1
       },
       {
         "id": 11,
-        "image_desktop": "/uploads/hero/1792516307361-813_People_discussing_in_business_mea___20261020140706.mp4",
-        "image_mobile": "/uploads/hero/1792516307361-813_People_discussing_in_business_mea___20261020140706.mp4",
+        "image_desktop": "/uploads/hero/slide_3_faststart.mp4",
+        "image_mobile": "/uploads/hero/slide_3_mobile.mp4",
+        "poster": "/uploads/hero/slide_3_poster.jpg",
         "order_index": 10,
         "is_active": 1
       },
       {
         "id": 12,
-        "image_desktop": "/uploads/hero/1792516324635-7293_Nuvens_movendo_sobre_arranha-cA_us_1080p_20261020141148.mp4",
-        "image_mobile": "/uploads/hero/1792516324635-7293_Nuvens_movendo_sobre_arranha-cA_us_1080p_20261020141148.mp4",
+        "image_desktop": "/uploads/hero/slide_4_faststart.mp4",
+        "image_mobile": "/uploads/hero/slide_4_mobile.mp4",
+        "poster": "/uploads/hero/slide_4_poster.jpg",
         "order_index": 11,
         "is_active": 1
       }

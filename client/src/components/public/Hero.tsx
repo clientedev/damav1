@@ -63,6 +63,16 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     setCurrentSlideIndex((prev) => (prev + 1) % totalSlides);
   };
 
+  // Ensure active slide video starts playing promptly on transition
+  useEffect(() => {
+    const video = document.querySelector(`#inicio [data-slide-index="${currentSlideIndex}"] video`) as HTMLVideoElement | null;
+    if (video) {
+      video.defaultMuted = true;
+      video.muted = true;
+      video.play().catch(() => {});
+    }
+  }, [currentSlideIndex]);
+
   const overlayOpacity = Math.min(Math.max((config.overlay_darkness ?? 65) / 100, 0.2), 0.95);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
@@ -147,6 +157,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
               return (
                 <div
                   key={slide.id || index}
+                  data-slide-index={index}
                   className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
                     isActive ? 'opacity-100 scale-105' : 'opacity-0 scale-100 pointer-events-none'
                   }`}
@@ -156,23 +167,29 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
                 >
                   {slide.image_desktop.toLowerCase().endsWith('.mp4') || slide.image_desktop.toLowerCase().endsWith('.webm') ? (
                     <video
-                      src={slide.image_desktop}
+                      src={(index === currentSlideIndex || index === (currentSlideIndex + 1) % totalSlides) 
+                        ? (isMobile && slide.image_mobile ? slide.image_mobile : slide.image_desktop)
+                        : undefined
+                      }
+                      poster={slide.poster || `/uploads/hero/slide_${index + 1}_poster.jpg`}
                       autoPlay
                       loop
                       muted
                       playsInline
-                      preload="auto"
+                      preload={isActive ? 'auto' : (index === (currentSlideIndex + 1) % totalSlides) ? 'metadata' : 'none'}
                       onLoadedMetadata={(e) => {
                         const el = e.currentTarget;
                         el.defaultMuted = true;
                         el.muted = true;
-                        el.play().catch(() => {});
+                        if (isActive) {
+                          el.play().catch(() => {});
+                        }
                       }}
                       className="w-full h-full object-cover object-center"
                     />
                   ) : (
                     <img
-                      src={slide.image_desktop}
+                      src={isMobile && slide.image_mobile ? slide.image_mobile : slide.image_desktop}
                       alt={slide.title || 'G11 Conceito Financeiro'}
                       className="w-full h-full object-cover object-center transform transition-transform duration-[8000ms] ease-out scale-100"
                     />

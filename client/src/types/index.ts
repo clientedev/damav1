@@ -21,6 +21,7 @@ export interface HeroSlide {
   id: number;
   image_desktop: string;
   image_mobile?: string;
+  poster?: string;
   title?: string;
   subtitle?: string;
   order_index: number;
