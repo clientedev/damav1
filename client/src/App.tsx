@@ -55,7 +55,7 @@ export function App() {
   const loadData = async () => {
     try {
       const data = await fetchPublicSiteData();
-      if (data) {
+      if (data && data.hero && data.hero.config) {
         setSiteData(data);
       }
     } catch (err: any) {
@@ -157,11 +157,28 @@ export function App() {
     );
   }
 
+  // Guaranteed safe data with fallback to initialSiteData
+  const safeData: SiteDataResponse = {
+    hero: {
+      config: siteData?.hero?.config || initialSiteData.hero.config,
+      slides: siteData?.hero?.slides || initialSiteData.hero.slides
+    },
+    settings: siteData?.settings || initialSiteData.settings,
+    about: siteData?.about || initialSiteData.about,
+    albums: siteData?.albums || initialSiteData.albums,
+    products: siteData?.products || initialSiteData.products,
+    benefits: siteData?.benefits || initialSiteData.benefits,
+    testimonials: siteData?.testimonials || initialSiteData.testimonials,
+    claims: siteData?.claims || initialSiteData.claims,
+    instagram: siteData?.instagram || initialSiteData.instagram,
+    sections_order: siteData?.sections_order || initialSiteData.sections_order
+  };
+
   // ADMIN DASHBOARD VIEW
   if (currentView === 'admin_dashboard') {
     return (
       <AdminLayout
-        siteData={siteData}
+        siteData={safeData}
         onRefreshSiteData={loadData}
         onLogout={() => {
           window.history.pushState({}, '', '/admin/login');
@@ -177,7 +194,7 @@ export function App() {
     <div className="min-h-screen bg-[#050a14] text-slate-100 flex flex-col relative selection:bg-sky-500 selection:text-black">
       {/* Navigation - Fixed Sticky Header with Theme Toggle */}
       <Navbar
-        settings={siteData.settings}
+        settings={safeData.settings}
         theme={theme}
         onToggleTheme={toggleTheme}
       />
@@ -187,50 +204,50 @@ export function App() {
         const renderSection = (id: string) => {
           switch (id) {
             case 'hero':
-              return <Hero key="hero" config={siteData.hero.config} slides={siteData.hero.slides} />;
+              return <Hero key="hero" config={safeData.hero.config} slides={safeData.hero.slides} />;
             case 'parceiros':
               return <PartnersMarquee key="parceiros" />;
             case 'sobre':
-              return <AboutSection key="sobre" about={siteData.about} />;
+              return <AboutSection key="sobre" about={safeData.about} />;
             case 'produtos':
               return (
                 <ProductsSection
                   key="produtos"
-                  products={siteData.products}
-                  benefits={siteData.benefits}
-                  whatsappUrl={siteData.settings.whatsapp_url}
+                  products={safeData.products}
+                  benefits={safeData.benefits}
+                  whatsappUrl={safeData.settings.whatsapp_url}
                 />
               );
             case 'galeria':
-              return <GallerySection key="galeria" albums={siteData.albums} />;
+              return <GallerySection key="galeria" albums={safeData.albums} />;
             case 'instagram':
               return (
                 <InstagramSection
                   key="instagram"
-                  posts={siteData.instagram}
-                  instagramUrl={siteData.settings.instagram_url}
+                  posts={safeData.instagram}
+                  instagramUrl={safeData.settings.instagram_url}
                 />
               );
             case 'depoimentos':
-              return <TestimonialsSection key="depoimentos" testimonials={siteData.testimonials} />;
+              return <TestimonialsSection key="depoimentos" testimonials={safeData.testimonials} />;
             case 'sinistros':
               return (
                 <ClaimsSection
                   key="sinistros"
-                  claims={siteData.claims}
-                  whatsappUrl={siteData.settings.whatsapp_url}
-                  phone={siteData.settings.whatsapp}
+                  claims={safeData.claims}
+                  whatsappUrl={safeData.settings.whatsapp_url}
+                  phone={safeData.settings.whatsapp}
                 />
               );
             case 'contato':
-              return <ContactSection key="contato" settings={siteData.settings} />;
+              return <ContactSection key="contato" settings={safeData.settings} />;
             default:
               return null;
           }
         };
 
-        if (siteData.sections_order && siteData.sections_order.length > 0) {
-          return siteData.sections_order
+        if (safeData.sections_order && safeData.sections_order.length > 0) {
+          return safeData.sections_order
             .filter((sec) => sec.is_active !== false)
             .map((sec) => renderSection(sec.id));
         }
@@ -238,37 +255,37 @@ export function App() {
         // Default Recommended Order Fallback
         return (
           <>
-            <Hero config={siteData.hero.config} slides={siteData.hero.slides} />
+            <Hero config={safeData.hero.config} slides={safeData.hero.slides} />
             <PartnersMarquee />
-            <AboutSection about={siteData.about} />
+            <AboutSection about={safeData.about} />
             <ProductsSection
-              products={siteData.products}
-              benefits={siteData.benefits}
-              whatsappUrl={siteData.settings.whatsapp_url}
+              products={safeData.products}
+              benefits={safeData.benefits}
+              whatsappUrl={safeData.settings.whatsapp_url}
             />
-            <GallerySection albums={siteData.albums} />
+            <GallerySection albums={safeData.albums} />
             <InstagramSection
-              posts={siteData.instagram}
-              instagramUrl={siteData.settings.instagram_url}
+              posts={safeData.instagram}
+              instagramUrl={safeData.settings.instagram_url}
             />
-            <TestimonialsSection testimonials={siteData.testimonials} />
+            <TestimonialsSection testimonials={safeData.testimonials} />
             <ClaimsSection
-              claims={siteData.claims}
-              whatsappUrl={siteData.settings.whatsapp_url}
-              phone={siteData.settings.whatsapp}
+              claims={safeData.claims}
+              whatsappUrl={safeData.settings.whatsapp_url}
+              phone={safeData.settings.whatsapp}
             />
-            <ContactSection settings={siteData.settings} />
+            <ContactSection settings={safeData.settings} />
           </>
         );
       })()}
 
       {/* Footer */}
-      <Footer settings={siteData.settings} />
+      <Footer settings={safeData.settings} />
 
       {/* Floating Action Button for Direct WhatsApp */}
       <aside aria-label="Ações de Contato" className="fixed bottom-6 right-6 z-40">
         <a
-          href={siteData.settings.whatsapp_url || `https://wa.me/${siteData.settings.whatsapp?.replace(/\D/g, '')}`}
+          href={safeData.settings.whatsapp_url || `https://wa.me/${safeData.settings.whatsapp?.replace(/\D/g, '')}`}
           target="_blank"
           rel="noopener noreferrer"
           title="Falar no WhatsApp"

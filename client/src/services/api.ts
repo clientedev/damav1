@@ -33,7 +33,12 @@ export function removeAuthToken() {
 function getLocalSiteData(): SiteDataResponse {
   try {
     const raw = localStorage.getItem('g11_local_sitedata');
-    if (raw) return JSON.parse(raw);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.hero && parsed.hero.config) {
+        return parsed;
+      }
+    }
   } catch (e) {
     console.error('Error reading local site data', e);
   }
@@ -71,9 +76,14 @@ async function request<T>(endpoint: string, options: RequestInit = {}): Promise<
     }
   }
 
-  const data = await res.json().catch(() => ({}));
-  if (!res.ok) {
-    throw new Error(data.error || `Erro ${res.status}: Não foi possível concluir a operação.`);
+  const contentType = res.headers.get('content-type') || '';
+  if (!contentType.includes('application/json')) {
+    throw new Error('API offline ou resposta não é JSON válido.');
+  }
+
+  const data = await res.json().catch(() => null);
+  if (!data || !res.ok) {
+    throw new Error(data?.error || `Erro ${res.status}: Não foi possível concluir a operação.`);
   }
 
   return data;
@@ -85,11 +95,17 @@ export async function fetchPublicSiteData(): Promise<SiteDataResponse> {
     const local = localStorage.getItem('g11_local_sitedata');
     if (local) {
       try {
-        return JSON.parse(local);
+        const parsed = JSON.parse(local);
+        if (parsed && parsed.hero && parsed.hero.config) {
+          return parsed;
+        }
       } catch (_) {}
     }
     const data = await request<SiteDataResponse>('/public/site-data');
-    return data;
+    if (data && data.hero && data.hero.config) {
+      return data;
+    }
+    return getLocalSiteData();
   } catch (err) {
     // Standalone / Vercel fallback without database
     return getLocalSiteData();
