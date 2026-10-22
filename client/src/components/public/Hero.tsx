@@ -50,8 +50,8 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     let targetProgress = 0;
     let isRunning = false;
 
-    // Lifted optical sweet spot: 36px on mobile puts logo squarely in upper-middle visual focal zone
-    const getTargetShift = (mob: boolean) => (mob ? 36 : 65);
+    // Optical dead-center positioning: -12px on mobile lifts logo up into exact visual center
+    const getTargetShift = (mob: boolean) => (mob ? -12 : 35);
 
     const measure = () => {
       isMob = window.innerWidth < 640;
@@ -68,12 +68,12 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
 
     const render = (progress: number) => {
       const mob = isMob;
-      // 1. Scale: Prominent at start, shrinks smoothly to brand header size
-      const initialScale = mob ? 1.08 : 1.18;
-      const finalScale = mob ? 0.85 : 0.94;
+      // 1. Scale: Generous, bold and grand at start (1.14 mob), smoothly compacts to header (0.78 mob)
+      const initialScale = mob ? 1.14 : 1.20;
+      const finalScale = mob ? 0.78 : 0.92;
       const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
 
-      // 2. Vertical offset: starts at lifted optical focal zone, smoothly lifts to 0
+      // 2. Vertical offset: starts at raised optical center, smoothly glides to 0
       const baseShift = getTargetShift(mob);
       const currentOffset = (1 - progress) * baseShift;
 
@@ -346,7 +346,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto"
             style={{
-              transform: `translate3d(0, ${isMobile ? 36 : 65}px, 0) scale(${isMobile ? 1.08 : 1.18})`,
+              transform: `translate3d(0, ${isMobile ? -12 : 35}px, 0) scale(${isMobile ? 1.14 : 1.20})`,
               transformOrigin: 'center center',
               willChange: 'transform',
               WebkitBackfaceVisibility: 'hidden',
@@ -356,7 +356,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
               ref={glowRef}
-              className="absolute w-[260px] sm:w-[520px] h-[260px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
+              className="absolute w-[280px] sm:w-[520px] h-[280px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
                 opacity: 1.1
               }}
@@ -366,11 +366,11 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             <img
               src={config.logo_url || '/uploads/branding/logo_hero_central.png'}
               alt="G11 Conceito Financeiro"
-              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[88vw] mx-auto select-none pointer-events-none"
+              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[90vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? `clamp(260px, 76vw, ${logoMobileWidth}px)`
-                  : `clamp(340px, 44vw, ${logoDesktopWidth}px)`
+                  ? 'clamp(290px, 86vw, 360px)'
+                  : `clamp(360px, 46vw, ${logoDesktopWidth}px)`
               }}
             />
           </div>
