@@ -54,7 +54,6 @@
   html {
     max-width: 100%;
     width: 100%;
-    overflow-x: hidden;
     position: relative;
     -webkit-text-size-adjust: 100%;
   }
@@ -65,7 +64,6 @@
     color: var(--text-secondary);
     max-width: 100%;
     width: 100%;
-    overflow-x: hidden;
     position: relative;
     touch-action: manipulation;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -74,7 +72,6 @@
   #root {
     max-width: 100%;
     width: 100%;
-    overflow-x: hidden;
     position: relative;
   }
 

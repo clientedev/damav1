@@ -52,8 +52,8 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     let targetProgress = 0;
     let isRunning = false;
 
-    // Optical centering: -12px on mobile (raised), 105px on desktop (centered)
-    const getTargetShift = (mob: boolean) => (mob ? -12 : 105);
+    // Optical centering: -24px on mobile (clears void below header), 35px on desktop
+    const getTargetShift = (mob: boolean) => (mob ? -24 : 35);
 
     const measure = () => {
       isMob = window.innerWidth < 640;
@@ -255,7 +255,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     <section
       ref={heroRef}
       id="inicio"
-      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[160vh] sm:min-h-[170vh] overflow-x-hidden overflow-x-clip"
+      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[160vh] sm:min-h-[170vh]"
     >
       {/* Sticky full-screen viewport with stable small-viewport-height (svh) to avoid mobile URL bar jump bugs */}
       <div className="sticky top-0 w-full max-w-full h-screen h-[100svh] overflow-hidden flex flex-col justify-between bg-[#050a14]">
@@ -385,17 +385,14 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
           />
         </div>
 
-        {/* Top Spacer to account for fixed navbar */}
-        <div className="h-14 sm:h-20 w-full flex-shrink-0" />
-
         {/* 100% MATHEMATICALLY CENTERED UNIFIED HERO CONTENT CONTAINER */}
-        <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full my-auto py-1 sm:py-3">
+        <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full pt-14 sm:pt-16 pb-2">
           {/* THE OFFICIAL LOGO - STARTS PROMINENT & CENTERED, SMOOTHLY SHRINKS & LIFTS ON SCROLL */}
           <div
             ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto"
             style={{
-              transform: `translate3d(0, ${isMobile ? -12 : 105}px, 0) scale(${isMobile ? 1.14 : 1.32})`,
+              transform: `translate3d(0, ${isMobile ? -24 : 35}px, 0) scale(${isMobile ? 1.14 : 1.32})`,
               transformOrigin: 'center center',
               willChange: 'transform',
               WebkitBackfaceVisibility: 'hidden',

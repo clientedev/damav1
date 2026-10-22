@@ -191,7 +191,7 @@ export function App() {
 
   // PUBLIC SITE VIEW
   return (
-    <div className="min-h-screen w-full max-w-full overflow-x-hidden overflow-x-clip bg-[#050a14] text-slate-100 flex flex-col relative selection:bg-sky-500 selection:text-black">
+    <div className="min-h-screen w-full max-w-full bg-[#050a14] text-slate-100 flex flex-col relative selection:bg-sky-500 selection:text-black">
       {/* Navigation - Fixed Sticky Header with Theme Toggle */}
       <Navbar
         settings={safeData.settings}
