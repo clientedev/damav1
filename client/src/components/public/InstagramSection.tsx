@@ -33,6 +33,8 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
 
+  const posterUrl = post.poster || (post.image_url ? post.image_url.replace(/\.mp4$/i, '_poster.jpg') : undefined);
+
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -42,6 +44,7 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
     video.playsInline = true;
     video.setAttribute('muted', '');
     video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
     video.setAttribute('autoplay', '');
     video.setAttribute('loop', '');
 
@@ -49,33 +52,48 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
       if (!video) return;
       video.defaultMuted = true;
       video.muted = true;
-      video.play().then(() => {
-        setIsPlaying(true);
-      }).catch((err) => {
-        console.warn('Autoplay waiting for user touch:', err);
-      });
+      video.playsInline = true;
+      const playPromise = video.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          setIsPlaying(true);
+        }).catch((err) => {
+          console.warn('Autoplay waiting for user touch:', err);
+        });
+      }
     };
 
     tryPlay();
 
     const unlockPlay = () => {
-      if (videoRef.current) {
-        videoRef.current.play().then(() => setIsPlaying(true)).catch(() => {});
+      const v = videoRef.current;
+      if (v) {
+        v.defaultMuted = true;
+        v.muted = true;
+        v.playsInline = true;
+        const p = v.play();
+        if (p !== undefined) {
+          p.then(() => setIsPlaying(true)).catch(() => {});
+        }
       }
     };
 
-    window.addEventListener('click', unlockPlay, { once: true, passive: true });
-    window.addEventListener('touchstart', unlockPlay, { once: true, passive: true });
-    window.addEventListener('scroll', unlockPlay, { once: true, passive: true });
+    window.addEventListener('click', unlockPlay, { passive: true });
+    window.addEventListener('touchstart', unlockPlay, { passive: true });
+    window.addEventListener('touchend', unlockPlay, { passive: true });
+    window.addEventListener('scroll', unlockPlay, { passive: true });
+    window.addEventListener('pointerdown', unlockPlay, { passive: true });
 
     return () => {
       window.removeEventListener('click', unlockPlay);
       window.removeEventListener('touchstart', unlockPlay);
+      window.removeEventListener('touchend', unlockPlay);
       window.removeEventListener('scroll', unlockPlay);
+      window.removeEventListener('pointerdown', unlockPlay);
     };
   }, [post.image_url]);
 
-  const togglePlay = (e: React.MouseEvent) => {
+  const togglePlay = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
     const video = videoRef.current;
     if (!video) return;
@@ -88,7 +106,7 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
     }
   };
 
-  const toggleSound = (e: React.MouseEvent) => {
+  const toggleSound = (e: React.MouseEvent | React.TouchEvent) => {
     e.stopPropagation();
     const video = videoRef.current;
     if (!video) return;
@@ -102,8 +120,21 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
     <div className="relative rounded-2xl overflow-hidden bg-black/90 aspect-[9/14] sm:aspect-[4/5] flex items-center justify-center group shadow-2xl border border-white/10 hover:border-sky-500/40 transition-all duration-300 keep-white media-card">
       {/* Autoplay Video Element */}
       <video
-        ref={videoRef}
+        ref={(el) => {
+          videoRef.current = el;
+          if (el) {
+            el.defaultMuted = true;
+            el.muted = true;
+            el.playsInline = true;
+            el.setAttribute('playsinline', '');
+            el.setAttribute('webkit-playsinline', '');
+            el.setAttribute('muted', '');
+            el.setAttribute('autoplay', '');
+            el.setAttribute('loop', '');
+          }
+        }}
         src={post.image_url}
+        poster={posterUrl}
         autoPlay
         loop
         muted
@@ -111,10 +142,16 @@ const InstagramVideoCard: React.FC<InstagramVideoCardProps> = ({ post, cleanUrl,
         preload="auto"
         onClick={togglePlay}
         onLoadedData={(e) => {
-          e.currentTarget.play().catch(() => {});
+          const el = e.currentTarget;
+          el.defaultMuted = true;
+          el.muted = true;
+          el.play().then(() => setIsPlaying(true)).catch(() => {});
         }}
         onCanPlay={(e) => {
-          e.currentTarget.play().catch(() => {});
+          const el = e.currentTarget;
+          el.defaultMuted = true;
+          el.muted = true;
+          el.play().then(() => setIsPlaying(true)).catch(() => {});
         }}
         className="w-full h-full object-cover cursor-pointer select-none"
       />
@@ -299,7 +336,7 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
                   ) : post.embed_html ? (
                     <div className="relative">
                       <div
-                        className={`w-full flex items-center justify-center bg-black/40 rounded-xl overflow-hidden transition-all duration-500 [&_iframe]:w-full [&_iframe]:rounded-xl [&_blockquote]:w-full [&_blockquote]:!max-w-full ${
+                        className={`w-full flex items-center justify-center bg-black/40 rounded-xl overflow-hidden transition-all duration-500 [&_iframe]:!w-full [&_iframe]:!min-w-0 [&_iframe]:rounded-xl [&_blockquote]:!w-full [&_blockquote]:!max-w-full [&_blockquote]:!min-w-0 ${
                           isExpanded ? 'max-h-none' : 'max-h-[440px]'
                         }`}
                         dangerouslySetInnerHTML={{ __html: post.embed_html }}
@@ -344,7 +381,7 @@ export const InstagramSection: React.FC<InstagramSectionProps> = ({ posts, insta
                           boxShadow: 'none',
                           margin: '1px',
                           maxWidth: '540px',
-                          minWidth: '326px',
+                          minWidth: '0px',
                           padding: 0,
                           width: 'calc(100% - 2px)'
                         }}

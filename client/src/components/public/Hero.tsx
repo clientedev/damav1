@@ -10,7 +10,9 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPlaying] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => 
+    typeof window !== 'undefined' ? window.innerWidth < 640 : false
+  );
 
   const heroRef = useRef<HTMLElement | null>(null);
   const logoWrapperRef = useRef<HTMLDivElement | null>(null);
@@ -167,14 +169,52 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     setCurrentSlideIndex((prev) => (prev + 1) % totalSlides);
   };
 
-  // Ensure active slide video starts playing promptly on transition
+  // Ensure active slide video starts playing promptly on transition and user gestures
   useEffect(() => {
-    const video = document.querySelector(`#inicio [data-slide-index="${currentSlideIndex}"] video`) as HTMLVideoElement | null;
-    if (video) {
-      video.defaultMuted = true;
-      video.muted = true;
-      video.play().catch(() => {});
-    }
+    const playCurrentSlide = () => {
+      const activeVideo = document.querySelector<HTMLVideoElement>(
+        `#inicio [data-slide-index="${currentSlideIndex}"] video`
+      );
+      if (activeVideo) {
+        activeVideo.defaultMuted = true;
+        activeVideo.muted = true;
+        activeVideo.playsInline = true;
+        const p = activeVideo.play();
+        if (p !== undefined) {
+          p.catch(() => {});
+        }
+      }
+      if (videoRef.current) {
+        videoRef.current.defaultMuted = true;
+        videoRef.current.muted = true;
+        videoRef.current.playsInline = true;
+        const p2 = videoRef.current.play();
+        if (p2 !== undefined) {
+          p2.catch(() => {});
+        }
+      }
+    };
+
+    playCurrentSlide();
+
+    // Unlock on any touch/scroll/click gesture on mobile devices
+    const onGesture = () => {
+      playCurrentSlide();
+    };
+
+    window.addEventListener('touchstart', onGesture, { passive: true });
+    window.addEventListener('touchend', onGesture, { passive: true });
+    window.addEventListener('scroll', onGesture, { passive: true });
+    window.addEventListener('click', onGesture, { passive: true });
+    window.addEventListener('pointerdown', onGesture, { passive: true });
+
+    return () => {
+      window.removeEventListener('touchstart', onGesture);
+      window.removeEventListener('touchend', onGesture);
+      window.removeEventListener('scroll', onGesture);
+      window.removeEventListener('click', onGesture);
+      window.removeEventListener('pointerdown', onGesture);
+    };
   }, [currentSlideIndex]);
 
   const overlayOpacity = Math.min(Math.max((config.overlay_darkness ?? 65) / 100, 0.2), 0.95);
@@ -188,6 +228,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     video.playsInline = true;
     video.setAttribute('muted', '');
     video.setAttribute('playsinline', '');
+    video.setAttribute('webkit-playsinline', '');
     video.setAttribute('autoplay', '');
     video.setAttribute('loop', '');
 
@@ -204,26 +245,6 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     };
 
     tryPlay();
-
-    const unlockPlay = () => {
-      if (videoRef.current) {
-        videoRef.current.defaultMuted = true;
-        videoRef.current.muted = true;
-        videoRef.current.play().catch(() => {});
-      }
-    };
-
-    window.addEventListener('click', unlockPlay, { once: true, passive: true });
-    window.addEventListener('touchstart', unlockPlay, { once: true, passive: true });
-    window.addEventListener('scroll', unlockPlay, { once: true, passive: true });
-    window.addEventListener('mousemove', unlockPlay, { once: true, passive: true });
-
-    return () => {
-      window.removeEventListener('click', unlockPlay);
-      window.removeEventListener('touchstart', unlockPlay);
-      window.removeEventListener('scroll', unlockPlay);
-      window.removeEventListener('mousemove', unlockPlay);
-    };
   }, [config.video_url, config.video_enabled]);
 
   // Dimensions - prominent brand presence
@@ -256,6 +277,18 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
                 >
                   {slide.image_desktop.toLowerCase().endsWith('.mp4') || slide.image_desktop.toLowerCase().endsWith('.webm') ? (
                     <video
+                      ref={(el) => {
+                        if (el) {
+                          el.defaultMuted = true;
+                          el.muted = true;
+                          el.playsInline = true;
+                          el.setAttribute('playsinline', '');
+                          el.setAttribute('webkit-playsinline', '');
+                          el.setAttribute('muted', '');
+                          el.setAttribute('autoplay', '');
+                          el.setAttribute('loop', '');
+                        }
+                      }}
                       src={(index === currentSlideIndex || index === (currentSlideIndex + 1) % totalSlides) 
                         ? (isMobile && slide.image_mobile ? slide.image_mobile : slide.image_desktop)
                         : undefined
@@ -266,6 +299,14 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
                       muted
                       playsInline
                       preload={isActive ? 'auto' : (index === (currentSlideIndex + 1) % totalSlides) ? 'metadata' : 'none'}
+                      onLoadedData={(e) => {
+                        const el = e.currentTarget;
+                        el.defaultMuted = true;
+                        el.muted = true;
+                        if (isActive) {
+                          el.play().catch(() => {});
+                        }
+                      }}
                       onLoadedMetadata={(e) => {
                         const el = e.currentTarget;
                         el.defaultMuted = true;
@@ -274,7 +315,15 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
                           el.play().catch(() => {});
                         }
                       }}
-                      className="w-full h-full object-cover object-center"
+                      onCanPlay={(e) => {
+                        const el = e.currentTarget;
+                        el.defaultMuted = true;
+                        el.muted = true;
+                        if (isActive) {
+                          el.play().catch(() => {});
+                        }
+                      }}
+                      className="w-full h-full object-cover object-center pointer-events-none"
                     />
                   ) : (
                     <img

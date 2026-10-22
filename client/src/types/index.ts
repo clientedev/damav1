@@ -145,6 +145,7 @@ export interface InstagramPost {
   category: string;
   embed_html?: string;
   image_url?: string;
+  poster?: string;
   order_index: number;
   is_active: number | boolean;
 }
