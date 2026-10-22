@@ -10,12 +10,19 @@ interface HeroProps {
 export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
   const [isPlaying] = useState(true);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
+  const heroRef = useRef<HTMLElement | null>(null);
+  const logoWrapperRef = useRef<HTMLDivElement | null>(null);
+  const textWrapperRef = useRef<HTMLDivElement | null>(null);
+  const glowRef = useRef<HTMLDivElement | null>(null);
+  const scrollCueRef = useRef<HTMLDivElement | null>(null);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const activeSlides = slides.filter((s) => s.is_active);
   const totalSlides = activeSlides.length;
 
+  // Track viewport size cleanly
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 640);
     checkMobile();
@@ -34,26 +41,95 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     return () => clearInterval(timer);
   }, [config.slideshow_enabled, isPlaying, totalSlides, config.transition_duration]);
 
-  // Scroll listener for hero interaction: large centered logo shrinks and reveals content on scroll
+  // Ultra-fluid 60/120fps hardware-accelerated scroll effect
   useEffect(() => {
-    const handleScroll = () => {
-      const heroEl = document.getElementById('inicio');
+    let rafId: number | null = null;
+    let isMob = window.innerWidth < 640;
+
+    const applyProgress = (progress: number, mob: boolean) => {
+      // 1. Logo Scale: Starts prominent and bold, shrinks smoothly to header size
+      const initialScale = mob ? 1.18 : 1.32;
+      const finalScale = mob ? 0.78 : 0.95;
+      const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
+
+      // 2. Logo Vertical Offset:
+      // At progress 0, offset pushes logo down into optical center of the hero screen.
+      // At progress 1, offset is 0 so it locks at the top of the content block.
+      const initialOffset = mob ? 88 : 110;
+      const finalOffset = 0;
+      const currentOffset = finalOffset + (1 - progress) * (initialOffset - finalOffset);
+
+      // 3. Text Reveal: Starts fading in after initial logo lift, completes smoothly
+      const textProgress = Math.min(Math.max((progress - 0.10) / 0.65, 0), 1);
+      const textTranslateY = (1 - textProgress) * (mob ? 16 : 24);
+
+      if (logoWrapperRef.current) {
+        logoWrapperRef.current.style.transform = `translate3d(0, ${currentOffset.toFixed(2)}px, 0) scale(${currentScale.toFixed(4)})`;
+      }
+
+      if (glowRef.current) {
+        glowRef.current.style.opacity = (0.65 + (1 - progress) * 0.45).toFixed(3);
+      }
+
+      if (textWrapperRef.current) {
+        textWrapperRef.current.style.opacity = textProgress.toFixed(3);
+        textWrapperRef.current.style.transform = `translate3d(0, ${textTranslateY.toFixed(2)}px, 0)`;
+        textWrapperRef.current.style.pointerEvents = textProgress > 0.4 ? 'auto' : 'none';
+      }
+
+      if (scrollCueRef.current) {
+        const cueOpacity = Math.max(0, 1 - progress * 3.5);
+        scrollCueRef.current.style.opacity = cueOpacity.toFixed(3);
+        if (cueOpacity <= 0) {
+          scrollCueRef.current.style.display = 'none';
+        } else {
+          scrollCueRef.current.style.display = 'flex';
+        }
+      }
+    };
+
+    const updateScroll = () => {
+      const heroEl = heroRef.current;
       if (!heroEl) return;
       const rect = heroEl.getBoundingClientRect();
       const heroScrollDistance = heroEl.offsetHeight - window.innerHeight;
       if (heroScrollDistance <= 0) {
-        setScrollProgress(1);
+        applyProgress(1, isMob);
         return;
       }
       const scrolled = -rect.top;
       const progress = Math.min(Math.max(scrolled / heroScrollDistance, 0), 1);
-      setScrollProgress(progress);
+      applyProgress(progress, isMob);
+    };
+
+    const handleScroll = () => {
+      if (rafId !== null) return;
+      rafId = requestAnimationFrame(() => {
+        updateScroll();
+        rafId = null;
+      });
+    };
+
+    const handleResize = () => {
+      isMob = window.innerWidth < 640;
+      setIsMobile(isMob);
+      handleScroll();
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('resize', handleResize, { passive: true });
+    window.addEventListener('orientationchange', handleResize, { passive: true });
+
+    // Initial calculation on mount
+    updateScroll();
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('orientationchange', handleResize);
+      if (rafId !== null) cancelAnimationFrame(rafId);
+    };
+  }, [config.logo_size_desktop, config.logo_size_mobile]);
 
   const handlePrev = () => {
     setCurrentSlideIndex((prev) => (prev === 0 ? totalSlides - 1 : prev - 1));
@@ -74,7 +150,6 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
   }, [currentSlideIndex]);
 
   const overlayOpacity = Math.min(Math.max((config.overlay_darkness ?? 65) / 100, 0.2), 0.95);
-  const videoRef = useRef<HTMLVideoElement | null>(null);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -123,34 +198,20 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     };
   }, [config.video_url, config.video_enabled]);
 
-  // Dimensions & Scale calculations
+  // Dimensions
   const logoDesktopWidth = config.logo_size_desktop || 440;
   const logoMobileWidth = config.logo_size_mobile || 260;
 
-  // Starts prominent and in optical center, then smoothly scales down and shifts up as text appears
-  const initialScale = isMobile ? 1.22 : 1.35;
-  const finalScale = isMobile ? 0.78 : 0.96;
-  const logoScale = finalScale + (1 - scrollProgress) * (initialScale - finalScale);
-
-  const initialLogoOffset = isMobile ? 55 : 105;
-  const finalLogoOffset = isMobile ? -8 : 0;
-  const logoOffset = finalLogoOffset + (1 - scrollProgress) * (initialLogoOffset - finalLogoOffset);
-
-  // Text smoothly emerges from 0.08 to 0.70 scroll progress
-  const textProgress = Math.min(Math.max((scrollProgress - 0.08) / 0.62, 0), 1);
-  const textTranslateY = (1 - textProgress) * (isMobile ? 14 : 22);
-  const canInteractText = textProgress > 0.4;
-
   return (
     <section
+      ref={heroRef}
       id="inicio"
-      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[140vh] sm:min-h-[155vh] overflow-x-clip"
+      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[185vh] sm:min-h-[175vh] overflow-x-clip"
     >
-      {/* Sticky full-screen viewport with dvh protection on mobile */}
-      <div className="sticky top-0 w-full max-w-full h-[100dvh] sm:h-screen overflow-hidden flex flex-col justify-between bg-[#050a14]">
+      {/* Sticky full-screen viewport with stable small-viewport-height (svh) to avoid mobile URL bar jump bugs */}
+      <div className="sticky top-0 w-full max-w-full h-screen h-[100svh] overflow-hidden flex flex-col justify-between bg-[#050a14]">
         {/* Background Slideshow / Video Layer */}
         <div className="absolute inset-0 z-0">
-          {/* Background Slideshow / Video Layer: activeSlides always takes priority */}
           {activeSlides.length > 0 ? (
             activeSlides.map((slide, index) => {
               const isActive = index === currentSlideIndex;
@@ -254,18 +315,19 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
         <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full my-auto py-1 sm:py-4">
           {/* THE OFFICIAL LOGO - STARTS PROMINENT & CENTERED, SMOOTHLY SHRINKS & LIFTS ON SCROLL */}
           <div
+            ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto will-change-transform"
             style={{
-              transform: `translate3d(0, ${logoOffset}px, 0) scale(${logoScale})`,
-              transformOrigin: 'center center',
-              transition: 'transform 50ms linear'
+              transform: `translate3d(0, ${isMobile ? 88 : 110}px, 0) scale(${isMobile ? 1.18 : 1.32})`,
+              transformOrigin: 'center center'
             }}
           >
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
+              ref={glowRef}
               className="absolute w-[240px] sm:w-[500px] h-[240px] sm:h-[500px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
-                opacity: 0.7 + (1 - scrollProgress) * 0.4
+                opacity: 1.1
               }}
             />
 
@@ -276,7 +338,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
               className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[84vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? `clamp(200px, 60vw, ${logoMobileWidth}px)`
+                  ? `clamp(180px, 58vw, ${logoMobileWidth}px)`
                   : `clamp(300px, 42vw, ${logoDesktopWidth}px)`
               }}
             />
@@ -284,12 +346,12 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
 
           {/* THE TEXT & CALL TO ACTIONS - REVEALED SMOOTHLY AS USER SCROLLS DOWN */}
           <div
-            className="w-full flex flex-col items-center will-change-transform mt-2 sm:mt-6"
+            ref={textWrapperRef}
+            className="w-full flex flex-col items-center will-change-transform mt-2 sm:mt-5"
             style={{
-              opacity: textProgress,
-              transform: `translate3d(0, ${textTranslateY}px, 0)`,
-              pointerEvents: canInteractText ? 'auto' : 'none',
-              transition: 'opacity 80ms linear, transform 80ms linear'
+              opacity: 0,
+              transform: `translate3d(0, ${isMobile ? 16 : 24}px, 0)`,
+              pointerEvents: 'none'
             }}
           >
             {/* Tagline with Cyan Accent Lines */}
@@ -302,7 +364,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             </div>
 
             {/* Headline / Subtitle */}
-            <h1 className="text-base sm:text-2xl md:text-3xl lg:text-4xl font-light text-white tracking-tight leading-snug sm:leading-relaxed max-w-3xl mx-auto mb-4 sm:mb-7 drop-shadow-sm px-2">
+            <h1 className="text-[15px] sm:text-2xl md:text-3xl lg:text-4xl font-light text-white tracking-tight leading-snug sm:leading-relaxed max-w-3xl mx-auto mb-3.5 sm:mb-7 drop-shadow-sm px-2">
               {config.subtitle || 'Assessoria de Alta Performance para Corretores e Clientes Estratégicos'}
             </h1>
 
@@ -312,7 +374,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
                 href={config.cta_primary_link || 'https://wa.me/5511991606951?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es!'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto blue-gradient-btn font-semibold px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-[#0047ab]/40 transition-all transform hover:-translate-y-0.5 keep-white cursor-pointer"
+                className="w-full sm:w-auto blue-gradient-btn font-semibold px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-[11px] sm:text-xs uppercase tracking-widest flex items-center justify-center gap-2 hover:shadow-xl hover:shadow-[#0047ab]/40 transition-all transform hover:-translate-y-0.5 keep-white cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
                 <span className="text-white">{config.cta_primary_text || 'Fale com um Especialista'}</span>
@@ -320,7 +382,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
 
               <a
                 href={config.cta_secondary_link || '#solucoes'}
-                className="w-full sm:w-auto bg-[#09283d]/80 hover:bg-[#09283d] text-white border border-[#38bdf8]/40 hover:border-[#38bdf8] px-6 sm:px-8 py-3 sm:py-3.5 rounded-full text-xs uppercase tracking-widest flex items-center justify-center backdrop-blur-sm transition-all keep-white cursor-pointer"
+                className="w-full sm:w-auto bg-[#09283d]/80 hover:bg-[#09283d] text-white border border-[#38bdf8]/40 hover:border-[#38bdf8] px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full text-[11px] sm:text-xs uppercase tracking-widest flex items-center justify-center backdrop-blur-sm transition-all keep-white cursor-pointer"
               >
                 <span className="text-white">{config.cta_secondary_text || 'Conhecer Soluções'}</span>
               </a>
@@ -329,17 +391,15 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
         </div>
 
         {/* Floating Scroll Cue at bottom while logo is prominent */}
-        {scrollProgress < 0.35 && (
-          <div
-            className="absolute bottom-12 sm:bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 pointer-events-none transition-opacity duration-300 z-30"
-            style={{ opacity: Math.max(0, 1 - scrollProgress * 3.2) }}
-          >
-            <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-[#38bdf8]/90 font-semibold animate-pulse">
-              Role para baixo
-            </span>
-            <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#38bdf8] animate-bounce" />
-          </div>
-        )}
+        <div
+          ref={scrollCueRef}
+          className="absolute bottom-12 sm:bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 pointer-events-none z-30"
+        >
+          <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.25em] text-[#38bdf8]/90 font-semibold animate-pulse">
+            Role para baixo
+          </span>
+          <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#38bdf8] animate-bounce" />
+        </div>
 
         {/* Bottom Bar: Slideshow controls & Status */}
         <div className="relative z-20 pb-3 sm:pb-6 px-4 sm:px-6 flex items-center justify-between max-w-7xl mx-auto w-full flex-shrink-0">
