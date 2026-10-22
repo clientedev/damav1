@@ -41,61 +41,65 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     return () => clearInterval(timer);
   }, [config.slideshow_enabled, isPlaying, totalSlides, config.transition_duration]);
 
-  // Ultra-fluid 60/120fps hardware-accelerated scroll effect (zero layout thrashing)
+  // 100% fluid 60/120fps hardware-accelerated scroll engine with LERP physics
   useEffect(() => {
     let rafId: number | null = null;
     let isMob = window.innerWidth < 640;
     let totalScrollDistance = 0;
+    let currentProgress = 0;
+    let targetProgress = 0;
+    let isRunning = false;
 
-    // Precalculate scroll track bounds on mount/resize so NO layout reflow happens on scroll
-    const measureBounds = () => {
+    // Lifted optical sweet spot: 36px on mobile puts logo squarely in upper-middle visual focal zone
+    const getTargetShift = (mob: boolean) => (mob ? 36 : 65);
+
+    const measure = () => {
       isMob = window.innerWidth < 640;
       setIsMobile(isMob);
       const heroEl = heroRef.current;
       if (heroEl) {
         totalScrollDistance = Math.max(heroEl.offsetHeight - window.innerHeight, 1);
       } else {
-        totalScrollDistance = window.innerHeight * (isMob ? 0.6 : 0.7);
+        totalScrollDistance = window.innerHeight * 0.65;
       }
     };
 
-    measureBounds();
+    measure();
 
-    const applyProgress = (progress: number, mob: boolean) => {
-      // 1. Logo Scale: Starts bold and prominent (1.05 mobile, 1.15 desktop), scales down to clean header size (0.84 mobile, 0.94 desktop)
-      const initialScale = mob ? 1.05 : 1.15;
-      const finalScale = mob ? 0.84 : 0.94;
+    const render = (progress: number) => {
+      const mob = isMob;
+      // 1. Scale: Prominent at start, shrinks smoothly to brand header size
+      const initialScale = mob ? 1.08 : 1.18;
+      const finalScale = mob ? 0.85 : 0.94;
       const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
 
-      // 2. Exact Optical Centering:
-      // Measure real text container height from DOM to calculate exact half-shift
-      const textEl = textWrapperRef.current;
-      const textHeight = textEl ? textEl.offsetHeight : (mob ? 190 : 210);
-      const centerShift = textHeight / 2;
-      const currentOffset = (1 - progress) * centerShift;
+      // 2. Vertical offset: starts at lifted optical focal zone, smoothly lifts to 0
+      const baseShift = getTargetShift(mob);
+      const currentOffset = (1 - progress) * baseShift;
 
-      // 3. Text Reveal: Starts fading in after logo begins moving (progress 0.08 to 0.72)
-      const textProgress = Math.min(Math.max((progress - 0.08) / 0.64, 0), 1);
-      const textTranslateY = (1 - textProgress) * (mob ? 14 : 20);
+      // 3. Text reveal curve: smooth ease-out quadratic
+      const rawTextP = Math.min(Math.max((progress - 0.08) / 0.62, 0), 1);
+      const textP = 1 - Math.pow(1 - rawTextP, 2);
+      const textTranslateY = (1 - textP) * (mob ? 14 : 20);
 
       if (logoWrapperRef.current) {
         logoWrapperRef.current.style.transform = `translate3d(0, ${currentOffset.toFixed(1)}px, 0) scale(${currentScale.toFixed(3)})`;
       }
 
       if (glowRef.current) {
-        glowRef.current.style.opacity = (0.7 + (1 - progress) * 0.4).toFixed(2);
+        glowRef.current.style.opacity = (0.7 + (1 - progress) * 0.45).toFixed(2);
       }
 
       if (textWrapperRef.current) {
-        textWrapperRef.current.style.opacity = textProgress.toFixed(2);
+        textWrapperRef.current.style.opacity = textP.toFixed(2);
         textWrapperRef.current.style.transform = `translate3d(0, ${textTranslateY.toFixed(1)}px, 0)`;
-        textWrapperRef.current.style.pointerEvents = textProgress > 0.4 ? 'auto' : 'none';
+        textWrapperRef.current.style.pointerEvents = textP > 0.4 ? 'auto' : 'none';
       }
 
       if (scrollCueRef.current) {
-        const cueOpacity = Math.max(0, 1 - progress * 3.2);
+        const cueOpacity = Math.max(0, 1 - progress * 3.5);
         scrollCueRef.current.style.opacity = cueOpacity.toFixed(2);
-        if (cueOpacity <= 0) {
+        if (cueOpacity <= 0.02) {
           scrollCueRef.current.style.display = 'none';
         } else {
           scrollCueRef.current.style.display = 'flex';
@@ -103,37 +107,52 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
       }
     };
 
-    // FAST, NON-BLOCKING SCROLL HANDLER (ZERO REFLOWS):
-    const onScroll = () => {
-      const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
-      const progress = totalScrollDistance > 0 
-        ? Math.min(Math.max(scrollY / totalScrollDistance, 0), 1) 
-        : 1;
-      applyProgress(progress, isMob);
+    // Smooth physics loop - eliminates touch-scroll stutter and frame skips
+    const animate = () => {
+      const diff = targetProgress - currentProgress;
+      if (Math.abs(diff) < 0.001) {
+        currentProgress = targetProgress;
+        render(currentProgress);
+        isRunning = false;
+        rafId = null;
+        return;
+      }
+
+      // 0.22 damping factor provides instant responsiveness with zero jitter
+      currentProgress += diff * 0.22;
+      render(currentProgress);
+      rafId = requestAnimationFrame(animate);
     };
 
-    const handleScroll = () => {
-      if (rafId !== null) return;
-      rafId = requestAnimationFrame(() => {
-        onScroll();
-        rafId = null;
-      });
+    const onScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+      targetProgress = totalScrollDistance > 0 
+        ? Math.min(Math.max(scrollY / totalScrollDistance, 0), 1) 
+        : 1;
+
+      if (!isRunning) {
+        isRunning = true;
+        rafId = requestAnimationFrame(animate);
+      }
     };
 
     const handleResize = () => {
-      measureBounds();
-      handleScroll();
+      measure();
+      onScroll();
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', handleResize, { passive: true });
     window.addEventListener('orientationchange', handleResize, { passive: true });
 
-    // Initial calculation on mount
-    handleResize();
+    // Initial positioning
+    measure();
+    currentProgress = 0;
+    targetProgress = 0;
+    render(0);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
       if (rafId !== null) cancelAnimationFrame(rafId);
@@ -325,10 +344,13 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
           {/* THE OFFICIAL LOGO - STARTS PROMINENT & CENTERED, SMOOTHLY SHRINKS & LIFTS ON SCROLL */}
           <div
             ref={logoWrapperRef}
-            className="relative flex flex-col items-center justify-center max-w-full mx-auto will-change-transform"
+            className="relative flex flex-col items-center justify-center max-w-full mx-auto"
             style={{
-              transform: `translate3d(0, 0, 0) scale(${isMobile ? 1.05 : 1.15})`,
-              transformOrigin: 'center center'
+              transform: `translate3d(0, ${isMobile ? 36 : 65}px, 0) scale(${isMobile ? 1.08 : 1.18})`,
+              transformOrigin: 'center center',
+              willChange: 'transform',
+              WebkitBackfaceVisibility: 'hidden',
+              backfaceVisibility: 'hidden'
             }}
           >
             {/* Ambient Cyan / Cobalt Radial Glow */}
@@ -356,11 +378,14 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
           {/* THE TEXT & CALL TO ACTIONS - REVEALED SMOOTHLY AS USER SCROLLS DOWN */}
           <div
             ref={textWrapperRef}
-            className="w-full flex flex-col items-center will-change-transform mt-2 sm:mt-5"
+            className="w-full flex flex-col items-center mt-2 sm:mt-5"
             style={{
               opacity: 0,
               transform: `translate3d(0, ${isMobile ? 14 : 20}px, 0)`,
-              pointerEvents: 'none'
+              pointerEvents: 'none',
+              willChange: 'transform, opacity',
+              WebkitBackfaceVisibility: 'hidden',
+              backfaceVisibility: 'hidden'
             }}
           >
             {/* Tagline with Cyan Accent Lines */}
