@@ -41,45 +41,60 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     return () => clearInterval(timer);
   }, [config.slideshow_enabled, isPlaying, totalSlides, config.transition_duration]);
 
-  // Ultra-fluid 60/120fps hardware-accelerated scroll effect
+  // Ultra-fluid 60/120fps hardware-accelerated scroll effect (zero layout thrashing)
   useEffect(() => {
     let rafId: number | null = null;
     let isMob = window.innerWidth < 640;
+    let totalScrollDistance = 0;
+
+    // Precalculate scroll track bounds on mount/resize so NO layout reflow happens on scroll
+    const measureBounds = () => {
+      isMob = window.innerWidth < 640;
+      setIsMobile(isMob);
+      const heroEl = heroRef.current;
+      if (heroEl) {
+        totalScrollDistance = Math.max(heroEl.offsetHeight - window.innerHeight, 1);
+      } else {
+        totalScrollDistance = window.innerHeight * (isMob ? 0.6 : 0.7);
+      }
+    };
+
+    measureBounds();
 
     const applyProgress = (progress: number, mob: boolean) => {
-      // 1. Logo Scale: Starts prominent and bold, shrinks smoothly to header size
-      const initialScale = mob ? 1.18 : 1.32;
-      const finalScale = mob ? 0.78 : 0.95;
+      // 1. Logo Scale: Starts bold and prominent (1.05 mobile, 1.15 desktop), scales down to clean header size (0.84 mobile, 0.94 desktop)
+      const initialScale = mob ? 1.05 : 1.15;
+      const finalScale = mob ? 0.84 : 0.94;
       const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
 
-      // 2. Logo Vertical Offset:
-      // At progress 0, offset pushes logo down into optical center of the hero screen.
-      // At progress 1, offset is 0 so it locks at the top of the content block.
-      const initialOffset = mob ? 88 : 110;
-      const finalOffset = 0;
-      const currentOffset = finalOffset + (1 - progress) * (initialOffset - finalOffset);
+      // 2. Exact Optical Centering:
+      // Measure real text container height from DOM to calculate exact half-shift
+      const textEl = textWrapperRef.current;
+      const textHeight = textEl ? textEl.offsetHeight : (mob ? 190 : 210);
+      const centerShift = textHeight / 2;
+      const currentOffset = (1 - progress) * centerShift;
 
-      // 3. Text Reveal: Starts fading in after initial logo lift, completes smoothly
-      const textProgress = Math.min(Math.max((progress - 0.10) / 0.65, 0), 1);
-      const textTranslateY = (1 - textProgress) * (mob ? 16 : 24);
+      // 3. Text Reveal: Starts fading in after logo begins moving (progress 0.08 to 0.72)
+      const textProgress = Math.min(Math.max((progress - 0.08) / 0.64, 0), 1);
+      const textTranslateY = (1 - textProgress) * (mob ? 14 : 20);
 
       if (logoWrapperRef.current) {
-        logoWrapperRef.current.style.transform = `translate3d(0, ${currentOffset.toFixed(2)}px, 0) scale(${currentScale.toFixed(4)})`;
+        logoWrapperRef.current.style.transform = `translate3d(0, ${currentOffset.toFixed(1)}px, 0) scale(${currentScale.toFixed(3)})`;
       }
 
       if (glowRef.current) {
-        glowRef.current.style.opacity = (0.65 + (1 - progress) * 0.45).toFixed(3);
+        glowRef.current.style.opacity = (0.7 + (1 - progress) * 0.4).toFixed(2);
       }
 
       if (textWrapperRef.current) {
-        textWrapperRef.current.style.opacity = textProgress.toFixed(3);
-        textWrapperRef.current.style.transform = `translate3d(0, ${textTranslateY.toFixed(2)}px, 0)`;
+        textWrapperRef.current.style.opacity = textProgress.toFixed(2);
+        textWrapperRef.current.style.transform = `translate3d(0, ${textTranslateY.toFixed(1)}px, 0)`;
         textWrapperRef.current.style.pointerEvents = textProgress > 0.4 ? 'auto' : 'none';
       }
 
       if (scrollCueRef.current) {
-        const cueOpacity = Math.max(0, 1 - progress * 3.5);
-        scrollCueRef.current.style.opacity = cueOpacity.toFixed(3);
+        const cueOpacity = Math.max(0, 1 - progress * 3.2);
+        scrollCueRef.current.style.opacity = cueOpacity.toFixed(2);
         if (cueOpacity <= 0) {
           scrollCueRef.current.style.display = 'none';
         } else {
@@ -88,31 +103,25 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
       }
     };
 
-    const updateScroll = () => {
-      const heroEl = heroRef.current;
-      if (!heroEl) return;
-      const rect = heroEl.getBoundingClientRect();
-      const heroScrollDistance = heroEl.offsetHeight - window.innerHeight;
-      if (heroScrollDistance <= 0) {
-        applyProgress(1, isMob);
-        return;
-      }
-      const scrolled = -rect.top;
-      const progress = Math.min(Math.max(scrolled / heroScrollDistance, 0), 1);
+    // FAST, NON-BLOCKING SCROLL HANDLER (ZERO REFLOWS):
+    const onScroll = () => {
+      const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+      const progress = totalScrollDistance > 0 
+        ? Math.min(Math.max(scrollY / totalScrollDistance, 0), 1) 
+        : 1;
       applyProgress(progress, isMob);
     };
 
     const handleScroll = () => {
       if (rafId !== null) return;
       rafId = requestAnimationFrame(() => {
-        updateScroll();
+        onScroll();
         rafId = null;
       });
     };
 
     const handleResize = () => {
-      isMob = window.innerWidth < 640;
-      setIsMobile(isMob);
+      measureBounds();
       handleScroll();
     };
 
@@ -121,7 +130,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     window.addEventListener('orientationchange', handleResize, { passive: true });
 
     // Initial calculation on mount
-    updateScroll();
+    handleResize();
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -198,15 +207,15 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     };
   }, [config.video_url, config.video_enabled]);
 
-  // Dimensions
+  // Dimensions - prominent brand presence
   const logoDesktopWidth = config.logo_size_desktop || 440;
-  const logoMobileWidth = config.logo_size_mobile || 260;
+  const logoMobileWidth = Math.max(config.logo_size_mobile || 290, 280);
 
   return (
     <section
       ref={heroRef}
       id="inicio"
-      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[185vh] sm:min-h-[175vh] overflow-x-clip"
+      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[160vh] sm:min-h-[170vh]"
     >
       {/* Sticky full-screen viewport with stable small-viewport-height (svh) to avoid mobile URL bar jump bugs */}
       <div className="sticky top-0 w-full max-w-full h-screen h-[100svh] overflow-hidden flex flex-col justify-between bg-[#050a14]">
@@ -312,20 +321,20 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
         <div className="h-14 sm:h-20 w-full flex-shrink-0" />
 
         {/* 100% MATHEMATICALLY CENTERED UNIFIED HERO CONTENT CONTAINER */}
-        <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full my-auto py-1 sm:py-4">
+        <div className="relative z-20 flex-1 flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto w-full my-auto py-1 sm:py-3">
           {/* THE OFFICIAL LOGO - STARTS PROMINENT & CENTERED, SMOOTHLY SHRINKS & LIFTS ON SCROLL */}
           <div
             ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto will-change-transform"
             style={{
-              transform: `translate3d(0, ${isMobile ? 88 : 110}px, 0) scale(${isMobile ? 1.18 : 1.32})`,
+              transform: `translate3d(0, 0, 0) scale(${isMobile ? 1.05 : 1.15})`,
               transformOrigin: 'center center'
             }}
           >
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
               ref={glowRef}
-              className="absolute w-[240px] sm:w-[500px] h-[240px] sm:h-[500px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
+              className="absolute w-[260px] sm:w-[520px] h-[260px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
                 opacity: 1.1
               }}
@@ -335,11 +344,11 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             <img
               src={config.logo_url || '/uploads/branding/logo_hero_central.png'}
               alt="G11 Conceito Financeiro"
-              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[84vw] mx-auto select-none pointer-events-none"
+              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[88vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? `clamp(180px, 58vw, ${logoMobileWidth}px)`
-                  : `clamp(300px, 42vw, ${logoDesktopWidth}px)`
+                  ? `clamp(260px, 76vw, ${logoMobileWidth}px)`
+                  : `clamp(340px, 44vw, ${logoDesktopWidth}px)`
               }}
             />
           </div>
@@ -350,7 +359,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             className="w-full flex flex-col items-center will-change-transform mt-2 sm:mt-5"
             style={{
               opacity: 0,
-              transform: `translate3d(0, ${isMobile ? 16 : 24}px, 0)`,
+              transform: `translate3d(0, ${isMobile ? 14 : 20}px, 0)`,
               pointerEvents: 'none'
             }}
           >
