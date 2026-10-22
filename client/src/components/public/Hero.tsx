@@ -255,12 +255,12 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     <section
       ref={heroRef}
       id="inicio"
-      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[160vh] sm:min-h-[170vh]"
+      className="relative w-full max-w-full bg-[#050a14] hero-dark-section min-h-[160vh] sm:min-h-[170vh] overflow-x-hidden overflow-x-clip"
     >
       {/* Sticky full-screen viewport with stable small-viewport-height (svh) to avoid mobile URL bar jump bugs */}
       <div className="sticky top-0 w-full max-w-full h-screen h-[100svh] overflow-hidden flex flex-col justify-between bg-[#050a14]">
         {/* Background Slideshow / Video Layer */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
           {activeSlides.length > 0 ? (
             activeSlides.map((slide, index) => {
               const isActive = index === currentSlideIndex;
@@ -405,7 +405,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
               ref={glowRef}
-              className="absolute w-[280px] sm:w-[520px] h-[280px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[70px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
+              className="absolute w-[220px] sm:w-[520px] h-[220px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[50px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
                 opacity: 1.1
               }}
@@ -415,10 +415,10 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             <img
               src={config.logo_url || '/uploads/branding/logo_hero_central.png'}
               alt="G11 Conceito Financeiro"
-              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[90vw] mx-auto select-none pointer-events-none"
+              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[85vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? 'clamp(290px, 86vw, 360px)'
+                  ? 'clamp(260px, 78vw, 310px)'
                   : `clamp(360px, 46vw, ${logoDesktopWidth}px)`
               }}
             />
