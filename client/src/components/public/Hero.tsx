@@ -52,8 +52,8 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     let targetProgress = 0;
     let isRunning = false;
 
-    // Optical centering: -24px on mobile (clears void below header), 35px on desktop
-    const getTargetShift = (mob: boolean) => (mob ? -24 : 35);
+    // Optical centering: -24px on mobile (clears void below header), 120px on desktop (perfect vertical center)
+    const getTargetShift = (mob: boolean) => (mob ? -24 : 120);
 
     const measure = () => {
       isMob = window.innerWidth < 640;
@@ -70,8 +70,8 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
 
     const render = (progress: number) => {
       const mob = isMob;
-      // 1. Scale: Mobile starts at 1.14 -> 0.78; Desktop starts at 1.32 -> 0.95
-      const initialScale = mob ? 1.14 : 1.32;
+      // 1. Scale: Mobile starts at 1.14 -> 0.78; Desktop starts at 1.36 -> 0.95
+      const initialScale = mob ? 1.14 : 1.36;
       const finalScale = mob ? 0.78 : 0.95;
       const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
 
@@ -248,7 +248,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
   }, [config.video_url, config.video_enabled]);
 
   // Dimensions - prominent brand presence
-  const logoDesktopWidth = config.logo_size_desktop || 440;
+  const logoDesktopWidth = Math.max(config.logo_size_desktop || 540, 520);
   const logoMobileWidth = Math.max(config.logo_size_mobile || 290, 280);
 
   return (
@@ -392,7 +392,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto"
             style={{
-              transform: `translate3d(0, ${isMobile ? -24 : 35}px, 0) scale(${isMobile ? 1.14 : 1.32})`,
+              transform: `translate3d(0, ${isMobile ? -24 : 120}px, 0) scale(${isMobile ? 1.14 : 1.36})`,
               transformOrigin: 'center center',
               willChange: 'transform',
               WebkitBackfaceVisibility: 'hidden',
@@ -416,7 +416,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
               style={{
                 width: isMobile
                   ? 'clamp(260px, 78vw, 310px)'
-                  : `clamp(360px, 46vw, ${logoDesktopWidth}px)`
+                  : `clamp(420px, 50vw, ${logoDesktopWidth}px)`
               }}
             />
           </div>
