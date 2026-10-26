@@ -70,9 +70,9 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
 
     const render = (progress: number) => {
       const mob = isMob;
-      // 1. Scale: Mobile starts at 1.14 -> 0.78; Desktop starts at 1.36 -> 0.95
-      const initialScale = mob ? 1.14 : 1.36;
-      const finalScale = mob ? 0.78 : 0.95;
+      // 1. Scale: Mobile starts at 0.91 -> 0.62; Desktop starts at 1.08 -> 0.76 (-20%)
+      const initialScale = mob ? 0.91 : 1.08;
+      const finalScale = mob ? 0.62 : 0.76;
       const currentScale = finalScale + (1 - progress) * (initialScale - finalScale);
 
       // 2. Vertical offset: mobile -12px, desktop 105px, both glides to 0
@@ -247,9 +247,9 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
     tryPlay();
   }, [config.video_url, config.video_enabled]);
 
-  // Dimensions - prominent brand presence
-  const logoDesktopWidth = Math.max(config.logo_size_desktop || 540, 520);
-  const logoMobileWidth = Math.max(config.logo_size_mobile || 290, 280);
+  // Dimensions - refined brand presence (-20%)
+  const logoDesktopWidth = Math.max(Math.round((config.logo_size_desktop || 540) * 0.8), 416);
+  const logoMobileWidth = Math.max(Math.round((config.logo_size_mobile || 290) * 0.8), 224);
 
   return (
     <section
@@ -392,7 +392,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             ref={logoWrapperRef}
             className="relative flex flex-col items-center justify-center max-w-full mx-auto"
             style={{
-              transform: `translate3d(0, ${isMobile ? -24 : 120}px, 0) scale(${isMobile ? 1.14 : 1.36})`,
+              transform: `translate3d(0, ${isMobile ? -24 : 120}px, 0) scale(${isMobile ? 0.91 : 1.08})`,
               transformOrigin: 'center center',
               willChange: 'transform',
               WebkitBackfaceVisibility: 'hidden',
@@ -402,7 +402,7 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             {/* Ambient Cyan / Cobalt Radial Glow */}
             <div
               ref={glowRef}
-              className="absolute w-[220px] sm:w-[520px] h-[220px] sm:h-[520px] rounded-full bg-[#38bdf8]/20 blur-[50px] sm:blur-[110px] -z-10 pointer-events-none animate-pulse-glow-blue"
+              className="absolute w-[180px] sm:w-[420px] h-[180px] sm:h-[420px] rounded-full bg-[#38bdf8]/20 blur-[40px] sm:blur-[90px] -z-10 pointer-events-none animate-pulse-glow-blue"
               style={{
                 opacity: 1.1
               }}
@@ -412,11 +412,11 @@ export const Hero: React.FC<HeroProps> = ({ config, slides }) => {
             <img
               src={config.logo_url || '/uploads/branding/logo_hero_central.png'}
               alt="G11 Conceito Financeiro"
-              className="h-auto object-contain drop-shadow-[0_15px_45px_rgba(56,189,248,0.45)] max-w-[85vw] mx-auto select-none pointer-events-none"
+              className="h-auto object-contain drop-shadow-[0_12px_36px_rgba(56,189,248,0.4)] max-w-[85vw] mx-auto select-none pointer-events-none"
               style={{
                 width: isMobile
-                  ? 'clamp(260px, 78vw, 310px)'
-                  : `clamp(420px, 50vw, ${logoDesktopWidth}px)`
+                  ? 'clamp(208px, 62vw, 248px)'
+                  : `clamp(336px, 40vw, ${logoDesktopWidth}px)`
               }}
             />
           </div>

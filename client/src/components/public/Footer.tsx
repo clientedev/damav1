@@ -19,7 +19,7 @@ export const Footer: React.FC<FooterProps> = ({ settings }) => {
             <img
               src="/uploads/branding/logo_hero_central.png"
               alt="G11 Conceito Financeiro"
-              className="h-10 w-auto object-contain filter drop-shadow-[0_0_10px_rgba(56,189,248,0.3)]"
+              className="h-8 w-auto object-contain filter drop-shadow-[0_0_10px_rgba(56,189,248,0.3)]"
             />
             <p className="text-xs text-sky-100/70 font-light leading-relaxed">
               Assessoria especializada para corretores de alta performance, conectando-os às principais instituições financeiras e de proteção do mercado.
